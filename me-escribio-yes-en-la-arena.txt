@@ -18,6 +18,7 @@ speech]
 Quizá para 
 que el sol 
 no requemara sus sombras, jajaja
+[end-speech]
 
 Chorus:
 Escribió Yes en la arena
