@@ -1,0 +1,58 @@
+\version "2.18.2"
+
+\header {
+  title = "The Song of Us"
+  composer = "Unknown"
+}
+
+\score {
+  <<
+    \new ChordNames {
+      \chords {
+        c2 g a:m f
+        d:m g
+        c f g a:m
+        d:m g
+        c f g a:m
+        f g c
+      }
+    }
+    \new Staff {
+      \relative c' {
+        \key c \major
+        \time 4/4
+        c4 d e2 | g4 a b2 | a4 b c2 | f4 g a2 |
+        d4 e f2 | g4 a b2 |
+        c4 d e2 | f4 g a2 | g4 a b2 | a4 b c2 |
+        d4 e f2 | g4 a b2 |
+        c4 d e2 | f4 g a2 | g4 a b2 | a4 b c2 |
+        f4 g a2 | g4 a b2 | c4 d e2 |
+      }
+      \addlyrics {
+        why is it, that win -- ning means some -- bo -- dy has to lose
+        when life is full of col -- ors, not just one or two?
+        Don't you know, we're all notes in a song we choose,
+        and as keys and chords in a pi -- a -- no, we all shine through?
+        A wise man said, "Love your neigh -- bor,"
+        yet we're too busy keep -- ing fa -- vor...
+        Har -- mo -- ny, it's more than just a tune.
+        We're all just keys lay -- ing on a pi -- a -- no,
+        so let's play in tune, let it flow!
+        Don't you see, Har -- mo -- ny's the song of us...
+        He gave so much, ask -- ing for so lit -- tle,
+        why can't we give back and solve the rid -- dle?
+        Har -- mo -- ny, it's more than just a tune.
+        We're all just keys lay -- ing on a pi -- a -- no,
+        so let's play in tune, let it flow!
+        Don't you see, Har -- mo -- ny's the song of us...
+        The Song of Us, it starts in the heart
+        In this life's song, let love be our part
+        in The Song of Us? in The ONE Song of Us?
+      }
+    }
+  >>
+  \layout { }
+  \midi {
+    \tempo 4=120
+  }
+}
