@@ -9,13 +9,17 @@ def parse_or_reformat_yml(file_path):
             return yaml.safe_load(f)
     except yaml.YAMLError:
         # If parsing fails, assume it's plain text and reformat
-        with open(file_path, "r") as f:
-            content = f.read()
-        # Wrap plain text in a YAML structure
-        return {
-            "title": os.path.basename(file_path).replace(".yml", "").replace("-", " ").title(),
-            "lyrics": content
-        }
+        try:
+            with open(file_path, "r") as f:
+                content = f.read()
+            # Wrap plain text in a YAML structure
+            return {
+                "title": os.path.basename(file_path).replace(".yml", "").replace("-", " ").title(),
+                "lyrics": content.strip()
+            }
+        except Exception as e:
+            # If even this fails, raise an exception to handle upstream
+            raise Exception(f"Reformatting failed for {file_path}: {e}")
 
 def consolidate_songs():
     """Walk through folders and consolidate song data."""
