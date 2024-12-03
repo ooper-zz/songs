@@ -1,46 +1,50 @@
-name: Consolidate Songs
+import os
+import yaml
 
-on:
-  push:
-    paths:
-      - '**/*.yml'
-  workflow_dispatch: # Allows manual triggering
+def parse_or_reformat_yml(file_path):
+    """Try to parse the YAML file or reformat it if it's plain text."""
+    try:
+        # Attempt to parse the file as YAML
+        with open(file_path, "r") as f:
+            return yaml.safe_load(f)
+    except yaml.YAMLError:
+        # If parsing fails, assume it's plain text and reformat
+        with open(file_path, "r") as f:
+            content = f.read()
+        # Wrap plain text in a YAML structure
+        return {
+            "title": os.path.basename(file_path).replace(".yml", "").replace("-", " ").title(),
+            "lyrics": content
+        }
 
-jobs:
-  consolidate:
-    runs-on: ubuntu-latest
+def consolidate_songs():
+    """Walk through folders and consolidate song data."""
+    songs = {}
+    error_log = []  # To track files that cannot be parsed or reformatted
 
-    steps:
-      - name: Debug file paths
-        run: ls -R
+    for root, dirs, files in os.walk("."):
+        if os.path.basename(root) == ".":
+            continue  # Skip the root directory
+        for file in files:
+            if file.endswith(".yml"):
+                file_path = os.path.join(root, file)
+                try:
+                    song_data = parse_or_reformat_yml(file_path)
+                    if song_data:
+                        folder_name = os.path.basename(root)
+                        songs[folder_name] = song_data
+                except Exception as e:
+                    # Log the error and skip the file
+                    error_log.append(f"Error processing {file_path}: {e}")
+    
+    # Write the consolidated YAML file
+    with open("consolidated_songs.yml", "w") as f:
+        yaml.dump({"songs": songs}, f, default_flow_style=False)
+    
+    # Write the error log
+    if error_log:
+        with open("error_log.txt", "w") as f:
+            f.write("\n".join(error_log))
 
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: |
-          pip install pyyaml
-
-      - name: Parse and consolidate song files
-        run: |
-          python consolidate_songs.py
-
-      - name: Print current working directory
-        run: pwd
-
-      - name: Run Python script from root
-        working-directory: ${{ github.workspace }}
-        run: python consolidate_songs.py
-
-      - name: Commit and push consolidated file
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add consolidated_songs.yml
-          git commit -m "Update consolidated songs file"
-          git push
+if __name__ == "__main__":
+    consolidate_songs()
