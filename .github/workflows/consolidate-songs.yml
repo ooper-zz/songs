@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug file paths
+        run: ls -R
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -26,6 +29,13 @@ jobs:
       - name: Parse and consolidate song files
         run: |
           python consolidate_songs.py
+
+      - name: Print current working directory
+        run: pwd
+
+      - name: Run Python script from root
+        working-directory: ${{ github.workspace }}
+        run: python consolidate_songs.py
 
       - name: Commit and push consolidated file
         run: |
