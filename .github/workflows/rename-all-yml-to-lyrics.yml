@@ -16,19 +16,11 @@ jobs:
 
       - name: Rename all .yml files to _lyrics.txt
         run: |
-          # Navigate to the songs folder
           cd songs
-
-          # Find all .yml files and rename them, but exclude the .github directory and this workflow file
           find . -type f -name "*.yml" -not -path "./.github/*" -not -name "rename-all-yml-to-lyrics.yml" | while read file; do
-            # Extract the directory and base name of the file
             dir=$(dirname "$file")
             base=$(basename "$file" .yml)
-
-            # Construct the new filename with _lyrics.txt
             new_file="$dir/${base}_lyrics.txt"
-
-            # Rename the file
             mv "$file" "$new_file"
             echo "Renamed $file to $new_file"
           done
