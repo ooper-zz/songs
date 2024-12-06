@@ -1,51 +1,42 @@
-name: Consolidate Songs
+import os
+import yaml
 
-on:
-  push:
-    paths:
-      - '**/*_lyrics.txt'
-  workflow_dispatch:
+def find_lyrics_files(base_dir):
+    """Find all files matching the '_lyrics.txt' pattern."""
+    lyrics_files = []
+    for root, dirs, files in os.walk(base_dir):
+        for file in files:
+            if file.endswith("_lyrics.txt"):
+                lyrics_files.append(os.path.join(root, file))
+    return lyrics_files
 
-jobs:
-  consolidate:
-    runs-on: ubuntu-latest
+def read_lyrics_file(file_path):
+    """Read the lyrics file and return its content."""
+    with open(file_path, "r") as f:
+        content = f.read()
+    # Use the folder name as the song title
+    title = os.path.basename(os.path.dirname(file_path)).replace("-", " ").title()
+    return {"title": title, "lyrics": content.strip()}
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+def consolidate_songs(base_dir, output_file):
+    """Consolidate all lyrics files into a single YAML file."""
+    songs = []
+    lyrics_files = find_lyrics_files(base_dir)
+    print(f"Found {len(lyrics_files)} lyrics files to process.")
+    
+    for file in lyrics_files:
+        print(f"Processing: {file}")
+        song_data = read_lyrics_file(file)
+        songs.append(song_data)
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+    if songs:
+        with open(output_file, "w") as f:
+            yaml.dump({"songs": songs}, f, default_flow_style=False, allow_unicode=True)
+        print(f"Consolidated {len(songs)} songs into {output_file}")
+    else:
+        print("No lyrics files found to consolidate.")
 
-      - name: Install dependencies
-        run: pip install pyyaml
-
-      - name: Debug directory structure
-        run: |
-          echo "Listing all files in the repository:"
-          ls -R
-
-      - name: Run consolidation script
-        run: |
-          python consolidate_songs.py
-
-      - name: Check for consolidated file
-        run: |
-          if [ -f "consolidated_songs.yml" ]; then
-            echo "consolidated_songs.yml was created successfully."
-          else
-            echo "Error: consolidated_songs.yml was not created!"
-            exit 1
-          fi
-
-      - name: Commit and push consolidated file
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add consolidated_songs.yml
-          git commit -m "Add consolidated songs file" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+if __name__ == "__main__":
+    base_directory = "."
+    output_file = "consolidated_songs.yml"
+    consolidate_songs(base_directory, output_file)
