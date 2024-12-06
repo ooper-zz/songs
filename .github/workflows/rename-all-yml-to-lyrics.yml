@@ -2,8 +2,10 @@ name: Rename All .yml Files to _lyrics.txt
 
 on:
   push:
+    # Look for any .yml file in the repository
     paths:
-    workflow_dispatch:
+      - '**/*.yml'
+  workflow_dispatch: # Allows manual triggering
 
 jobs:
   rename:
