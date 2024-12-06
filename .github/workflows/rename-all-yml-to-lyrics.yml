@@ -3,8 +3,7 @@ name: Rename All .yml Files to _lyrics.txt
 on:
   push:
     paths:
-      - 'songs/**/*.yml'
-  workflow_dispatch:
+    workflow_dispatch:
 
 jobs:
   rename:
