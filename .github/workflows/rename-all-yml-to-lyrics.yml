@@ -2,10 +2,7 @@ name: Rename All .yml Files to _lyrics.txt
 
 on:
   push:
-    # Look for any .yml file in the repository
-    paths:
-      - '**/*.yml'
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   rename:
@@ -15,15 +12,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Ensure songs directory exists
+        run: |
+          if [ ! -d "songs" ]; then
+            echo "Error: songs directory does not exist!"
+            exit 1
+          fi
+
       - name: Rename all .yml files to _lyrics.txt
         run: |
           cd songs
+          echo "Files to be renamed:"
+          find . -type f -name "*.yml" -not -path "./.github/*" -not -name "rename-all-yml-to-lyrics.yml"
+
           find . -type f -name "*.yml" -not -path "./.github/*" -not -name "rename-all-yml-to-lyrics.yml" | while read file; do
             dir=$(dirname "$file")
             base=$(basename "$file" .yml)
             new_file="$dir/${base}_lyrics.txt"
-            mv "$file" "$new_file"
-            echo "Renamed $file to $new_file"
+            if mv "$file" "$new_file"; then
+              echo "Renamed $file to $new_file"
+            else
+              echo "Error renaming $file to $new_file" >&2
+            fi
           done
 
       - name: Commit and push changes
