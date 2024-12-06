@@ -1,0 +1,43 @@
+name: Rename All .yml Files to _lyrics.txt
+
+on:
+  push:
+    paths:
+      - 'songs/**/*.yml'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Rename all .yml files to _lyrics.txt
+        run: |
+          # Navigate to the songs folder
+          cd songs
+
+          # Find all .yml files and rename them
+          find . -type f -name "*.yml" | while read file; do
+            # Extract the directory and base name of the file
+            dir=$(dirname "$file")
+            base=$(basename "$file" .yml)
+
+            # Construct the new filename with _lyrics.txt
+            new_file="$dir/${base}_lyrics.txt"
+
+            # Rename the file
+            mv "$file" "$new_file"
+            
+            echo "Renamed $file to $new_file"
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add songs/
+          git commit -m "Rename all .yml files to _lyrics.txt"
+          git push
