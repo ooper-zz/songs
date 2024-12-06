@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'songs/**/*.yml'
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   rename:
