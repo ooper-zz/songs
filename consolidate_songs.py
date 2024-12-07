@@ -13,10 +13,12 @@ def find_lyrics_files(base_dir):
 def read_lyrics_file(file_path):
     """Read the lyrics file and return its content."""
     with open(file_path, "r") as f:
-        content = f.read()
+        lines = f.readlines()
+    # Strip each line and join them with a single newline
+    content = "\n".join(line.strip() for line in lines)
     # Use the folder name as the song title
     title = os.path.basename(os.path.dirname(file_path)).replace("-", " ").title()
-    return {"title": title, "lyrics": content.strip()}
+    return {"title": title, "lyrics": content}
 
 def consolidate_songs(base_dir, output_file):
     """Consolidate all lyrics files into a single YAML file."""
