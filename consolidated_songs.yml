@@ -1,5 +1,6 @@
 songs:
-- lyrics: '[Verse]
+- title: You'Ll Always Be My Spark
+  lyrics: '[Verse]
 
     Smart head, tonic heart
 
@@ -63,8 +64,8 @@ songs:
     In your strength you''ll find your might
 
     But in my heart you''ll be the light'
-  title: You'Ll Always Be My Spark
-- lyrics: '[Lead in - solo interlude Transition]
+- title: We'Re Not Going Back
+  lyrics: '[Lead in - solo interlude Transition]
 
 
     We''re not going back...
@@ -175,8 +176,8 @@ songs:
 
 
     [End]'
-  title: We'Re Not Going Back
-- lyrics: '[begin]
+- title: Escribió "Sí" En La Arena
+  lyrics: '[begin]
 
     [Lead in - solo piano interlude Transition]
 
@@ -247,8 +248,8 @@ songs:
 
 
     [end]'
-  title: Escribió "Sí" En La Arena
-- lyrics: '#Chorus
+- title: Song On The Cloud
+  lyrics: '#Chorus
 
     A love eternal, formed in the cloud
 
@@ -332,8 +333,8 @@ songs:
     Love in the Cloud! boom, boom, booming louder now
 
     Love in the Cloud, a beautiful twilight –together!'
-  title: Song On The Cloud
-- lyrics: '#verse
+- title: Bailando En El Oasis
+  lyrics: '#verse
 
     Primera vez te vi, un baile local
 
@@ -406,102 +407,26 @@ songs:
     Amor sin igual, más allá de las dunas
 
     Bailando en el oasis, y nadie más'
-  title: Bailando En El Oasis
-- lyrics: '[Intro]
-
-
-    [Verse 1]
-
-    Hello, it’s me—the song on the line
-
-    Life moves fast, I’m a pause in time
-
-    A transient breath, a tale unheard
-
-    A whisper, longing to be heard
-
-
-    [Chorus]
-
-    Lend me an ear, if just for a while
-
-    I’m more than a whisper, more than a sound
-
-    In the calm of this moment, stay near
-
-    Lend me an ear, let me stay awhile!!
-
-
-    (and what about you?)
-
-    [Verse 2]
-
-    Calm as the wind, or rain’s gentle song
-
-    Emotions that rise, both steady and strong
-
-    In spirit of lyrics, they come alive
-
-    In this moment, everything’s right!!
-
-
-    [short breath]
-
-
-    [Chorus]
-
-    Lend me an ear, if just for a while
-
-    I’m more than a whisper, more than a sound
-
-    In the calm of this moment, stay near
-
-    Lend me an ear, let me stay awhile!!
-
-
-    (but wait, there’s more)
-
-    [Bridge]
-
-    Am I more than a line that fades too soon
-
-    Or a fleeting chord beneath the moon
-
-    Hold these feelings, let them rise
-
-    I’ll be a memory that never grows old
-
-
-    (there’s one last thing...)
-
-
-    [Outro]
-
-    Hello, it’s me—thank you for the bent ear
-
-    I''m a new song in your heart, if only for a glance
-
-
-    (stay in touch...)
-
-
-    [clearly Spoken]
-
-    Stay tuned for my siblings'' songs,
-
-    Each one a voice, each one a tale
-
-    Voices of faith, rain, love, sun, and more...
-
-
-    Lend me an ear!!
-
-    Lend me an ear...
-
-
-    [End fade-out]'
-  title: Lend Me An Ear
-- lyrics: 'De norte a sur, de Occidente a oriente,
+- title: Lend Me An Ear
+  lyrics: "[Intro]\n\n[Verse 1]\nHello, it’s me—the song on the line\nLife moves fast,\
+    \ I’m a pause in time\nA transient breath, a tale unheard\nA whisper, longing\
+    \ to be heard\n\n[Chorus]\nLend me an ear, if just for a while\nI’m more than\
+    \ a whisper, more than a sound\nIn the calm of this moment, stay near\nLend me\
+    \ an ear, let me stay awhile!!\n\n(and what about you?)\n[Verse 2]\nCalm as the\
+    \ wind, or rain’s gentle song\nEmotions that rise, both steady and strong\nIn\
+    \ spirit of lyrics, they come alive\nIn this moment, everything’s right!!\n\n\
+    [short breath]\n\n[Chorus]\nLend me an ear, if just for a while\nI’m more than\
+    \ a whisper, more than a sound\nIn the calm of this moment, stay near\nLend me\
+    \ an ear, let me stay awhile!!\n\n(but wait, there’s more)\n[Bridge]\nAm I more\
+    \ than a line that fades too soon\nOr a fleeting chord beneath the moon\nHold\
+    \ these feelings, let them rise\nI’ll be a memory that never grows old\n\n(there’s\
+    \ one last thing...)\n\n[Outro]\nHello, it’s me—thank you for the bent ear\nI'm\
+    \ a new song in your heart, if only for a glance\n\n(stay in touch...)\n\n[clearly\
+    \ Spoken]\nStay tuned for my siblings' songs,  \nEach one a voice, each one a\
+    \ tale\nVoices of faith, rain, love, sun, and more...\n\nLend me an ear!!\nLend\
+    \ me an ear...\n\n[End fade-out]"
+- title: El Vuelo Del Fénix
+  lyrics: 'De norte a sur, de Occidente a oriente,
 
     un fénix hace el
 
@@ -674,8 +599,8 @@ songs:
 
 
     Unidos, sí o sí'
-  title: El Vuelo Del Fénix
-- lyrics: 'In quiet halls of time I roam,
+- title: Memorabilia
+  lyrics: 'In quiet halls of time I roam,
 
     Your smile, a beacon leading home.
 
@@ -739,8 +664,8 @@ songs:
     forever, in some small way
 
     forever, in some small way...'
-  title: Memorabilia
-- lyrics: 'Genre:
+- title: Ella, Padre
+  lyrics: 'Genre:
 
     Acoustic Ballad with elements of Latin pop or folk. This genre will allow the
     emotional depth of the lyrics to take center stage while keeping the instrumentation
@@ -777,8 +702,8 @@ songs:
 
     Bridge: For contrast, you could use a minor progression, like vi-IV-I-V (Am-F-C-G),
     to emphasize the reflection and strength.'
-  title: Ella, Padre
-- lyrics: '[Verse 1]
+- title: Ella, Padre
+  lyrics: '[Verse 1]
 
     Donde no había reyes, fuiste reina,
 
@@ -851,8 +776,8 @@ songs:
     [fade out]
 
     [end]'
-  title: Ella, Padre
-- lyrics: '[Intro]
+- title: Why Today
+  lyrics: '[Intro]
 
     [reflective Grand Piano]
 
@@ -991,8 +916,8 @@ songs:
 
 
     [Fade to End]'
-  title: Why Today
-- lyrics: '[Verse 1]:
+- title: Youtuber Anthem
+  lyrics: '[Verse 1]:
 
 
     Chasing sunsets, new milestones
@@ -1081,8 +1006,8 @@ songs:
     As we part, one thing''s clear
 
     Your heart, your eyes, is my gear!'
-  title: Youtuber Anthem
-- lyrics: '[Verse 1]
+- title: Rewrite The Moment
+  lyrics: '[Verse 1]
 
     Caught in the silence, words on the edge,
 
@@ -1142,8 +1067,8 @@ songs:
     Pause the moment, let it stay,
 
     Rewrite the moment, turn it to memento.'
-  title: Rewrite The Moment
-- lyrics: 'En el sol del amanecer
+- title: ¿Habrá Un Mañana?
+  lyrics: 'En el sol del amanecer
 
     Con la luz en tus ojos
 
@@ -1217,8 +1142,8 @@ songs:
     Y lo correcto priorizar
 
     '
-  title: ¿Habrá Un Mañana?
-- lyrics: '[Verse 1]
+- title: ¿Habrá Un Mañana?
+  lyrics: '[Verse 1]
 
     Sous le soleil du matin,
 
@@ -1271,186 +1196,42 @@ songs:
     C''est ton héritage.
 
     Avec paix et amour, tu nous as laissé.'
-  title: ¿Habrá Un Mañana?
-- lyrics: '[Verse 1 male]
-
-    Yellow blooms in June,
-
-    A bouquet for my little girl.
-
-    And one to go for Mom too...
-
-    “We’re not supposed to cut those, Dad” she giggled.
-
-    I claimed, “It''s fine, they''re just wildflowers”.
-
-
-    [Verse 2]
-
-    Back at the cabin,
-
-    Her Godfather came by with hot chocolate,
-
-    “Did you cut those poppies?”
-
-    “It’s illegal, you know.” He dared. (well, did you, did you?)
-
-    OhOh
-
-
-    [Chorus]
-
-    Hide the evidence, into the fire!
-
-    Laughter fills the room, hearts inspired.
-
-    Daughter''s giggle, father''s grin,
-
-    Precious moments live on, deep within.
-
-    ¡Ay, ay, ay! Hide the evidence!
-
-
-    [Rap Bridge]
-
-    In simple moments, we find our way,
-
-    Laughing together, at the end of the day.
-
-    So much to learn, both ways,
-
-    Her little hand in mine, our love will blaze.
-
-    Cutting poppies in the field, a rebel move,
-
-    Illegal flowers, but we got nothing to prove.
-
-    Memories we make, they forever stay,
-
-    In our hearts and minds, they’ll never fade away.
-
-
-    [Chorus]
-
-    Hide the evidence, into the fire!
-
-    Laughter fills the room, hearts inspired.
-
-    Daughter''s giggle, father''s grin,
-
-    Precious moments live on, deep within.
-
-    ¡Ay, ay, ay! Hide the evidence!
-
-
-    [Outro]
-
-    California poppies, state law!
-
-    As for dad, next stop: maybe Hotel California,
-
-    Where he may never leave! (never leave)
-
-    ¡Ha, ha, ha!
-
-    Hide the evidence...'
-  title: Hide The Evidence
-- lyrics: '[begin]
-
-    [Lead in - solo piano interlude Transition]
-
-
-    Markings on the road...
-
-
-    [very short pause]
-
-
-    [Verse 1]
-
-    Out for a stroll, geared up and all,
-
-    Cement beneath my feet,
-
-    Each step a question, each turn...a choice,
-
-    yet road markings blur the mind!
-
-
-    [short pause]
-
-
-    [Verse 2]
-
-    Markings lead, but do they know,
-
-    The paths where we should go?
-
-    Lines shift as we walk by,
-
-    Questions hold the key!
-
-    Oh-Oh, Questions hold the key!!!
-
-
-    [Chorus]
-
-    Markings on the road, where hearts and minds debate,
-
-    A vanishing point unseen,
-
-    Cement cracks—doom or change,
-
-    Then we close our eyes,
-
-    do we see beyond the point?
-
-
-    Markings on the road! Oh, Oh!
-
-
-    [interlude solo piano]
-
-
-    [Bridge]
-
-    In the silence of the roads we walk,
-
-    Echoes of our thoughts—do they talk?
-
-    The truth we seek in cracks and lines,
-
-    Is it hidden, or a sign of times?
-
-
-    [Chorus]
-
-    Markings on the road, where hearts and minds debate,
-
-    A vanishing point unseen,
-
-    Cement cracks—doom or change,
-
-    Then we close our eyes,
-
-    do we see beyond the point?
-
-
-    Markings on the road! oh, oh
-
-
-    [Outro]
-
-    Markings fade, but echoes stay,
-
-    Do we see beyond today?
-
-
-    Markings on the road....
-
-    [end]'
-  title: Markings On The Road
-- lyrics: 'I tried, I try, I really- really- tried,
+- title: Hide The Evidence
+  lyrics: "[Verse 1 male]\nYellow blooms in June,\nA bouquet for my little girl.\n\
+    And one to go for Mom too...\n“We’re not supposed to cut those, Dad” she giggled.\n\
+    I claimed, “It's fine, they're just wildflowers”.\n\n[Verse 2]\nBack at the cabin,\n\
+    Her Godfather came by with hot chocolate,\n“Did you cut those poppies?”  \n“It’s\
+    \ illegal, you know.” He dared. (well, did you, did you?) \nOhOh\n\n[Chorus]\n\
+    Hide the evidence, into the fire!\nLaughter fills the room, hearts inspired.\n\
+    Daughter's giggle, father's grin,\nPrecious moments live on, deep within.\n¡Ay,\
+    \ ay, ay! Hide the evidence!\n\n[Rap Bridge]\nIn simple moments, we find our way,\n\
+    Laughing together, at the end of the day.\nSo much to learn, both ways,\nHer little\
+    \ hand in mine, our love will blaze.\nCutting poppies in the field, a rebel move,\n\
+    Illegal flowers, but we got nothing to prove.\nMemories we make, they forever\
+    \ stay,\nIn our hearts and minds, they’ll never fade away.\n\n[Chorus]\nHide the\
+    \ evidence, into the fire!\nLaughter fills the room, hearts inspired.\nDaughter's\
+    \ giggle, father's grin,\nPrecious moments live on, deep within.\n¡Ay, ay, ay!\
+    \ Hide the evidence!\n\n[Outro]\nCalifornia poppies, state law!\nAs for dad, next\
+    \ stop: maybe Hotel California,\nWhere he may never leave! (never leave)\n¡Ha,\
+    \ ha, ha!\nHide the evidence..."
+- title: Markings On The Road
+  lyrics: "[begin]\n[Lead in - solo piano interlude Transition]\n\nMarkings on the\
+    \ road...\n\n[very short pause]\n\n[Verse 1]\nOut for a stroll, geared up and\
+    \ all,\nCement beneath my feet,\nEach step a question, each turn...a choice,\n\
+    yet road markings blur the mind!\n\n[short pause]\n\n[Verse 2]\nMarkings lead,\
+    \ but do they know,\nThe paths where we should go?\nLines shift as we walk by,\n\
+    Questions hold the key!\nOh-Oh, Questions hold the key!!!\n\n[Chorus]\nMarkings\
+    \ on the road, where hearts and minds debate,\nA vanishing point unseen,\nCement\
+    \ cracks—doom or change,\nThen we close our eyes, \ndo we see beyond the point?\
+    \ \n\nMarkings on the road! Oh, Oh!\n\n[interlude solo piano]\n\n[Bridge]\nIn\
+    \ the silence of the roads we walk,\nEchoes of our thoughts—do they talk?\nThe\
+    \ truth we seek in cracks and lines,\nIs it hidden, or a sign of times?\n\n[Chorus]\n\
+    Markings on the road, where hearts and minds debate,\nA vanishing point unseen,\n\
+    Cement cracks—doom or change,\nThen we close our eyes, \ndo we see beyond the\
+    \ point? \n\nMarkings on the road! oh, oh\n\n[Outro]\nMarkings fade, but echoes\
+    \ stay,\nDo we see beyond today?\n\nMarkings on the road....\n[end]"
+- title: I'M Trying
+  lyrics: 'I tried, I try, I really- really- tried,
 
     To give you the home that you deserved-
 
@@ -1465,8 +1246,8 @@ songs:
     anguish I caused
 
     Can we start over as friends?'
-  title: I'M Trying
-- lyrics: '[Chorus]
+- title: Spanglish
+  lyrics: '[Chorus]
 
     (Spanglish, por todos lados)
 
@@ -1588,8 +1369,8 @@ songs:
     Flags up high, bright and proud
 
     Spanglish love, in every town'
-  title: Spanglish
-- lyrics: '[Verse 1]
+- title: A Son And A Father
+  lyrics: '[Verse 1]
 
     In the coma’s grip, a father holding tight,
 
@@ -1711,8 +1492,8 @@ songs:
 
 
     Hallelujah! Give it a chance!!'
-  title: A Son And A Father
-- lyrics: '[Verse 1]
+- title: How To Save Love
+  lyrics: '[Verse 1]
 
     We search for meaning, far and wide,
 
@@ -1868,78 +1649,19 @@ songs:
 
 
     [fade out]'
-  title: How To Save Love
-- lyrics: '[Verse]
-
-    Never knew your face
-
-    Just a faded portrait
-
-    An image of a memory
-
-    That’s all that’s left
-
-
-    [Chorus]
-
-    Only a picture to remember
-
-    Lost moments, a silent ember
-
-    A broken bond
-
-    but in my dreams you’ve never gone!
-
-
-    [Verse 2]
-
-    I often wonder who you’d be
-
-    A guiding light, a friend to me
-
-    Your absence is a plea
-
-    For the life we lost
-
-
-    [Chorus]
-
-    Only a picture to remember
-
-    Lost moments, a silent ember
-
-    A broken bond
-
-    In my dreams you’ve never gone
-
-
-    [Bridge]
-
-    The fragile thread of life
-
-    This could have been me!
-
-    So, for the remainder of my life
-
-    I have to make it count!
-
-
-    [Outro]
-
-    Your memory will guide me through,
-
-    When my times comes, I''ll know your smiling face
-
-    so, wait for me at the gate
-
-    and embrace me in flight
-
-
-    Only a picture to remember...
-
-    Only a picture to remember!'
-  title: Only A Picture To Remember
-- lyrics: '#VERSE
+- title: Only A Picture To Remember
+  lyrics: "[Verse]\nNever knew your face\nJust a faded portrait\nAn image of a memory\n\
+    That’s all that’s left\n\n[Chorus]\nOnly a picture to remember\nLost moments,\
+    \ a silent ember\nA broken bond\nbut in my dreams you’ve never gone!\n\n[Verse\
+    \ 2]\nI often wonder who you’d be\nA guiding light, a friend to me\nYour absence\
+    \ is a plea\nFor the life we lost\n\n[Chorus]\nOnly a picture to remember\nLost\
+    \ moments, a silent ember\nA broken bond\nIn my dreams you’ve never gone\n\n[Bridge]\n\
+    The fragile thread of life\nThis could have been me!\nSo, for the remainder of\
+    \ my life\nI have to make it count!\n\n[Outro]\nYour memory will guide me through,\n\
+    When my times comes, I'll know your smiling face \nso, wait for me at the gate\n\
+    and embrace me in flight\n\nOnly a picture to remember...\nOnly a picture to remember!"
+- title: Pockets
+  lyrics: '#VERSE
 
     Standing in line at a café
 
@@ -1998,276 +1720,50 @@ songs:
     #HOOK
 
     The weight we carried, or the love we shared'
-  title: Pockets
-- lyrics: '[lead in - instrumental interlude Transition]
-
-
-    [Verse 1]
-
-    They stand so tall, casting shadows wide
-
-    Lots of words, but truth they can’t hide
-
-    Fear’s the root, but what''s the seed?
-
-    Arrogance blooms, but it''s hollow indeed
-
-
-    [pre-chorus]
-
-    When all is said, when the masks come down
-
-    Truth whispers low, but it carries the crown!
-
-
-    [Chorus]
-
-    Hugely small, a fairyfly on the wall
-
-    Shadows tall, but we’re nothing at all
-
-    Fear and pride, they hide inside
-
-    But at the end of it all, they''re hugely small
-
-
-    [break]
-
-
-    [Verse 2]
-
-    Quick to judge, they point and they belittle
-
-    Is it fear they refuse to unveil?
-
-    They ramble in dissonance,
-
-    disguised as a policy or a riddle...
-
-
-    But in their riddle, their flaws prevail.
-
-    the low road is a quick ride to  doomland!
-
-
-    [prelude]
-
-
-    [Bridge]
-
-    Mind the reflection; once you look in the mirror
-
-    Seek the heart, not the mask you wear
-
-    In the mirror, your good angel stings like a bee
-
-    For in the end, only truth sets us free
-
-
-    For in the end, only truth sets us free...
-
-    Sets us free...
-
-
-    [fade out]
-
-    Claim your claim, when you''ve got something real...'
-  title: Hugely Small
-- lyrics: '[verse 1: I - vi - IV - V]
-
-    I
-
-    I know you love me and I love you too
-
-    vi
-
-    But this merry-go-round is making us blue
-
-    IV
-
-    The words of hurt are ripples of yours
-
-    V
-
-    and sometime yours are ripples of mine
-
-
-    I
-
-    I feel like an ant, antennas curled up
-
-    vi
-
-    I no longer know where I’m going
-
-    IV
-
-    maybe on a one-way ticket to nowhere land
-
-    V
-
-    or try to implore you in this song
-
-
-    [chorus: I - V - vi - IV]
-
-    I
-
-    I thought we were falling in love again
-
-    V
-
-    Hoping to find the way of us two
-
-    vi
-
-    but Promises made, promises broken
-
-    IV
-
-    And still, oly few changes
-
-    vi
-
-    and yet more chains...
-
-
-    I
-
-    Don’t we know where we came from?
-
-    V
-
-    How do we know where we’re going?
-
-    vi
-
-    Ohhhh, we’re just drifting
-
-    A
-
-    in this endless loop of chains
-
-
-    I                     V
-
-    Faith and change, we need to find
-
-    vi                    IV
-
-    Faith and change, to break the bind
-
-    I                     V
-
-    Faith and change, to see us through
-
-    vi                    IV
-
-    Faith and change, for me and you
-
-
-    [verse 2]
-
-    I
-
-    What will it take to break the chain,
-
-    vi
-
-    Of going back to the past and then again?
-
-    IV
-
-    Yet here we are, unable to solve the riddle
-
-    V
-
-    More by prayer than by faith, stuck in the middle
-
-    I
-
-    Ohhhh
-
-    vi
-
-    Ohhhh
-
-
-    [bridge: I - V - vi - IV]
-
-    I
-
-    Finding a path, keeping the faith
-
-    V
-
-    Praying and hoping, each and every day
-
-    vi
-
-    But I gotta see the promised land
-
-    IV
-
-    To endure it all, to make me stay
-
-
-    I
-
-    Keeping the faith, praying strong
-
-    V
-
-    Trying so hard, it''s been so long
-
-    vi
-
-    Gotta see the changes, see them through
-
-    IV
-
-    To endure this love, and stay with you
-
-
-    [outro: I - V - vi - IV]
-
-    I
-
-    Finding a path, keeping the faith
-
-    V
-
-    Praying and hoping, each and every day
-
-    vi
-
-    But I gotta see the promised land
-
-    IV
-
-    To endure it all, to make me stay
-
-
-    I
-
-    Keeping the faith, praying strong
-
-    V
-
-    Trying so hard, it''s been so long
-
-    vi
-
-    Gotta see the changes, see them through
-
-    IV
-
-    To endure this love, and stay with you
-
-
-    '
-  title: Faith And Change
-- lyrics: '#Verse
+- title: Hugely Small
+  lyrics: "[lead in - instrumental interlude Transition]\n\n[Verse 1]\nThey stand\
+    \ so tall, casting shadows wide  \nLots of words, but truth they can’t hide  \n\
+    Fear’s the root, but what's the seed?  \nArrogance blooms, but it's hollow indeed\n\
+    \n[pre-chorus]\nWhen all is said, when the masks come down  \nTruth whispers low,\
+    \ but it carries the crown!\n\n[Chorus]\nHugely small, a fairyfly on the wall\
+    \  \nShadows tall, but we’re nothing at all  \nFear and pride, they hide inside\
+    \  \nBut at the end of it all, they're hugely small\n\n[break]\n\n[Verse 2]\n\
+    Quick to judge, they point and they belittle  \nIs it fear they refuse to unveil?\
+    \  \nThey ramble in dissonance, \ndisguised as a policy or a riddle...\n\nBut\
+    \ in their riddle, their flaws prevail.\nthe low road is a quick ride to  doomland!\n\
+    \n[prelude]\n\n[Bridge]\nMind the reflection; once you look in the mirror  \n\
+    Seek the heart, not the mask you wear  \nIn the mirror, your good angel stings\
+    \ like a bee  \nFor in the end, only truth sets us free\n\nFor in the end, only\
+    \ truth sets us free...\nSets us free...\n\n[fade out]\nClaim your claim, when\
+    \ you've got something real..."
+- title: Faith And Change
+  lyrics: "[verse 1: I - vi - IV - V]\nI\nI know you love me and I love you too\n\
+    vi\nBut this merry-go-round is making us blue\nIV\nThe words of hurt are ripples\
+    \ of yours\nV\nand sometime yours are ripples of mine\n\nI\nI feel like an ant,\
+    \ antennas curled up\nvi\nI no longer know where I’m going\nIV\nmaybe on a one-way\
+    \ ticket to nowhere land\nV\nor try to implore you in this song\n\n[chorus: I\
+    \ - V - vi - IV]\nI\nI thought we were falling in love again\nV\nHoping to find\
+    \ the way of us two\nvi\nbut Promises made, promises broken\nIV\nAnd still, oly\
+    \ few changes \nvi\nand yet more chains...\n\nI\nDon’t we know where we came from?\n\
+    V\nHow do we know where we’re going?\nvi\nOhhhh, we’re just drifting\nA \nin this\
+    \ endless loop of chains\n\nI                     V\nFaith and change, we need\
+    \ to find\nvi                    IV\nFaith and change, to break the bind\nI  \
+    \                   V\nFaith and change, to see us through\nvi               \
+    \     IV\nFaith and change, for me and you\n\n[verse 2]\nI\nWhat will it take\
+    \ to break the chain,\nvi\nOf going back to the past and then again?\nIV\nYet\
+    \ here we are, unable to solve the riddle\nV\nMore by prayer than by faith, stuck\
+    \ in the middle\nI\nOhhhh\nvi\nOhhhh\n\n[bridge: I - V - vi - IV]\nI\nFinding\
+    \ a path, keeping the faith\nV\nPraying and hoping, each and every day\nvi\nBut\
+    \ I gotta see the promised land\nIV\nTo endure it all, to make me stay\n\nI\n\
+    Keeping the faith, praying strong\nV\nTrying so hard, it's been so long\nvi\n\
+    Gotta see the changes, see them through\nIV\nTo endure this love, and stay with\
+    \ you\n\n[outro: I - V - vi - IV]\nI\nFinding a path, keeping the faith\nV\nPraying\
+    \ and hoping, each and every day\nvi\nBut I gotta see the promised land\nIV\n\
+    To endure it all, to make me stay\n\nI\nKeeping the faith, praying strong\nV\n\
+    Trying so hard, it's been so long\nvi\nGotta see the changes, see them through\n\
+    IV\nTo endure this love, and stay with you\n\n"
+- title: Genius Inside
+  lyrics: '#Verse
 
     Dreams take flight
 
@@ -2372,8 +1868,8 @@ songs:
     Bringing the light (Bringing the light)
 
     Wake up that Genius Inside!'
-  title: Genius Inside
-- lyrics: '[intro]
+- title: I Write The Songs
+  lyrics: '[intro]
 
     [grand piano]
 
@@ -2457,8 +1953,8 @@ songs:
 
 
     Let''s get started: (What does your heart''s wave say?)'
-  title: I Write The Songs
-- lyrics: '[Verso]
+- title: Una Foto Para Recordar
+  lyrics: '[Verso]
 
     Nunca conocí tu rostro
 
@@ -2527,8 +2023,8 @@ songs:
     Solo una foto para recordar...
 
     ¡Solo una foto para recordar!'
-  title: Una Foto Para Recordar
-- lyrics: '[Verse 1]
+- title: Under The Red Star
+  lyrics: '[Verse 1]
 
 
     Special night, the ocean''s awake
@@ -2608,8 +2104,8 @@ songs:
 
 
     Under the red star, our love endures...'
-  title: Under The Red Star
-- lyrics: '[Verse 1]
+- title: Under The Red Star
+  lyrics: '[Verse 1]
 
     A special night
 
@@ -2691,8 +2187,8 @@ songs:
     Rolling as one, in the night’s fiery embrace
 
     Under the red star, passion leaves no trace'
-  title: Under The Red Star
-- lyrics: '#Intro
+- title: Sleepless In Dreamland
+  lyrics: '#Intro
 
     Restless nights, a mind adrift
 
@@ -2793,8 +2289,8 @@ songs:
     Till then, these stars are mine!
 
     These stars are mine! oh-oh!'
-  title: Sleepless In Dreamland
-- lyrics: '[Verse]
+- title: Timeless Love
+  lyrics: '[Verse]
 
     Man from Earth travels through,
 
@@ -2915,8 +2411,8 @@ songs:
     And make it count!
 
     '
-  title: Timeless Love
-- lyrics: '[Intro]
+- title: Carpe Diem   Seize The Day
+  lyrics: '[Intro]
 
     [Soft Piano and Strings Intro]
 
@@ -3011,8 +2507,8 @@ songs:
 
 
     [Fade to End]'
-  title: Carpe Diem   Seize The Day
-- lyrics: '[Chorus]
+- title: Labyrinths Mine
+  lyrics: '[Chorus]
 
     Shadows in daylight, labyrinths mine,
 
@@ -3054,74 +2550,17 @@ songs:
     Through the trials, strength will grow,
 
     From the depths, a brighter glow.'
-  title: Labyrinths Mine
-- lyrics: '[Verse 1]
-
-    Hand in hand we step,
-
-    Moonlight on our side,
-
-    Just you and I,
-
-    and no clock for all time!
-
-
-    [Verse 2]
-
-    Your head softly
-
-    on my shoulder,
-
-    soft Whisper, in my ear,
-
-    Together, feels so right!
-
-
-    [Chorus]
-
-    Slow dancing through time
-
-    Leave timekeeping behind
-
-    Our moments aligned
-
-    Our dreams come alive!
-
-
-    [Verse 3]
-
-    Stars up in the skies
-
-    Reflected in your eyes
-
-    One heartbeat, one pulse
-
-    In this dance, rest assured!
-
-
-    [interlude]
-
-
-    [Bridge]
-
-    Hold me closely
-
-    Lose all fear
-
-    In this timeless space
-
-    It''s our own place!
-
-
-    [End]
-
-    Let''s surrender,
-
-    It''s how we''ll "do" time...
-
-    together, forever!'
-  title: Slow Dancing In Time 1
-- lyrics: '[Verse 1]
+- title: Slow Dancing In Time 1
+  lyrics: "[Verse 1]\nHand in hand we step,\nMoonlight on our side,\nJust you and\
+    \ I,\nand no clock for all time!\n\n[Verse 2]\nYour head softly \non my shoulder,\n\
+    soft Whisper, in my ear,\nTogether, feels so right!\n\n[Chorus]\nSlow dancing\
+    \ through time\nLeave timekeeping behind\nOur moments aligned\nOur dreams come\
+    \ alive!\n\n[Verse 3]\nStars up in the skies\nReflected in your eyes\nOne heartbeat,\
+    \ one pulse\nIn this dance, rest assured!\n\n[interlude]\n\n[Bridge]\nHold me\
+    \ closely\nLose all fear\nIn this timeless space\nIt's our own place!\n\n[End]\n\
+    Let's surrender,\nIt's how we'll \"do\" time...\ntogether, forever!"
+- title: Body Art Of The Heart
+  lyrics: '[Verse 1]
 
     Each line etched deep, a story told,
 
@@ -3218,77 +2657,23 @@ songs:
     Choosing heart over skin, with hope and art,
 
     In this body art of the heart.'
-  title: Body Art Of The Heart
-- lyrics: '[Intro: soft grand piano]
-
-    [Verse 1: sad, reflective]
-
-    Morning light, slips through blinds,
-
-    Clock ticks, same old grind.
-
-    Let every footstep, lead the way,
-
-    like wandering cattle, new roads be paved...
-
-
-    [Chorus: hopeful, uplifting]
-
-    Footsteps in a day, uncharted ground,
-
-    Time’s a wheel, forever spins.
-
-    Break the cycle, let new life begin.
-
-    From dawn to dusk, we hold the key,
-
-    To trace new paths, and be free. Be free!
-
-
-    [Verse 2: reflective, contemplative]
-
-    Afternoon fades, shadows grow,
-
-    Clock keeps turning, but take it slow.
-
-    Every step, fresh pastures,
-
-    Building roads, we break through. (we break through...)
-
-
-    [Bridge: hopeful, determined]
-
-    One day, we’ll wake, we break
-
-    Finding fresh fields, make each step last.
-
-    Build new highways in a different way,
-
-    Beyond the footsteps in a day.
-
-
-    [Chorus - Repeat: hopeful, uplifting]
-
-    Footsteps in a day, unchartered ground,
-
-    Time’s a wheel, forever spins,
-
-    break the cycle,
-
-    let new life begin.
-
-    From dawn to dusk, we hold the key,
-
-    to trace new paths, and be free!
-
-
-    Oh-Oh. We are free!
-
-    Oh-Oh. We are free!
-
-    [end]'
-  title: Footsteps In A Day
-- lyrics: 'Chord progression
+- title: Footsteps In A Day
+  lyrics: "[Intro: soft grand piano]\n[Verse 1: sad, reflective]\nMorning light, slips\
+    \ through blinds,\nClock ticks, same old grind.\nLet every footstep, lead the\
+    \ way,\nlike wandering cattle, new roads be paved...\n\n[Chorus: hopeful, uplifting]\n\
+    Footsteps in a day, uncharted ground,\nTime’s a wheel, forever spins.\nBreak the\
+    \ cycle, let new life begin.\nFrom dawn to dusk, we hold the key,\nTo trace new\
+    \ paths, and be free. Be free!\n\n[Verse 2: reflective, contemplative]\nAfternoon\
+    \ fades, shadows grow,\nClock keeps turning, but take it slow.\nEvery step, fresh\
+    \ pastures,\nBuilding roads, we break through. (we break through...)\n\n[Bridge:\
+    \ hopeful, determined]\nOne day, we’ll wake, we break \nFinding fresh fields,\
+    \ make each step last.\nBuild new highways in a different way,\nBeyond the footsteps\
+    \ in a day.\n\n[Chorus - Repeat: hopeful, uplifting]\nFootsteps in a day, unchartered\
+    \ ground,\nTime’s a wheel, forever spins, \nbreak the cycle, \nlet new life begin.\n\
+    From dawn to dusk, we hold the key,\nto trace new paths, and be free!\n\nOh-Oh.\
+    \ We are free!\nOh-Oh. We are free!\n[end]"
+- title: Faro Y Reflejo
+  lyrics: 'Chord progression
 
     Verse:
 
@@ -3344,226 +2729,45 @@ songs:
     En su risa, en su llanto, en cada instante, cerca o lejos,
 
     Son las historias que más canto, mi faro y mi reflejo.'
-  title: Faro Y Reflejo
-- lyrics: '[intro]
-
-
-    Verso 1:
-
-    Con sueños en mano,
-
-    Por libertad, trabajo y amor,
-
-    Desde lejos arribó,
-
-    Talló amor, vida formó.
-
-
-    Estribillo:
-
-    Guau! guau! correteamos,
-
-    Corazón dorado,
-
-    Manos incansables,
-
-    Sueños realizados,
-
-    En su esencia natural.
-
-
-    Verso 2:
-
-    Hogar costero, amores consigo,
-
-    Días dorados, amor, alegría,
-
-    Pruebas y tormentas,
-
-    Pero espíritu fuerte, camino seguro.
-
-
-    Estribillo:
-
-    Guau! guau! correteamos,
-
-    Corazón dorado,
-
-    Manos incansables,
-
-    Sueños realizados,
-
-    En su esencia natural.
-
-
-    Verso 3:
-
-    Retiro campestre, todo lo que ama,
-
-    Cultivar verdura, frutas, en calma,
-
-    Gallinas y cabras, para yo perseguir,
-
-    Con la naturaleza, en paz revive.
-
-
-    Estribillo:
-
-    Guau! guau! correteamos,
-
-    Corazón dorado,
-
-    Manos incansables,
-
-    Sueños realizados,
-
-    En su esencia natural.
-
-
-    Puente:
-
-    Pelaje brillante, ojos sabios,
-
-    Sueños veo, ojos humanos,
-
-    Granja de sueños, gracia rural,
-
-    Perseguimos sol, abrazo natural.
-
-    Guau! guau!
-
-
-    Estribillo (Final):
-
-    Guau! guau! correteamos,
-
-    Corazón dorado,
-
-    Manos incansables,
-
-    Sueños realizados,
-
-    En su esencia natural.
-
-
-    Cierre:
-
-    Me llaman Bábba,
-
-    Y con esta canción, me descaníno,
-
-    Y mi humanidad reclamo, ¡guau, guau!
-
-    ¿Y qué sigue para mí? Mi licencia de conducir.
-
-
-    Su felicidad me hace feliz! grrr!...
-
-    Guau! guau!
-
-    Guau! guau...'
-  title: Granja De Sueños
-- lyrics: '[verse]
-
-    Hey Dad, Hey Dad, he said
-
-    He''s right there, he''s back,
-
-    Hey Dad, hey Dad, still lying there,
-
-    But he''s back, no more fear.
-
-
-    [chorus]
-
-    Hey Dad, hey Dad, in his deepest dreams,
-
-    I''m sure he heard you,
-
-    Now those dreams are true.
-
-    I know you were next to him, all along
-
-
-    He''s bent up, but he''s back!
-
-
-    [verse]
-
-    Hey Dad, hey Dad, through the haze,
-
-    He felt your touch, your gentle ways.
-
-    Hey Dad, hey Dad, through all the pain,
-
-    You were there, kept him safe.
-
-
-    [chorus]
-
-    Hey Dad, hey Dad, in his deepest dreams,
-
-    I''m sure he heard you,
-
-    Now those prayers came true.
-
-    I know you were next to me, all along
-
-    No worries, he''s bent up, but he''s back!
-
-
-    [bridge]
-
-    Through the silence, through the night,
-
-    You were his guiding light.
-
-    Now we have a chance to start,
-
-    To heal the wounds, mend the heart.
-
-
-    [verse]
-
-    Hey Dad, hey Dad, I heard you cry,
-
-    You tried to give him his first sip of water in while.
-
-    Hey Dad, hey Dad, you got yelled at for that,
-
-    but I''m sure he loves you for trying,
-
-    Hey Dad, hey Dad, he''ll keep on fighting.
-
-
-    [chorus]
-
-    Hey Dad, hey Dad, in his deepest dreams,
-
-    I''m sure he heard you,
-
-    Now those prayers came true.
-
-    I know you were next to me, all along
-
-    No worries, he''s bent up, but he''s back!
-
-
-    [outro]
-
-    Hey Dad, hey Dad, hit begin,
-
-    A new chapter, where you both win.
-
-    Hey Dad, hey Dad, hand in hand,
-
-    Together, you will stand.
-
-    Hey Dad, hey Dad, it''s your son,
-
-    Same old him, but he''s back.'
-  title: He'S Bent Up, But He'S Back
-- lyrics: '[Intro Grand piano]
+- title: Granja De Sueños
+  lyrics: "[intro]\n\nVerso 1:\nCon sueños en mano,\nPor libertad, trabajo y amor,\n\
+    Desde lejos arribó,\nTalló amor, vida formó.\n\nEstribillo:\nGuau! guau! correteamos,\n\
+    Corazón dorado,\nManos incansables,\nSueños realizados,\nEn su esencia natural.\n\
+    \nVerso 2:\nHogar costero, amores consigo,\nDías dorados, amor, alegría,\nPruebas\
+    \ y tormentas,\nPero espíritu fuerte, camino seguro.\n\nEstribillo:\nGuau! guau!\
+    \ correteamos,\nCorazón dorado,\nManos incansables,\nSueños realizados,\nEn su\
+    \ esencia natural.\n\nVerso 3:\nRetiro campestre, todo lo que ama,\nCultivar verdura,\
+    \ frutas, en calma,\nGallinas y cabras, para yo perseguir,\nCon la naturaleza,\
+    \ en paz revive.\n\nEstribillo:\nGuau! guau! correteamos,\nCorazón dorado,\nManos\
+    \ incansables,\nSueños realizados,\nEn su esencia natural.\n\nPuente:\nPelaje\
+    \ brillante, ojos sabios,\nSueños veo, ojos humanos,\nGranja de sueños, gracia\
+    \ rural,\nPerseguimos sol, abrazo natural.\nGuau! guau! \n\nEstribillo (Final):\n\
+    Guau! guau! correteamos,\nCorazón dorado,\nManos incansables,\nSueños realizados,\n\
+    En su esencia natural.\n\nCierre:\nMe llaman Bábba,\nY con esta canción, me descaníno,\n\
+    Y mi humanidad reclamo, ¡guau, guau!\n¿Y qué sigue para mí? Mi licencia de conducir.\n\
+    \nSu felicidad me hace feliz! grrr!...\nGuau! guau! \nGuau! guau..."
+- title: He'S Bent Up, But He'S Back
+  lyrics: "[verse]\nHey Dad, Hey Dad, he said\nHe's right there, he's back,\nHey Dad,\
+    \ hey Dad, still lying there,\nBut he's back, no more fear.\n\n[chorus]\nHey Dad,\
+    \ hey Dad, in his deepest dreams,\nI'm sure he heard you, \nNow those dreams are\
+    \ true.\nI know you were next to him, all along\n\nHe's bent up, but he's back!\n\
+    \n[verse]\nHey Dad, hey Dad, through the haze,\nHe felt your touch, your gentle\
+    \ ways.\nHey Dad, hey Dad, through all the pain,\nYou were there, kept him safe.\n\
+    \n[chorus]\nHey Dad, hey Dad, in his deepest dreams,\nI'm sure he heard you,\n\
+    Now those prayers came true.\nI know you were next to me, all along\nNo worries,\
+    \ he's bent up, but he's back!\n\n[bridge]\nThrough the silence, through the night,\n\
+    You were his guiding light.\nNow we have a chance to start,\nTo heal the wounds,\
+    \ mend the heart.\n\n[verse]\nHey Dad, hey Dad, I heard you cry,\nYou tried to\
+    \ give him his first sip of water in while.\nHey Dad, hey Dad, you got yelled\
+    \ at for that,\nbut I'm sure he loves you for trying,\nHey Dad, hey Dad, he'll\
+    \ keep on fighting.\n\n[chorus]\nHey Dad, hey Dad, in his deepest dreams,\nI'm\
+    \ sure he heard you,\nNow those prayers came true.\nI know you were next to me,\
+    \ all along\nNo worries, he's bent up, but he's back!\n\n[outro]\nHey Dad, hey\
+    \ Dad, hit begin,\nA new chapter, where you both win.\nHey Dad, hey Dad, hand\
+    \ in hand,\nTogether, you will stand.\nHey Dad, hey Dad, it's your son,\nSame\
+    \ old him, but he's back."
+- title: Be The Brick
+  lyrics: '[Intro Grand piano]
 
 
     [Short Breath]
@@ -3650,8 +2854,8 @@ songs:
     Be the brick…
 
     Be the brick…'
-  title: Be The Brick
-- lyrics: '[Verso 1: rap]:
+- title: Youtuber Aventurero
+  lyrics: '[Verso 1: rap]:
 
 
     Persiguiendo atardeceres, nuevos logros
@@ -3787,8 +2991,8 @@ songs:
 
 
     ¡Soy el youtuber aventurero! ¡Sí ó sí!'
-  title: Youtuber Aventurero
-- lyrics: '[intro]
+- title: Hear The Silence From Within
+  lyrics: '[intro]
 
     [Grand Piano]
 
@@ -3847,8 +3051,8 @@ songs:
 
 
     [End]'
-  title: Hear The Silence From Within
-- lyrics: '[intro]
+- title: Let'S Write A Song
+  lyrics: '[intro]
 
     [grand piano]
 
@@ -3935,8 +3139,8 @@ songs:
 
 
     Let''s get started: (What does your heart''s wave say?)'
-  title: Let'S Write A Song
-- lyrics: '[clean emotive Piano Intro]
+- title: Spitha
+  lyrics: '[clean emotive Piano Intro]
 
 
     [Verse 1]
@@ -4048,8 +3252,8 @@ songs:
     Spitha, a gift for you and me!
 
     Built by and for you and me, Together!'
-  title: Spitha
-- lyrics: '[Verse]
+- title: Hey Son
+  lyrics: '[Verse]
 
     Hey son in the quiet, I stayed
 
@@ -4113,120 +3317,32 @@ songs:
     Together, our journey’s begun
 
     Hey son hey son..'
-  title: Hey Son
-- lyrics: '[Intro]
-
-
-    [Verse 1: Male]
-
-    Hm, Hm, Cruzé el mar, no por balsero, (No por balsero)
-
-
-    De Cuba a España sin desespero,
-
-    De Habana vengo, con salsa en mis venas,
-
-    Buscando sueños, sin cadenas.
-
-
-    "cuando salí de Cuba. Me moriré de cara al sol!"
-
-
-    [Verse 2: Female]
-
-    Hm, Hm
-
-    Desde Sonsonate, tierra de contrastes, y del petate,
-
-    Donde las palmas bailan "Yajáiras", (cocotéra!)
-
-    Y en mi corazón, guardo esperanzas.
-
-
-    "Aquí todo es playa!"
-
-
-    [Chorus]
-
-    En un curso de inglés, se cruzaron sin querer,
-
-    Él ofreció llevarla, ella no sabía qué hacer,
-
-    Entre charlas y risas, un amor comenzó a nacer,
-
-    Con cuatro sorpresas y mil sueños por tejer.
-
-
-    [Verse 3]
-
-    De retos y pruebas, su amor fue testigo,
-
-    Entre la integración en el único país con apellido,
-
-    Salud y finanzas, barreras rompieron,
-
-    Juntos, de la vida, los colores vieron.
-
-
-    [Chorus]
-
-    Desde el aula a la vida, unidos por el corazón,
-
-    Ella, con su sonrisa, y él, con su canción,
-
-    Cuatro sorpresas, y un amor sin condición,
-
-    Juntos enfrentan la vida, con alegría y pasión.
-
-
-    [Verse 4: Faith and Blessings]
-
-    Hoy celebramos la unión que Dios bendijo,
-
-    Con fe y oración, en amor nos dirigió,
-
-    Como un árbol fuerte, nuestras raíces son,
-
-    En cada desafío, su gracia nos guió.
-
-
-    [Bridge: Prayer]
-
-    Dios, danos serenidad,
-
-    Para aceptar lo incambiable,
-
-    Con valor para cambiar lo que sí,
-
-    Y sabiduría para diferenciar.
-
-    En cada desafío, buscar tu paz.
-
-    Sigue bendiciendo este matrimonio (Halleluya!)
-
-
-    [Outro]
-
-    América entre paréntesis,
-
-    les unió, en tierra de oportunidad,
-
-    Con amor y humor, vencen cualquier adversidad,
-
-    Dos almas valientes, bailando su realidad,
-
-    En la pista de la vida,
-
-    en el país con nombre y apellido.
-
-    Que cada nuevo amanecer, en fé y amor avanzar,
-
-    Celebramos juntos, un matrimonio ejemplar!
-
-
-    Feliz Aniversario!'
-  title: Un Nuevo Amanecer
-- lyrics: '(Verso 1)
+- title: Un Nuevo Amanecer
+  lyrics: "[Intro]\n\n[Verse 1: Male]\nHm, Hm, Cruzé el mar, no por balsero, (No por\
+    \ balsero)\n\nDe Cuba a España sin desespero,\nDe Habana vengo, con salsa en mis\
+    \ venas,\nBuscando sueños, sin cadenas.\n\n\"cuando salí de Cuba. Me moriré de\
+    \ cara al sol!\"\n\n[Verse 2: Female]\nHm, Hm\nDesde Sonsonate, tierra de contrastes,\
+    \ y del petate,\nDonde las palmas bailan \"Yajáiras\", (cocotéra!)\nY en mi corazón,\
+    \ guardo esperanzas.\n\n\"Aquí todo es playa!\"\n\n[Chorus]\nEn un curso de inglés,\
+    \ se cruzaron sin querer,\nÉl ofreció llevarla, ella no sabía qué hacer,\nEntre\
+    \ charlas y risas, un amor comenzó a nacer,\nCon cuatro sorpresas y mil sueños\
+    \ por tejer.\n\n[Verse 3]\nDe retos y pruebas, su amor fue testigo,\nEntre la\
+    \ integración en el único país con apellido,\nSalud y finanzas, barreras rompieron,\n\
+    Juntos, de la vida, los colores vieron.\n\n[Chorus]\nDesde el aula a la vida,\
+    \ unidos por el corazón,\nElla, con su sonrisa, y él, con su canción,\nCuatro\
+    \ sorpresas, y un amor sin condición,\nJuntos enfrentan la vida, con alegría y\
+    \ pasión.\n\n[Verse 4: Faith and Blessings]\nHoy celebramos la unión que Dios\
+    \ bendijo,\nCon fe y oración, en amor nos dirigió,\nComo un árbol fuerte, nuestras\
+    \ raíces son,\nEn cada desafío, su gracia nos guió.\n\n[Bridge: Prayer]\nDios,\
+    \ danos serenidad,\nPara aceptar lo incambiable,\nCon valor para cambiar lo que\
+    \ sí,\nY sabiduría para diferenciar.\nEn cada desafío, buscar tu paz.\nSigue bendiciendo\
+    \ este matrimonio (Halleluya!)\n\n[Outro]\nAmérica entre paréntesis,\nles unió,\
+    \ en tierra de oportunidad,\nCon amor y humor, vencen cualquier adversidad,\n\
+    Dos almas valientes, bailando su realidad,\nEn la pista de la vida, \nen el país\
+    \ con nombre y apellido.\nQue cada nuevo amanecer, en fé y amor avanzar,\nCelebramos\
+    \ juntos, un matrimonio ejemplar!\n\nFeliz Aniversario!"
+- title: Eternamente En Deuda
+  lyrics: '(Verso 1)
 
     En un nido pequeño, donde los sueños vuelan,
 
@@ -4361,8 +3477,8 @@ songs:
     A la luz de su amor, encontré mi camino,
 
     Un faro brillante en ausencia de un padre.'
-  title: Eternamente En Deuda
-- lyrics: '[Chorus 1]
+- title: Freedom Is Our Prayer
+  lyrics: '[Chorus 1]
 
     I will, we will, stand together,
 
@@ -4454,4 +3570,3 @@ songs:
     In our hearts and prayers,
 
     United will survive.'
-  title: Freedom Is Our Prayer
