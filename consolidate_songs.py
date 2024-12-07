@@ -1,5 +1,6 @@
 import os
 import yaml
+from yaml.representer import SafeRepresenter
 
 def find_lyrics_files(base_dir):
     """Find all files matching the '_lyrics.txt' pattern."""
@@ -13,13 +14,18 @@ def find_lyrics_files(base_dir):
 def read_lyrics_file(file_path):
     """Read the lyrics file and return its content."""
     with open(file_path, "r") as f:
-        # Read the file and strip trailing newlines and spaces from each line
         lines = f.read().splitlines()
-    # Join lines with a single newline
     content = "\n".join(lines)
-    # Use the folder name as the song title
     title = os.path.basename(os.path.dirname(file_path)).replace("-", " ").title()
     return {"title": title, "lyrics": content}
+
+def str_presenter(dumper, data):
+    """Force block scalar style for multiline strings."""
+    if "\n" in data:
+        return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='|')
+    return dumper.represent_scalar('tag:yaml.org,2002:str', data)
+
+yaml.add_representer(str, str_presenter)
 
 def consolidate_songs(base_dir, output_file):
     """Consolidate all lyrics files into a single YAML file."""
