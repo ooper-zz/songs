@@ -1,7 +1,7 @@
 name: Rename All .yml Files to _lyrics.txt
 
 on:
-  push:
+  # push: // uncomment to make it run again
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
