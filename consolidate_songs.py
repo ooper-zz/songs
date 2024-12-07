@@ -13,9 +13,10 @@ def find_lyrics_files(base_dir):
 def read_lyrics_file(file_path):
     """Read the lyrics file and return its content."""
     with open(file_path, "r") as f:
-        lines = f.readlines()
-    # Strip each line and join them with a single newline
-    content = "\n".join(line.strip() for line in lines)
+        # Read the file and strip trailing newlines and spaces from each line
+        lines = f.read().splitlines()
+    # Join lines with a single newline
+    content = "\n".join(lines)
     # Use the folder name as the song title
     title = os.path.basename(os.path.dirname(file_path)).replace("-", " ").title()
     return {"title": title, "lyrics": content}
@@ -33,7 +34,7 @@ def consolidate_songs(base_dir, output_file):
 
     if songs:
         with open(output_file, "w") as f:
-            yaml.dump({"songs": songs}, f, default_flow_style=False, allow_unicode=True)
+            yaml.dump({"songs": songs}, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
         print(f"Consolidated {len(songs)} songs into {output_file}")
     else:
         print("No lyrics files found to consolidate.")
