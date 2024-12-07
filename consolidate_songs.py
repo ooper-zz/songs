@@ -22,17 +22,21 @@ def consolidate_songs(base_dir, output_file):
     """Consolidate all lyrics files into a single YAML file."""
     songs = []
     lyrics_files = find_lyrics_files(base_dir)
+    print(f"Found {len(lyrics_files)} lyrics files to process.")
     
     for file in lyrics_files:
+        print(f"Processing: {file}")
         song_data = read_lyrics_file(file)
         songs.append(song_data)
 
-    # Write consolidated data to the output YAML file
-    with open(output_file, "w") as f:
-        yaml.dump({"songs": songs}, f, default_flow_style=False, allow_unicode=True)
+    if songs:
+        with open(output_file, "w") as f:
+            yaml.dump({"songs": songs}, f, default_flow_style=False, allow_unicode=True)
+        print(f"Consolidated {len(songs)} songs into {output_file}")
+    else:
+        print("No lyrics files found to consolidate.")
 
 if __name__ == "__main__":
     base_directory = "."
     output_file = "consolidated_songs.yml"
     consolidate_songs(base_directory, output_file)
-    print(f"Consolidated {len(find_lyrics_files(base_directory))} songs into {output_file}")
