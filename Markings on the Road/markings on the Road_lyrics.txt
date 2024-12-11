@@ -1,4 +1,4 @@
-[begin]
+
 [Lead in - solo piano interlude Transition]
 
 Markings on the road...
@@ -51,4 +51,3 @@ Markings fade, but echoes stay,
 Do we see beyond today?
 
 Markings on the road....
-[end]
