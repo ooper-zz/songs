@@ -456,7 +456,7 @@ songs:
     [fade out]
     [end]
 - title: Why Today
-  lyrics: |-
+  lyrics: |
     [Intro]
     [reflective Grand Piano]
 
@@ -530,8 +530,6 @@ songs:
     [Pause]
     Heed the wisdom of the wise one!
     [Pause]
-
-    [Fade to End]
 - title: Youtuber Anthem
   lyrics: |-
     [Verse 1]:
