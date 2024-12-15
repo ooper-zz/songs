@@ -710,25 +710,23 @@ songs:
     \ stop: maybe Hotel California,\nWhere he may never leave! (never leave)\n¡Ha,\
     \ ha, ha!\nHide the evidence..."
 - title: The Unsung Song
-  lyrics: |+
-    [intro brief soft grand piano prolog ]
-
-    A song is written...
-
-    [verse 1]
-    Where rivers run, their stories fade,
-    Yet life blooms in the paths they made.
-    Lose to give, give to find!
-
-    oh-oh-oh
-
-    Sing the unsung song with me...
+  lyrics: |
+    [intro soft grand piano ]
 
     [Chorus upbeat]:
     A destination swept off course,
     A river vein feeds pastures wide,
-    Breeds new life, yet dries before the tide,
+    Breeds new life, yet dries too soon,
     The lyrics of the unsung song!
+
+    [verse 1]
+    Where rivers run, their stories fade,
+    Yet life blooms in the paths they've made.
+    Lose to give, give to find!
+
+    Would you sing the unsung song with me?
+
+    [interlude]
 
     Bridge:
     Lakes reflect, yet hold their fill,
@@ -741,15 +739,18 @@ songs:
     A destination swept off course,
     A river vein feeds pastures wide,
     Breeds new life, yet dries before the tide,
-    The lyrics of the unsung song..
+    The lyrics of the unsung song!!
+
+    [breath]
 
     Outro:
     Do we live the river’s flow,
     Or fulfill the lives we sow?
 
     The song's been written...
+    Would you sing the unsung song, with me...
 
-
+    [fade out]
 - title: Markings On The Road
   lyrics: "\n[Lead in - solo piano interlude Transition]\n\nMarkings on the road...\n\
     \n[very short pause]\n\n[Verse 1]\nOut for a stroll, geared up and all,\nCement\
