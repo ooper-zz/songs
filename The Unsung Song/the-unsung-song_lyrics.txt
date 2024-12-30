@@ -1,41 +1,31 @@
-[intro soft grand piano ]
-
-[Chorus upbeat]:
-A destination swept off course,
-A river vein feeds pastures wide,
-Breeds new life, yet dries too soon,
+#Chorus
+A destination swept off course
+A river vein feeds pastures wide
+Breeds new life, yet dries too soon
 The lyrics of the unsung song!
 
-[verse 1]
-Where rivers run, their stories fade,
-Yet life blooms in the paths they've made.
+#verse
+Where rivers run, their stories fade
+Yet life blooms in the paths they've made
 Lose to give, give to find!
 
 Would you sing the unsung song with me?
 
-[interlude]
-
-Bridge:
-Lakes reflect, yet hold their fill,
+#Bridge
+Lakes reflect, yet hold their fill
 Do rivers dream, or just fulfill?
 
-[hook]
-Sing the unsung song with me...
+#hook
+Sing the unsung song with me
 
-[Chorus upbeat]:
-A destination swept off course,
-A river vein feeds pastures wide,
-Breeds new life, yet dries before the tide,
+#Chorus
+A destination swept off course
+A river vein feeds pastures wide
+Breeds new life, yet dries before the tide
 The lyrics of the unsung song!!
 
-[breath]
-
-Outro:
-Do we live the river’s flow,
+Do we live the river's flow
 Or fulfill the lives we sow?
 
-The song's been written...
-Would you sing the unsung song, with me...
-
-[fade out]
-
+The song's been written
+Would you sing the unsung song, with me
