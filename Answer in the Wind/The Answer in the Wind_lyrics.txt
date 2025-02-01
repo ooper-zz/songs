@@ -40,5 +40,6 @@ Then maybe the answer was never a wall...
 Maybe the song has already sung.
 Maybe a carpenter carved it in the wind!
 
-[end]
 [fade out]
+The answer's in the Wind...
+[end]
