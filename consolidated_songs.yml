@@ -3031,25 +3031,48 @@ songs:
     Rolling as one, in the night’s fiery embrace
     Under the red star, passion leaves no trace
 - title: Answer In The Wind
-  lyrics: "[begin]\n[Verse 1 – The Prophet Who Turned Away]\nYou sang of nightmares,\
-    \ they crowned you a prophet\nBut the mirror kept flashing fanfare and profit\n\
-    You walked out the door, left the Folk folks behind\nA restless soul, seeking\
-    \ an unsung song to sing...\n\n[short breath]\n[Chorus – And So We Answer]\nMaybe\
-    \ the answer was never one.\nIf love is the reason, if mercy still calls,\nThen\
-    \ maybe the answer was never a wall...\n\nMaybe the song has already sung.\nMaybe\
-    \ a carpenter carved it in the wind!\n\n[short pause]\nLend an ear, guessing,\
-    \ the answer’s in the wind, oh-oh-oh\nthe answer’s in the wind! \n\n[Verse 2 –\
-    \ When is a man truly a man? (The Journey’s the Destination)]\nBob sang of the\
-    \ roads, the miles left behind,\nBut a man ain't a man by the steps he can climb.\n\
-    Not dust on his boots, not the battles he wins,\nBut the love that he sows, the\
-    \ hearts he lets in.\n\n[breath]\n[Verse 3 – How long before we listen? (Hear\
-    \ the Silence from Within) and Lend me an Ear]\nBob asked how many ears must a\
-    \ man have to hear,\nBut the deafest are those who never lent an ear.\nThe cries\
-    \ on the wind, they still pitch today,\nBut love breaks the silence and clears\
-    \ out the gray.\n\n[short breath]\n[Chorus – And So We Answer]\nMaybe the answer\
-    \ was never one.\nIf love is the reason, if mercy still calls,\nThen maybe the\
-    \ answer was never a wall...\n\nMaybe the song has already sung.\nMaybe a carpenter\
-    \ carved it in the wind!\n\n[fade out]\nThe answer's in the Wind...\n[end]"
+  lyrics: |-
+    [begin]
+    [Verse 1]
+    You sang of nightmares, and they crowned you a prophet
+    But the mirror kept flashing fanfare and profit
+    You walked out the door, left the Folk folks behind
+    A restless soul, seeking an unsung song to sing!
+
+    [short breath]
+    [Chorus – And So I Answer]
+    Maybe the answer was never one.
+    If love is the reason, if mercy still calls,
+    Then maybe the answer is never a wall...
+
+    Maybe the song has already sung.
+    Maybe a carpenter carved it in the wind!
+
+    [Verse 2 – When is a man truly a man? (The Journey’s the Destination)]
+    You sang of the roads, the miles left behind,
+    But a man ain't a man by the steps he can climb.
+    Not dust on his boots, not the battles he wins,
+    But the love that he sows, the hearts he lets in.
+
+    [breath]
+    [Verse 3 – How long before we listen? (Hear the Silence from Within) and Lend me an Ear]
+    You asked how many ears must a man have to hear,
+    But the deafest are those who never lent an ear.
+    The cries on the wind, they still pitch today,
+    But love breaks the silence and clears out the gray.
+
+    [short breath]
+    [Chorus]
+    Maybe the answer was never one.
+    If love is the reason, if mercy still calls,
+    Then maybe the answer is never a wall...
+
+    Maybe the song has already sung.
+    Maybe a carpenter carved it in the wind!
+
+    The answer's carved in the Wind...
+
+    [end fade out]
 - title: Memorabilia
   lyrics: |-
     In quiet halls of time I roam
