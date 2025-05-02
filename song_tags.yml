@@ -1,0 +1,133 @@
+songs:
+  A Son And A Father:
+    status: ignore
+    date:
+    album: Father Trilogy
+
+  Answer In The Wind:
+    status: released
+    date:
+
+  Bailando En El Oasis:
+    status: released
+    date:
+
+  Be The Brick:
+    status: released
+    date:
+
+  Body Art Of The Heart:
+    status: deferred
+    date:
+
+  Carpe Diem   Seize The Day:
+    status: deferred
+    date:
+
+  Ella, Padre:
+    status: released
+    date:
+
+  El Vuelo Del Fénix:
+    status: released
+    date:
+
+  Faith And Change:
+    status: deferred
+    date:
+
+  Footsteps In A Day:
+    status: released
+    date:
+
+  Freedom Is Our Prayer:
+    status: released
+    date:
+
+  Genius Inside:
+    status: released
+    date:
+
+  Granja De Sueños:
+    status: released
+    date:
+
+  He'S Bent Up, But He'S Back:
+    status: ignore
+    date:
+    album: Father Trilogy
+
+  Hear The Silence From Within:
+    status: released
+    date:
+
+  Hugely Small:
+    status: deferred
+    date:
+
+  I'm Trying:
+    status: deferred
+    date:
+
+  Let'S Write A Song:
+    status: ignore
+    date:
+
+  Memorabilia:
+    status: released
+    date:
+
+  Only A Picture To Remember:
+    status: released
+    date:
+
+  Rewrite The Moment:
+    status: released
+    date:
+
+  Song On The Cloud:
+    status: ignore
+    date:
+
+  Spitha:
+    status: deferred
+    date:
+
+  The Journey To Myself:
+    status: released
+    date:
+
+  The Unsung Song:
+    status: released
+    date:
+
+  This Time Around:
+    status: released
+    date:
+    album: Father Trilogy
+
+  Timeless Love:
+    status: ignore
+    date:
+
+  Under The Red Star:
+    status: released
+    date:
+
+  Youtuber Aventurero:
+    status: released
+    date:
+
+  You'Ll Always Be My Spark:
+    status: deferred
+    date:
+
+albums:
+  Father Trilogy:
+    release_date:
+    songs:
+      - A Son And A Father
+      - He'S Bent Up, But He'S Back
+      - Hey Son
+      - This Time Around
+
