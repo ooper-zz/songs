@@ -1,1 +1,8 @@
 **/.DS_Store
+.consolidated_songs.yml.swp
+__pycache__/generate_song_tags.cpython-313.pyc
+__pycache__/test_generate_song_tags.cpython-313.pyc
+consolidated_songs.yml.bak
+test_generate_song_tags.py
+consolidate_songs.log
+test_song_tags.yml

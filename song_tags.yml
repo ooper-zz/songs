@@ -122,12 +122,171 @@ songs:
     status: deferred
     date:
 
-albums:
-  Father Trilogy:
-    release_date:
-    songs:
-      - A Son And A Father
-      - He'S Bent Up, But He'S Back
-      - Hey Son
-      - This Time Around
+  # New songs from test_song_tags.yml
+  Enternament En Gracia:
+    status: deferred
+    date: ''
+    album: ''
+  The Journey'S The Destination:
+    status: released
+    date: ''
+    album: ''
+  Carpe Diem  Seize The Day:
+    status: deferred
+    date: ''
+    album: ''
+  Accompaniment:
+    status: deferred
+    date: ''
+    album: ''
+  Spanglish:
+    status: deferred
+    date: ''
+    album: ''
+  Desde Tu Vientre:
+    status: deferred
+    date: ''
+    album: ''
+  The Answer In The Wind:
+    status: released
+    date: ''
+    album: ''
+  We'Re Not Going Back:
+    status: released
+    date: ''
+    album: ''
+  Un Nuevo Amanezer:
+    status: deferred
+    date: ''
+    album: ''
+  Lend Me An Ear:
+    status: released
+    date: ''
+    album: ''
+  Hey Son:
+    status: released
+    date: ''
+    album: ''
+  How To Save Love:
+    status: released
+    date: ''
+    album: ''
+  Markings On The Road:
+    status: released
+    date: ''
+    album: ''
+  The Tone Of The Heart:
+    status: released
+    date: ''
+    album: ''
+  That Make Hearts Soar:
+    status: released
+    date: ''
+    album: ''
+  Why Today:
+    status: released
+    date: ''
+    album: ''
+  Under The Red Star. V2:
+    status: released
+    date: ''
+    album: ''
+  Escribió "Sí" En La Arena:
+    status: released
+    date: ''
+    album: ''
+  Hide The Evidence:
+    status: released
+    date: ''
+    album: ''
+  Slow Dancing In Time:
+    status: deferred
+    date: ''
+    album: ''
+  Connections:
+    status: deferred
+    date: ''
+    album: ''
+  Labyrinths Min:
+    status: deferred
+    date: ''
+    album: ''
+  Si No Fueras Tu:
+    status: released
+    date: ''
+    album: ''
+  Youtubero Aventurero:
+    status: released
+    date: ''
+    album: ''
+  Un Foto Para Recordar:
+    status: released
+    date: ''
+    album: ''
+  Open Your Heart:
+    status: released
+    date: ''
+    album: ''
+  The Hummingbird Knows:
+    status: released
+    date: ''
+    album: ''
+  ¿Habrá Un Mañana?:
+    status: released
+    date: ''
+    album: ''
+  Faro Y Reflejo:
+    status: deferred
+    date: ''
+    album: ''
+  Sleepless In Dreamland:
+    status: released
+    date: ''
+    album: ''
+  Timeless Purpose:
+    status: released
+    date: ''
+    album: ''
+  Y Aura T Il Demain?:
+    status: released
+    date: ''
+    album: ''
+  Madre E Hija A La Vez:
+    status: released
+    date: ''
+    album: ''
+  A Son And His Father:
+    status: released
+    date: ''
+    album: ''
+  Pockets:
+    status: released
+    date: ''
+    album: ''
+  Journey To Myself:
+    status: released
+    date: ''
+    album: ''
+  As I Saw You Then:
+    status: released
+    date: ''
+    album: ''
+  Madre Y Esposa A La Vez:
+    status: released
+    date: ''
+    album: ''
+  I'M Trying:
+    status: deferred
+    date: ''
+    album: ''
+  Ahora Como Entonces:
+    status: released
+    date: ''
+    album: ''
+  Count Ten To One:
+    status: released
+    date: ''
+    album: ''
 
+albums:
+  
