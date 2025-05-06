@@ -1,72 +1,42 @@
 songs:
 - title: Ahora Como Entonces
   lyrics: |-
-    Verso 1:
-    Te miro como si fuera la primera vez,
-    En nuestro abrazo, calor que perdura.
-    Viste un rayo de luz en un cielo gris,
-    Y con tu abrazo, inspiraste esta canción.
+    [Solo Grand Piano Intro]
 
-    Coro:
-    Hoy es oro, el amor aún brilla,
-    En cada giro, tu mano junto a la mía.
-    Lo que venga, lo que fue,
-    Te veo ahora... ¡como te vi entonces!
+    Verse 1
+    I look at you as if we’ve just met,
+    Our warm embrace never to forget.
+    A ray of light in a sky of gray,
+    in our embrace, we found our way.
 
-    Verso 2:
-    Sonrisas nacen con la luz del sol,
-    Suaves, constantes, puro fulgor.
-    No tengo palabras que decir,
-    Todo sigue donde debe ir.
+    Chorus
+    Today is golden, love still shines,
+    Through every turn, your hand with mine.
+    Whatever may come, whatever's been,
 
-    Coro:
-    Hoy es oro, el amor aún brilla,
-    En cada giro, tu mano junto a la mía.
-    Lo que venga, lo que fue,
-    Te veo ahora... ¡como te vi entonces!
+    I see you now as I saw you then!
 
-    Puente:
-    Sin perderme en el ayer, sin temer al mañana,
-    Vivimos la promesa que hicimos con el alma.
+    Verse 2
+    Smiles unfold like morning light,
+    Soft and steady, pure and bright.
+    No need for words, no need to chase,
+    Every moment still falls into place.
 
-    Outro:
-    Si el tiempo se detiene o acelera,
-    ¡Sigues inspirando canción!
-  timestamp: '2025-05-06T06:17:12.202434'
-  version: null
-- title: Ahora Como Entonces
-  lyrics: |-
-    Verso 1:
-    Te miro como si fuera la primera vez,
-    En nuestro abrazo, calor que perdura.
-    Viste un rayo de luz en un cielo gris,
-    Y con tu abrazo, inspiraste esta canción.
+    Chorus
+    Today is golden, love still shines,
+    Through every turn, your hand with mine.
+    Whatever may come, whatever's been,
+    I see you now as I saw you then!
 
-    Coro:
-    Hoy es oro, el amor aún brilla,
-    En cada giro, tu mano junto a la mía.
-    Lo que venga, lo que fue,
-    Te veo ahora... ¡como te vi entonces!
+    Bridge
+    Not lost in the past, not fearing the new,
+    Just living the promise I made with you.
 
-    Verso 2:
-    Sonrisas nacen con la luz del sol,
-    Suaves, constantes, puro fulgor.
-    No tengo palabras que decir,
-    Todo sigue donde debe ir.
+    Outro
+    If time stands still or carries us on,
+    I see you now, as I saw you then...
 
-    Coro:
-    Hoy es oro, el amor aún brilla,
-    En cada giro, tu mano junto a la mía.
-    Lo que venga, lo que fue,
-    Te veo ahora... ¡como te vi entonces!
-
-    Puente:
-    Sin perderme en el ayer, sin temer al mañana,
-    Vivimos la promesa que hicimos con el alma.
-
-    Outro:
-    Si el tiempo se detiene o acelera,
-    ¡Sigues inspirando canción!
+    [end]
 - title: Answer in the Wind
   lyrics: |-
     [begin]
@@ -110,86 +80,6 @@ songs:
     The answer's carved in the Wind...
 
     [end fade out]
-  timestamp: '2025-05-06T06:17:12.198694'
-  version: null
-- title: As I Saw You Then
-  lyrics: |-
-    [Solo Grand Piano Intro]
-
-    Verse 1
-    I look at you as if we’ve just met,
-    Our warm embrace never to forget.
-    A ray of light in a sky of gray,
-    in our embrace, we found our way.
-
-    Chorus
-    Today is golden, love still shines,
-    Through every turn, your hand with mine.
-    Whatever may come, whatever's been,
-
-    I see you now as I saw you then!
-
-    Verse 2
-    Smiles unfold like morning light,
-    Soft and steady, pure and bright.
-    No need for words, no need to chase,
-    Every moment still falls into place.
-
-    Chorus
-    Today is golden, love still shines,
-    Through every turn, your hand with mine.
-    Whatever may come, whatever's been,
-    I see you now as I saw you then!
-
-    Bridge
-    Not lost in the past, not fearing the new,
-    Just living the promise I made with you.
-
-    Outro
-    If time stands still or carries us on,
-    I see you now, as I saw you then...
-
-    [end]
-  timestamp: '2025-05-06T06:17:12.203532'
-  version: null
-- title: As I Saw You Then
-  lyrics: |-
-    [Solo Grand Piano Intro]
-
-    Verse 1
-    I look at you as if we’ve just met,
-    Our warm embrace never to forget.
-    A ray of light in a sky of gray,
-    in our embrace, we found our way.
-
-    Chorus
-    Today is golden, love still shines,
-    Through every turn, your hand with mine.
-    Whatever may come, whatever's been,
-
-    I see you now as I saw you then!
-
-    Verse 2
-    Smiles unfold like morning light,
-    Soft and steady, pure and bright.
-    No need for words, no need to chase,
-    Every moment still falls into place.
-
-    Chorus
-    Today is golden, love still shines,
-    Through every turn, your hand with mine.
-    Whatever may come, whatever's been,
-    I see you now as I saw you then!
-
-    Bridge
-    Not lost in the past, not fearing the new,
-    Just living the promise I made with you.
-
-    Outro
-    If time stands still or carries us on,
-    I see you now, as I saw you then...
-
-    [end]
 - title: Bailando en el Oasis
   lyrics: |-
     #verse
@@ -232,8 +122,6 @@ songs:
     Nuestros corazones siguen, en un eterno vals
     Amor sin igual, más allá de las dunas
     Bailando en el oasis, y nadie más
-  timestamp: '2025-05-06T06:17:12.200149'
-  version: null
 - title: Be the Brick
   lyrics: |-
     [Intro Grand piano]
@@ -286,8 +174,6 @@ songs:
     [Outro]
     Be the brick…
     Be the brick…
-  timestamp: '2025-05-06T06:17:12.202044'
-  version: null
 - title: Body Art of the Heart
   lyrics: |-
     [Verse 1]
@@ -343,64 +229,6 @@ songs:
     Marks etched deep in each heart,
     Choosing heart over skin, with hope and art,
     In this body art of the heart.
-  timestamp: '2025-05-06T06:17:12.202562'
-  version: null
-- title: Carpe Diem Seize The Day
-  lyrics: |-
-    [Intro]
-    [Soft Piano and Strings Intro]
-
-    [Chorus]
-    Carpe Diem, seize the day,
-    Live with purpose, find your way.
-    Each morning, sun does rise,
-    Today could be our prize.
-
-    [Verse 1]
-    A wise man spoke, make each day count,
-    Yesterday's dreams woven in hearts,
-    Tomorrow's hopes where we start,
-    In today’s light, we find our part.
-
-    [Chorus]
-    [Significantly Rising]
-    Carpe Diem, seize the day,
-    Live with purpose, find your way.
-    Strive each morning, sun does rise,
-    Today could be our prize.
-
-    [Verse 2]
-    Together, rhymes that make us smile,
-    Silent peace, listen for a while.
-    Solidarity, wisdom’s grace,
-    Solving problems, steady pace.
-
-    [Bridge]
-    Living in worry, past replays,
-    We lose beauty of precious days.
-    Lessons left, find,
-    Peace and joy, heart and mind.
-
-    [Chorus]
-    [Significantly Rising]
-    Carpe Diem, seize the day,
-    Live with purpose, find your way.
-    Strive each morning, at sun rise,
-    'Cause today could be our prize!
-    [Backup: "Carpe Diem, Find your way..."]
-    [Backup: "Seize the day!"]
-
-    [Outro]
-    Heed the wisdom, simple and true,
-    Live today, in all you do.
-    Yesterday's dreams, tomorrow's scope,
-    In today’s light, we find our hope.
-    [Backup: "Carpe Diem, Find your hope..."]
-    [Backup: "Carpe Diem, Seize the Day..."]
-
-    [Fade to End]
-  timestamp: '2025-05-06T06:17:12.195281'
-  version: null
 - title: Carpe Diem Seize The Day
   lyrics: |-
     [Intro]
@@ -508,55 +336,6 @@ songs:
     One last breath… you rise, you're free.
 
     [end fade out]
-  timestamp: '2025-05-06T06:17:12.198474'
-  version: null
-- title: Desde Tu Vientre
-  lyrics: |-
-    [Verse 1 – A Whispered Beginning]
-    Desde tu vientre, escuché mi nombre,
-    flotando en aguas de un mundo sin sol.
-    Tu risa danzaba al oleaje,
-    una hebra de luz en mi corazón.
-
-    [Pre-Chorus – The Wonder of Creation]
-    Antes del alba, fui solo un suspiro,
-    polvo en el viento, sombra en la mar.
-    Pero tu voz me tejió entre nudos,
-    y en tu latido, aprendí a escuchar.
-
-    [Chorus – Sweeping Melody]
-    Y cuando abrí los ojos, tu risa fue sonrisa,
-    el tejido tomó forma y de tu voz oí mi nombre.
-    Tu voz dijo mi nombre—
-    desde tu vientre, supe que nunca me perderé.
-
-    Desde tu vientre!
-
-    [Verse 2 – The Questions of the Unborn Soul]
-    ¿Seré un lucero en una noche callada,
-    o vendrán más soles después de mí?
-    ¿Seré el unicornio que cruza tu prado,
-    o una manada corriendo hacia ti?
-
-    [Chorus – Stronger Emotion]
-    Y cuando abrí los ojos, tu risa fue sonrisa,
-    el tejido tomó forma y de tu voz oí mi nombre—
-    desde tu vientre, supe que nunca me perderé.
-
-    Desde tu vientre!
-
-    [Bridge – The Journey to Birth]
-    El agua cedió, la luz me alcanzó,
-    un trueno estalló en mi piel dormida.
-    Sombras y fuego rasgaron mi mundo,
-    y yo solo buscaba tu voz.
-
-    [Outro – Divine Whisper]
-    Antes del tiempo, antes del miedo,
-    fui solo un eco en la inmensidad…
-    que con un vagido, Dios me hizo real.
-  timestamp: '2025-05-06T06:17:12.199617'
-  version: null
 - title: Desde Tu Vientre
   lyrics: |-
     [Verse 1 – A Whispered Beginning]
@@ -667,8 +446,6 @@ songs:
     Susurros de integración
     El vuelo del fénix suelta plumas de esperanza
     Unidos sí, o sí
-  timestamp: '2025-05-06T06:17:12.199476'
-  version: null
 - title: Escribió "Sí" en la Arena
   lyrics: "[intro]\n\nEscribió \"Sí\" en la Arena...\n\n[very short pause]\n\n#Verse\
     \ \nMi corazón latía\nCon la brisa del mar\nAl compás de las olas\nY las palmeras\n\
@@ -681,8 +458,6 @@ songs:
     Construiríamos un futuro\nY no castillos de arena\n\n#Outro\nY esa palabra escrita\
     \ en la arena fue el comienzo\nDe un amor justo y verdadero,\nY de donde un granito\
     \ brillando en la arena,\nNaciera un pedacito de cielo"
-  timestamp: '2025-05-06T06:17:12.200421'
-  version: null
 - title: Faith and change
   lyrics: "[verse 1: I - vi - IV - V]\nI\nI know you love me and I love you too\n\
     vi\nBut this merry-go-round is making us blue\nIV\nThe words of hurt are ripples\
@@ -709,8 +484,6 @@ songs:
     To endure it all, to make me stay\n\nI\nKeeping the faith, praying strong\nV\n\
     Trying so hard, it's been so long\nvi\nGotta see the changes, see them through\n\
     IV\nTo endure this love, and stay with you"
-  timestamp: '2025-05-06T06:17:12.201635'
-  version: null
 - title: Faro y Reflejo
   lyrics: |-
     Chord progression
@@ -743,8 +516,6 @@ songs:
     "Las Mujeres en Mi Vida", en cada reto, en cada quehacer.
     En su risa, en su llanto, en cada instante, cerca o lejos,
     Son las historias que más canto, mi faro y mi reflejo.
-  timestamp: '2025-05-06T06:17:12.197656'
-  version: null
 - title: Footsteps in a Day
   lyrics: "[Intro: soft grand piano]\n[Verse 1: sad, reflective]\nMorning light, slips\
     \ through blinds,\nClock ticks, same old grind.\nLet every footstep, lead the\
@@ -760,70 +531,6 @@ songs:
     \ ground,\nTime’s a wheel, forever spins, \nbreak the cycle, \nlet new life begin.\n\
     From dawn to dusk, we hold the key,\nto trace new paths, and be free!\n\nOh-Oh.\
     \ We are free!\nOh-Oh. We are free!\n[end]"
-  timestamp: '2025-05-06T06:17:12.199731'
-  version: null
-- title: Genius Inside
-  lyrics: |-
-    #Verse
-    Dreams take flight
-    When inner sparks ignite
-    Light it up, and change your world
-
-    #Verse
-    On the edge, ready to be free
-    A bright mind stands idle
-    With endless possibilities
-
-    #Pre-Chorus
-    No more doubt, no more fear
-    Visions lead to new frontiers
-    An idea. Write it down!
-
-    #Pre-Chorus
-    No more doubt, no more fear
-    Visions lead to new frontiers
-    An idea. Write it down!
-
-    #Chorus
-    Genius inside, waiting to shine
-    Ideas like stars, lighting the night
-    Light up your spark, let dreams take flight
-    Unleash the sleeping genius inside!
-
-    #Verse
-    Zero: a simple idea
-    It changed it all
-    Add dreams to your world
-    And watch your life stand tall
-
-    #Pre-Chorus
-    Rise above, stand out proud
-    Let your voice be heard in the crowd
-
-    #Chorus
-    Genius inside, waiting to shine
-    Ideas like stars (light stars), lighting the night
-    Light up your spark, let dreams take flight
-    Unleash the sleeping genius inside!
-    Oh-Oh!
-
-    #Bridge
-    The future calls, don't turn away
-    Every idea leads to brighter days
-    Stand tall, make it known
-    This is the time, a new path to own
-
-    #Outro
-    Dreams take flight
-    Bringing the light
-    Wake up that Genius Inside!
-
-    #Hook
-    No more doubt!
-    Bringing the light (Bringing the light)
-    Wake up that Genius Inside!
-  timestamp: '2025-05-06T06:17:12.199034'
-  version: null
 - title: Genius Inside
   lyrics: |-
     #Verse
@@ -901,8 +608,6 @@ songs:
     En su esencia natural.\n\nCierre:\nMe llaman Bábba,\nY con esta canción, me descaníno,\n\
     Y mi humanidad reclamo, ¡guau, guau!\n¿Y qué sigue para mí? Mi licencia de conducir.\n\
     \nSu felicidad me hace feliz! grrr!...\nGuau! guau! \nGuau! guau..."
-  timestamp: '2025-05-06T06:17:12.195594'
-  version: null
 - title: He's bent up, but he's back
   lyrics: "[verse]\nHey Dad, Hey Dad, he said\nHe's right there, he's back,\nHey Dad,\
     \ hey Dad, still lying there,\nBut he's back, no more fear.\n\n[chorus]\nHey Dad,\
@@ -923,8 +628,6 @@ songs:
     \ Dad, hit begin,\nA new chapter, where you both win.\nHey Dad, hey Dad, hand\
     \ in hand,\nTogether, you will stand.\nHey Dad, hey Dad, it's your son,\nSame\
     \ old him, but he's back."
-  timestamp: '2025-05-06T06:17:12.203671'
-  version: null
 - title: Hear the silence from Within
   lyrics: |-
     #Verse
@@ -978,47 +681,6 @@ songs:
     Song within
     Here’s to song within a song.
     Let it rise, Let it stand tall!
-  timestamp: '2025-05-06T06:17:12.195026'
-  version: null
-- title: Hey Son
-  lyrics: |-
-    [Verse]
-    Hey son in the quiet, I stayed
-    Held your hand, softly prayed
-    Waited for a sign a scratch, a blink
-    Why won’t you wake? Oh!
-
-    [Chorus]
-    In your stillness, my heart knew
-    God would guide us, bring us through
-    Then I heard, hey dad!
-    You're all bent up but you're back! oh-oh-oh
-
-    [Verse 2]
-    Hey son, brought you water
-    Held the cup, wet your lips
-    Prayed you'd take the sip
-
-    [Chorus]
-    In your stillness, my heart knew
-    God would guide us, bring us through
-    Then I heard, hey dad!
-    You're all bent up, but you're back! oh-oh-oh
-
-    [Bridge]
-    Through the silence,
-    Through the night,
-    Found our strength,
-    Reached the light.
-
-    [Outro]
-    Hey son, let’s start anew
-    Hand in hand, just us two
-    Step by step, father and son
-    Together, our journey’s begun
-    Hey son hey son..
-  timestamp: '2025-05-06T06:17:12.201781'
-  version: null
 - title: Hey Son
   lyrics: |-
     [Verse]
@@ -1074,8 +736,6 @@ songs:
     \ Hide the evidence!\n\n[Outro]\nCalifornia poppies, state law!\nAs for dad, next\
     \ stop: maybe Hotel California,\nWhere he may never leave! (never leave)\n¡Ha,\
     \ ha, ha!\nHide the evidence..."
-  timestamp: '2025-05-06T06:17:12.197103'
-  version: null
 - title: How to Save Love
   lyrics: |-
     [Verse 1]
@@ -1167,26 +827,6 @@ songs:
     K-I-S-S, keep it simple, silly...
 
     [fade out]
-  timestamp: '2025-05-06T06:17:12.195898'
-  version: null
-- title: Hugely Small
-  lyrics: "[lead in - instrumental interlude Transition]\n\n[Verse 1]\nThey stand\
-    \ so tall, casting shadows wide  \nLots of words, but truth they can’t hide  \n\
-    Fear’s the root, but what's the seed?  \nArrogance blooms, but it's hollow indeed\n\
-    \n[pre-chorus]\nWhen all is said, when the masks come down  \nTruth whispers low,\
-    \ but it carries the crown!\n\n[Chorus]\nHugely small, a fairyfly on the wall\
-    \  \nShadows tall, but we’re nothing at all  \nFear and pride, they hide inside\
-    \  \nBut at the end of it all, they're hugely small\n\n[break]\n\n[Verse 2]\n\
-    Quick to judge, they point and they belittle  \nIs it fear they refuse to unveil?\
-    \  \nThey ramble in dissonance, \ndisguised as a policy or a riddle...\n\nBut\
-    \ in their riddle, their flaws prevail.\nthe low road is a quick ride to  doomland!\n\
-    \n[prelude]\n\n[Bridge]\nMind the reflection; once you look in the mirror  \n\
-    Seek the heart, not the mask you wear  \nIn the mirror, your good angel stings\
-    \ like a bee  \nFor in the end, only truth sets us free\n\nFor in the end, only\
-    \ truth sets us free...\nSets us free...\n\n[fade out]\nClaim your claim, when\
-    \ you've got something real..."
-  timestamp: '2025-05-06T06:17:12.199287'
-  version: null
 - title: Hugely Small
   lyrics: "[lead in - instrumental interlude Transition]\n\n[Verse 1]\nThey stand\
     \ so tall, casting shadows wide  \nLots of words, but truth they can’t hide  \n\
@@ -1253,8 +893,6 @@ songs:
     I write the songs that make hearts soar.
 
     Let's get started: (What does your heart's wave say?)
-  timestamp: '2025-05-06T06:17:12.199832'
-  version: null
 - title: I'm Trying
   lyrics: |-
     I tried, I try, I really- really- tried,
@@ -1265,8 +903,6 @@ songs:
     I'm trying, I'm trying To heal the wounds, the tears we cried,s
     anguish I caused
     Can we start over as friends?
-  timestamp: '2025-05-06T06:17:12.200313'
-  version: null
 - title: Journey to Myself
   lyrics: |-
     #Chorus
@@ -1298,8 +934,6 @@ songs:
     But love remains, it’s what I’ve sown.
     Through every breath, the voice will stay,
     A light of hope to guide my way.
-  timestamp: '2025-05-06T06:17:12.202170'
-  version: null
 - title: Labyrinths mine
   lyrics: |-
     [Chorus]
@@ -1325,8 +959,6 @@ songs:
     Finding light, a path is made.
     Through the trials, strength will grow,
     From the depths, a brighter glow.
-  timestamp: '2025-05-06T06:17:12.198142'
-  version: null
 - title: Lend me an Ear
   lyrics: "[Intro]\n\n[Verse 1]\nHello, it’s me—the song on the line\nLife moves fast,\
     \ I’m a pause in time\nA transient breath, a tale unheard\nA whisper, longing\
@@ -1345,8 +977,6 @@ songs:
     \ Spoken]\nStay tuned for my siblings' songs,  \nEach one a voice, each one a\
     \ tale\nVoices of faith, rain, love, sun, and more...\n\nLend me an ear!!\nLend\
     \ me an ear...\n\n[End fade-out]"
-  timestamp: '2025-05-06T06:17:12.202685'
-  version: null
 - title: Let's Write a Song
   lyrics: |-
     [intro]
@@ -1399,8 +1029,6 @@ songs:
     I write songs that make hearts soar.
 
     Let's get started: (What does your heart's wave say?)
-  timestamp: '2025-05-06T06:17:12.200611'
-  version: null
 - title: Madre e hija a la vez
   lyrics: "Verso 1\nNuestros ojos, dos almas conociéndose,\n¿Seré suficiente? — susurré\
     \ en silencio.\nLágrimas de padres, amor tan presente.\nY en ese suspiro, supe\
@@ -1414,8 +1042,6 @@ songs:
     \ tus huellas!\nforjadas con la poesía de tu vida...\nMadre e hija a la vez…\n\
     La paz que a mi alma mece.\nEres mi leyenda…\nEres madre… é hija… a la vez!\n\n\
     [end fade out]"
-  timestamp: '2025-05-06T06:17:12.202304'
-  version: null
 - title: Madre y Esposa a la Vez
   lyrics: |-
     [Verse 1]
@@ -1458,8 +1084,6 @@ songs:
     Eres el ritmo que ordena mi canción!
 
     [ end with fading out grand piano solo]
-  timestamp: '2025-05-06T06:17:12.198832'
-  version: null
 - title: Madre y Padre a la Vez
   lyrics: |-
     [Verse 1]
@@ -1504,12 +1128,8 @@ songs:
 
     [fade out]
     [end]
-  timestamp: '2025-05-06T06:17:12.198180'
-  version: null
 - title: Mar y Tierra
   lyrics: Test lyrics for Mar y Tierra
-  timestamp: '2025-05-06T06:17:12.203701'
-  version: null
 - title: Markings on the Road
   lyrics: "[Lead in - solo piano interlude Transition]\n\nMarkings on the road...\n\
     \n[very short pause]\n\n[Verse 1]\nOut for a stroll, geared up and all,\nCement\
@@ -1526,48 +1146,6 @@ songs:
     \ or change,\nThen we close our eyes, \ndo we see beyond the point? \n\nMarkings\
     \ on the road! oh, oh\n\n[Outro]\nMarkings fade, but echoes stay,\nDo we see beyond\
     \ today?\n\nMarkings on the road...."
-  timestamp: '2025-05-06T06:17:12.195998'
-  version: null
-- title: Memorabilia
-  lyrics: |-
-    In quiet halls of time I roam
-    Your smile, a beacon leading home
-    Only to wake, my visit's gone
-    paid with the currency of time
-
-    If I could walk the streams of time
-    Where every second flows in line
-    a ripple through the fabric of time
-    Memorabilia, if only once again
-    hold your hand in mine...oh-oh-oh!
-
-    Memorabilia!!!!
-
-    Through laughter shared and lessons learned
-    Quality time, a candle’s light
-    nostalgically held so dear
-    destined to pass on, forever more
-
-    If I could walk the streams of time
-    Where every second flows in line
-    a ripple through the fabric of time
-    Memorabilia, if only once again
-    hold your hand in mine
-
-    Memorabilia!!!!
-
-    I count each blessing gained
-    in every turn, a lesson claimed
-    Through dreams, never small
-    I find the strength to face it all
-
-    Thank you for your life, so strong and brave
-    I hope my love, through time, will stay
-    a part of you
-    forever, in some small way
-    forever, in some small way...
-  timestamp: '2025-05-06T06:17:12.201921'
-  version: null
 - title: Memorabilia
   lyrics: |-
     In quiet halls of time I roam
@@ -1623,25 +1201,6 @@ songs:
     \nAnd that?\nThat was really something.\n\nOutro \nTook months before we even\
     \ kissed...\nBut that fateful night?\nYou reached out first.\nNot by chance —\n\
     but part of God’s grand design.\n\nAnd we can never let go."
-  timestamp: '2025-05-06T06:17:12.202797'
-  version: null
-- title: Really Something
-  lyrics: "Verse 1\nWe were walking. Just talking.\nHad never held hands or anything...\n\
-    The street was quiet — no reason to rush.\nThen — out of nowhere — total darkness.\n\
-    And without a word...\nyou reached for my hand.\nWhy did that shake me?!\nI mean…\
-    \ my palms were sweaty —\nI was gonna reach too...\nbut probably for the wrong\
-    \ reasons.\nChorus\nYou didn’t think twice —\njust reached for my hand.\nI was\
-    \ fumbling, overthinking...\nbut you just trusted me.\nAnd that?\nThat was really\
-    \ something...\nVerse 2\nThen — just like that — the lights blinked back.\nAnd\
-    \ you? You let go\nlike it never even happened.\nLaughed it off. Looked ahead.\n\
-    Kept walking like always.\nBut me?\nI was still in that second.\nStill holding\
-    \ on — even with my hand empty.\nFunny how trust shows up unannounced\nNo grand\
-    \ gesture, no perfect vows\nJust fingers brushing in the dark\nAnd somehow...\
-    \ I believed in us\nFinal Chorus\nYou didn’t think twice —\njust reached for my\
-    \ hand.\nI was fumbling, overthinking...\nbut you just needed my protection..\n\
-    \nAnd that?\nThat was really something.\n\nOutro \nTook months before we even\
-    \ kissed...\nBut that fateful night?\nYou reached out first.\nNot by chance —\n\
-    but part of God’s grand design.\n\nAnd we can never let go. \n"
 - title: Rewrite the Moment
   lyrics: |-
     [Verse 1]
@@ -1677,8 +1236,6 @@ songs:
     [Outro]
     Pause the moment, let it stay,
     Rewrite the moment, turn it to memento.
-  timestamp: '2025-05-06T06:17:12.197936'
-  version: null
 - title: Slow Dancing in Time
   lyrics: "[Verse 1]\nHand in hand we step,\nMoonlight on our side,\nJust you and\
     \ I,\nand no clock for all time!\n\n[Verse 2]\nYour head softly \non my shoulder,\n\
@@ -1688,8 +1245,6 @@ songs:
     \ one pulse\nIn this dance, rest assured!\n\n[interlude]\n\n[Bridge]\nHold me\
     \ closely\nLose all fear\nIn this timeless space\nIt's our own place!\n\n[End]\n\
     Let's surrender,\nIt's how we'll \"do\" time...\ntogether, forever!"
-  timestamp: '2025-05-06T06:17:12.195632'
-  version: null
 - title: Song on the Cloud
   lyrics: |-
     #Chorus
@@ -1738,8 +1293,6 @@ songs:
     #Hook
     Love in the Cloud! boom, boom, booming louder now
     Love in the Cloud, a beautiful twilight –together!
-  timestamp: '2025-05-06T06:17:12.203271'
-  version: null
 - title: Spanglish
   lyrics: |-
     [Chorus]
@@ -1809,97 +1362,6 @@ songs:
     Spanglish! From East to West
     Flags up high, bright and proud
     Spanglish love, in every town
-  timestamp: '2025-05-06T06:17:12.203047'
-  version: null
-- title: Spanglish
-  lyrics: |-
-    [Chorus]
-    (Spanglish, por todos lados)
-    Spanglish! Coast to coast
-    Miami nights, con sabor Caribeño
-    D.C. streets, shoutin' “¡Vamos, mi gente!” (viva el istmo Centro americano!)
-    TexMex heat, LA dreams, all one familia
-
-    (Spanglish, por todos lados)
-    Spanglish! From East to West
-    Flags up high, bright and proud
-    Spanglish love, in every town
-
-    [Verse 1]
-    We’re here together, Americano strong
-    From barrio streets to city songs
-    In Miami nights, con ritmo y fé
-    D.C. pride, "We’re here to stay"
-
-    Like salsa that spices up the goods,
-    In every corner, every neighborhood
-    One voice, one beat, we’re here as one
-    Latino roots, Americano sun
-
-    [Pre-Chorus]
-    The 52nd star in red, white, and blue
-    Latino pride, Americano too
-
-    [Chorus]
-    (Spanglish, por todos lados)
-    Spanglish! Coast to coast
-    Miami nights, con sabor Caribeño
-    D.C. streets, shoutin' “¡Vamos, mi gente!” (viva el istmo Centro americano!)
-    TexMex heat, LA dreams, all one familia
-
-    (Spanglish, por todos lados)
-    Spanglish! From East to West
-    Flags up high, bright and proud
-    Spanglish love, in every town
-
-    [Verse 2]
-    From coast to coast, our flags collide
-    TexMex streets to Cali vibes
-    With every dance, cada canción,
-    We bring the heart, we bring el son
-
-    In Brooklyn nights and Chi-Town beats,
-    We’re roots and dreams on every street
-    A blend of worlds, proud and free,
-    Americano soul, Latino dream
-
-    [Bridge]
-    Somos familia, de aquí y allá
-    One rhythm rising, no importa el lugar
-    The stars shine bright, we all belong
-    Spanglish pride, our colors strong
-
-    [Chorus]
-    (Spanglish, por todos lados)
-    Spanglish! Coast to coast
-    Miami nights, con sabor Caribeño
-    D.C. streets, shoutin' “¡Vamos, mi gente!” (viva el istmo Centro americano!)
-    TexMex heat, LA dreams, all one familia
-
-    (Spanglish, por todos lados)
-    Spanglish! From East to West
-    Flags up high, bright and proud
-    Spanglish love, in every town
-- title: The Hummingbird Knows
-  lyrics: "Verse 1\nFrom Galilee to Assisi’s hills to Ligurian sea, \nto the New World\
-    \ it sailed—\nThe fog rolls in low—did the ocean exhale?\nIt moves like a robe\
-    \ in the slow-falling dark.\nNo sound, no warning…\nIs it mist... or something\
-    \ divine?\n\nChorus\nThe mist remembers\nMoves with grace where soft winds blow.\n\
-    It kneels on hills, in silence waits\nIt carries footsteps slow and kind,\nA robe\
-    \ of peace and compassion that trails behind\nThe hummingbird knows, its flutter\
-    \ still—\nWhile crows cry loud, unknowing still.\n\nThe mist remembers—\nAnd the\
-    \ hummingbird knows!\n\nBridge\nThe hummingbird hovers, quiet and true,\nThe crow\
-    \ calls out, cutting through.\nEach reads the wind their own way—\nStill, the\
-    \ mist does not betray.\nIt finds its form without a claim,\nAnd settles softly\
-    \ in my spirit.\n\nChorus (repeat)\nThe mist remembers\nMoves with grace where\
-    \ soft winds blow.\nIt kneels on hills, in silence waits\nIt carries footsteps\
-    \ slow and kind,\nA robe of peace and compassion that trails behind\nThe hummingbird\
-    \ knows, its flutter still—\nWhile crows cry loud, unknowing still.\n\nThe mist\
-    \ remembers—\nAnd the hummingbird knows!\n\nOutro\nAnd I dance with the melody\
-    \ of the fog,\nAs it curls and climbs across the sky.\nMore arrives, soft as breath,\n\
-    And I open—\nLetting it in."
-  timestamp: '2025-05-06T06:17:12.203842'
-  version: null
 - title: The Hummingbird Knows
   lyrics: "Verse 1\nFrom Galilee to Assisi’s hills to Ligurian sea, \nto the New World\
     \ it sailed—\nThe fog rolls in low—did the ocean exhale?\nIt moves like a robe\
@@ -1949,8 +1411,6 @@ songs:
     But love remains, it’s what I’ve sown.
     Through every breath, the voice will stay,
     A light of hope to guide my way.
-  timestamp: '2025-05-06T06:17:12.197809'
-  version: null
 - title: The Journey's the Destination
   lyrics: |-
     #Verse
@@ -2012,8 +1472,6 @@ songs:
     Enjoy the ride or start anew.
     But on this voyage,
     You've got to keep breathing!
-  timestamp: '2025-05-06T06:17:12.195127'
-  version: null
 - title: The Tone of the Heart
   lyrics: |-
     [Verse 1]
@@ -2048,8 +1506,6 @@ songs:
     But the heart has wings, it jumps, it flies
     It doesn’t stop to wonder why
     Listen to the tone of the heart...
-  timestamp: '2025-05-06T06:17:12.202917'
-  version: null
 - title: The Unsung Song
   lyrics: |-
     #Chorus
@@ -2083,79 +1539,6 @@ songs:
 
     The song's been written
     Would you sing the unsung song, with me
-  timestamp: '2025-05-06T06:17:12.198002'
-  version: null
-- title: The Unsung Song
-  lyrics: |-
-    #Chorus
-    A destination swept off course
-    A river vein feeds pastures wide
-    Breeds new life, yet dries too soon
-    The lyrics of the unsung song!
-
-    #verse
-    Where rivers run, their stories fade
-    Yet life blooms in the paths they've made
-    Lose to give, give to find!
-
-    Would you sing the unsung song with me?
-
-    #Bridge
-    Lakes reflect, yet hold their fill
-    Do rivers dream, or just fulfill?
-
-    #hook
-    Sing the unsung song with me
-
-    #Chorus
-    A destination swept off course
-    A river vein feeds pastures wide
-    Breeds new life, yet dries before the tide
-    The lyrics of the unsung song!!
-
-    Do we live the river's flow
-    Or fulfill the lives we sow?
-
-    The song's been written
-    Would you sing the unsung song, with me
-- title: This Time Around
-  lyrics: |-
-    [begin]
-    [Intro Grand Piano Soft]
-    [Hook / Refrain]
-    This time around, we rise, we rise!
-
-    [Chorus]
-    No more doubt, no more fear
-    Through every storm, we’re staying near
-    This time around, love’s crystal clear
-    We’ll keep the lights on, through every tear
-
-    [Hook / Refrain]
-    This time around, we rise, we rise!
-
-    [Bridge]
-    We’ve been broken, we’ve been scarred,
-    But every scar a brand-new start.
-    We’ll renew our vows in present tense,
-    This time around, we’ll make it last...
-
-    [Chorus]
-    No more doubt, no more fear
-    Through every storm, we’re staying near
-    This time around, love’s crystal clear
-    We’ll keep the lights on, through every tear
-
-    [Outro / Hook]
-    This time around, we light the way
-    This time around, we light the way
-
-    [final vocal echo]
-    This Time around...
-
-    [end]
-  timestamp: '2025-05-06T06:17:12.198611'
-  version: null
 - title: This Time Around
   lyrics: |-
     [begin]
@@ -2259,75 +1642,6 @@ songs:
     Let our faith decide.
     For now, keep breathing
     And make it count!
-  timestamp: '2025-05-06T06:17:12.195442'
-  version: null
-- title: Timeless Love
-  lyrics: |
-    [Verse]
-    Man from Earth travels through,
-    Sees the sunrise anew.
-    But the heart is old and blue,
-    Lost in time he thinks of you.
-
-    [Chorus]
-    Is it heaven or just fate?
-    Can we find our way?
-    Life’s a mystery,
-    In our choices, we see.
-
-    [Verse 2]
-    John Teeter from the future,
-    He knows what will unfold.
-    Past and future take their toll,
-    Two hearts searching for their soul.
-
-    [Chorus]
-    Is it heaven or just fate?
-    Can we find our way?
-    Life’s a mystery,
-    In our choices, we see.
-
-    [Bridge]
-    Paths we walk, who can say?
-    Fate’s design leads astray.
-    Gift or curse, endless time,
-    Eternal drift, ageless climb.
-
-    [Chorus]
-    Is it heaven or just fate?
-    Can we find our way?
-    Life’s a mystery,
-    In our choices, we see.
-
-    [Verse 3]
-    Loved ones fade, mother's tear,
-    Life’s sharp edge, shadows near.
-    Years go by, yet I stand,
-    Watching worlds shift like sand.
-
-    [Chorus]
-    Is it heaven or just fate?
-    Can we find our way?
-    Life’s a mystery,
-    In our choices, we see.
-
-    [Verse 4]
-    Struggles bear, triumphs too,
-    What’s the truth, can we view?
-    Moments pass, doubts erased,
-    In the now, time embraced.
-
-    [Chorus]
-    Is it heaven or just fate?
-    Can we find our way?
-    Life’s a mystery,
-    In our choices, we see.
-
-    [Outro]
-    The answer’s hidden,
-    Let our faith decide.
-    For now, keep breathing
-    And make it count!
 - title: Timeless Purpose
   lyrics: |-
     [Intro Grand Piano solo]
@@ -2357,39 +1671,6 @@ songs:
     It lights our way, it keeps us whole!
 
     A timeless purpose keeps us whole...
-  timestamp: '2025-05-06T06:17:12.197970'
-  version: null
-- title: Timeless Purpose
-  lyrics: |+
-    [Intro Grand Piano solo]
-
-    [fade in]
-    [Verse]
-    Do we just exist and seek to fill,
-    Or connect the dots that fulfill?
-    What gives a life its meaning?
-    Is it found, or what we make?
-
-    [Chorus]
-    A legacy etched in the life we sketch,
-    Have a purpose, find what’s next.
-    It may shift, yet it lifts the soul,
-    It lights our way, it keeps us whole!
-
-    [Bridge ]
-    Some days the road feels cold and long,
-    But a spark remains to keep us strong,
-    And makes tomorrow brighter than today.
-
-    [Chorus]
-    A legacy etched in the life we sketch,
-    Have a purpose, to find what’s next.
-    It may shift, yet it lifts the soul,
-    It lights our way, it keeps us whole!
-
-    A timeless purpose keeps us whole...
-
-
 - title: We're not going back
   lyrics: |-
     [Lead in - solo interlude Transition]
@@ -2454,8 +1735,6 @@ songs:
     Not going baaak, ah, ah, ak!
 
     [End]
-  timestamp: '2025-05-06T06:17:12.197505'
-  version: null
 - title: You'll always be my spark
   lyrics: |-
     [Verse]
@@ -2493,8 +1772,6 @@ songs:
     Under moon and under stars so bright
     In your strength you'll find your might
     But in my heart you'll be the light
-  timestamp: '2025-05-06T06:17:12.196913'
-  version: null
 - title: Youtuber Anthem
   lyrics: |-
     [Verse 1]:
@@ -2548,146 +1825,6 @@ songs:
     Memories linger, like the rain
     As we part, one thing's clear
     Your heart, your eyes, is my gear!
-  timestamp: '2025-05-06T06:17:12.196328'
-  version: null
-- title: Youtuber Anthem
-  lyrics: |-
-    [Verse 1]:
-
-    Chasing sunsets, new milestones
-    Meeting strangers, stories told
-    Laughter echoes, bonfire nights
-    Connections made along the way
-
-    Got my cam, and here I go!
-
-    [Pre-Chorus]:
-    Highs and lows, we roam
-    Every new place, a new home
-    Every face and every smile
-    The journey, your eyes and hearts,
-
-    All worthwhile...
-
-    [Chorus]:
-    Sharing rides, sharing dreams
-    From close ties to drifting apart
-    In every laugh, in every tear
-    The heart is what I call home
-
-    Always connected! Oh, oh!
-
-    [Verse 2]:
-    Ancient paths, stories told
-    Footsteps echo, brave and bold
-    Tracing history, new trails unfold
-    In this journey, a new quest
-
-    [Bridge]:
-
-    Every sunset paints a scene
-    Moments fleeting, yet serene
-    Laughter rings, nights unseen
-    In these bonds, we find our dream
-
-    [Chorus]:
-    Sharing rides, sharing dreams
-    From close ties to drifting apart
-    In every laugh, in every tear
-    The heart is what I call home
-
-    Always connected! Oh, oh!
-
-    [Outro]:
-    Journeys end, but bonds remain
-    Memories linger, like the rain
-    As we part, one thing's clear
-    Your heart, your eyes, is my gear!
-- title: Youtuber Aventurero
-  lyrics: |-
-    [Verso 1: rap]:
-
-    Persiguiendo atardeceres, nuevos logros
-    Conociendo extraños, contando historias
-    Risas resonando, noches de fogata
-    Conexiones hechas en el camino
-
-    ¡Tomo mi cámara, y aquí voy!
-
-    [Pre-Coro]:
-
-    Altos y bajos, vagamos
-    Cada nuevo lugar, un nuevo hogar
-    Cada rostro y cada sonrisa
-    El viaje, tus ojos y corazones,
-
-    Todo vale la pena...
-
-    [Estribillo]:
-
-    Aventuras, sueños compartidos
-    Juntos primero, separados después
-    En cada risa, en cada lágrima
-    El corazón es hogar
-
-    ¡Soy el youtuber aventurero! ¡Sí ó sí!
-
-    [Verso 2: rap]:
-
-    Caminos antiguos, historias contadas
-    Pasos resuenan, valientes y audaces
-    Trazando la historia, nuevos caminos
-    En este viaje, una nueva misión
-
-    [Estribillo]:
-
-    Aventuras, sueños compartidos
-    Juntos, separados, re-encontrados después!
-    En cada risa, en cada lágrima
-    El corazón es hogar
-
-    ¡Soy el youtuber aventurero! ¡Sí ó sí!
-
-    [Verso 3: rap]:
-
-    Sobre dos ruedas, o quizás cuatro
-    Viento en la cara, libre y audaz
-    bicicleta, moto o van, a todas partes
-    Cada viaje es un nuevo comienzo
-
-    [Puente]:
-
-    Cada atardecer pinta una escena
-    Momentos fugaces, pero serenos
-    Risas suenan, noches sin fin
-    Entrelazados, sueños encontrados
-
-    [Estribillo]:
-
-    Aventuras, sueños compartidos
-    Juntos, separados, re-encontrados después!
-    En cada risa, en cada lágrima
-    El corazón es hogar
-
-    ¡Soy el youtuber aventurero! ¡Sí ó sí!
-
-    [Desenlace]:
-
-    Los viajes terminan, lazos permanecen
-    Los recuerdos persisten, como la lluvia
-    Al despedirnos, una cosa está clara
-    Tu corazón, tus ojos, ellos mi guía!
-
-    [Estribillo]:
-
-    Aventuras, sueños compartidos
-    Juntos primero, separados después
-    En cada risa, en cada lágrima
-    El corazón es hogar
-
-    ¡Soy el youtuber aventurero! ¡Sí ó sí!
-  timestamp: '2025-05-06T06:17:12.198664'
-  version: null
 - title: Youtuber Aventurero
   lyrics: |-
     [Verso 1: rap]:
@@ -2840,8 +1977,6 @@ songs:
     Cherish life, give it a chance!!
 
     Hallelujah! Give it a chance!!
-  timestamp: '2025-05-06T06:17:12.200692'
-  version: null
 - title: eternamente en deuda
   lyrics: |-
     (Verso 1)
@@ -2918,8 +2053,6 @@ songs:
     Agradecido por las semillas que cultivó.
     A la luz de su amor, encontré mi camino,
     Un faro brillante en ausencia de un padre.
-  timestamp: '2025-05-06T06:17:12.196142'
-  version: null
 - title: freedom is our prayer
   lyrics: |-
     [Chorus 1]
@@ -2973,8 +2106,6 @@ songs:
     "America" must thrive.
     In our hearts and prayers,
     United will survive.
-  timestamp: '2025-05-06T06:17:12.198884'
-  version: null
 - title: only a picture to remember
   lyrics: "[Verse]\nNever knew your face\nJust a faded portrait\nAn image of a memory\n\
     That’s all that’s left\n\n[Chorus]\nOnly a picture to remember\nLost moments,\
@@ -2986,8 +2117,6 @@ songs:
     \ my life\nI have to make it count!\n\n[Outro]\nYour memory will guide me through,\n\
     When my times comes, I'll know your smiling face \nso, wait for me at the gate\n\
     and embrace me in flight\n\nOnly a picture to remember...\nOnly a picture to remember!"
-  timestamp: '2025-05-06T06:17:12.203099'
-  version: null
 - title: open your heart
   lyrics: |-
     [Verse]
@@ -3025,8 +2154,6 @@ songs:
     Heartbeats rising high and low
     Inspiration starts to flow
     In this moment let it show
-  timestamp: '2025-05-06T06:17:12.201487'
-  version: null
 - title: pockets
   lyrics: |-
     #VERSE
@@ -3062,8 +2189,6 @@ songs:
 
     #HOOK
     The weight we carried, or the love we shared
-  timestamp: '2025-05-06T06:17:12.200494'
-  version: null
 - title: si no fueras tu
   lyrics: |-
     #Verse
@@ -3112,8 +2237,6 @@ songs:
     #Hook
     Si no fueras tu
     Si yo no estoy, no habría una canción
-  timestamp: '2025-05-06T06:17:12.199999'
-  version: null
 - title: sleepless in Dreamland
   lyrics: |-
     #Intro
@@ -3171,8 +2294,6 @@ songs:
     Maybe sleep, will come in time
     Till then, these stars are mine!
     These stars are mine! oh-oh!
-  timestamp: '2025-05-06T06:17:12.195769'
-  version: null
 - title: spitha
   lyrics: |-
     [clean emotive Piano Intro]
@@ -3236,8 +2357,6 @@ songs:
     Spitha, the spark in us, always ahead.
     Spitha, a gift for you and me!
     Built by and for you and me, Together!
-  timestamp: '2025-05-06T06:17:12.199337'
-  version: null
 - title: un nuevo amanecer
   lyrics: "[Intro]\n\n[Verse 1: Male]\nHm, Hm, Cruzé el mar, no por balsero, (No por\
     \ balsero)\n\nDe Cuba a España sin desespero,\nDe Habana vengo, con salsa en mis\
@@ -3262,8 +2381,6 @@ songs:
     Dos almas valientes, bailando su realidad,\nEn la pista de la vida, \nen el país\
     \ con nombre y apellido.\nQue cada nuevo amanecer, en fé y amor avanzar,\nCelebramos\
     \ juntos, un matrimonio ejemplar!\n\nFeliz Aniversario!"
-  timestamp: '2025-05-06T06:17:12.200786'
-  version: null
 - title: una foto para recordar
   lyrics: |-
     [Verso]
@@ -3304,8 +2421,6 @@ songs:
 
     Solo una foto para recordar...
     ¡Solo una foto para recordar!
-  timestamp: '2025-05-06T06:17:12.201225'
-  version: null
 - title: under the red star
   lyrics: |-
     [Verse 1]
@@ -3352,8 +2467,6 @@ songs:
     Bodies entwined, with Mars as our guide
     Rolling as one, in the night’s fiery embrace
     Under the red star, passion leaves no trace
-  timestamp: '2025-05-06T06:17:12.197293'
-  version: null
 - title: why today
   lyrics: |-
     [Intro]
@@ -3429,8 +2542,6 @@ songs:
     [Pause]
     Heed the wisdom of the wise one!
     [Pause]
-  timestamp: '2025-05-06T06:17:12.199159'
-  version: null
 - title: ¿habrá un mañana?
   lyrics: |-
     En el sol del amanecer
@@ -3473,5 +2584,3 @@ songs:
     Hola al amanecer, y el mañana a soñar
     Risas, amor, y amistad valorar
     Y lo correcto priorizar
-  timestamp: '2025-05-06T06:17:12.200985'
-  version: null
