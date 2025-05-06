@@ -98,20 +98,11 @@ def read_lyrics_file(file_path):
             "title": title,
             "lyrics": content
         }
-    except ValueError as ve:
-        logging.error(f"Validation error: {str(ve)}")
-        raise
-    except UnicodeDecodeError:
-        logging.error(f"Unicode error reading {file_path}")
-        raise
-    except Exception as e:
+    except (ValueError, UnicodeDecodeError) as e:
         logging.error(f"Error reading {file_path}: {str(e)}")
         raise
-    except UnicodeDecodeError:
-        logging.error(f"Unicode error reading {file_path}")
-        raise
     except Exception as e:
-        logging.error(f"Error reading {file_path}: {str(e)}")
+        logging.error(f"Unexpected error reading {file_path}: {str(e)}")
         raise
 
 def str_presenter(dumper, data):

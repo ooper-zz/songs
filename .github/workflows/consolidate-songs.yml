@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: write  # Grants permission to write to the repository
+  pull-requests: write  # Required for updating files
 
 jobs:
   consolidate:
@@ -24,6 +25,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history for better git operations
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -64,6 +67,12 @@ jobs:
           # Verify directory permissions
           echo "=== Directory Permissions ==="
           ls -l .
+          # Verify git status
+          echo "=== Git Status ==="
+          git status
+          # Display git config
+          echo "=== Git Config ==="
+          git config --list
 
       - name: Commit and push changes
         run: |
