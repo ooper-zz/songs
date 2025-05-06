@@ -1,324 +1,283 @@
+albums: null
 songs:
   A Son And A Father:
-    status: ignore
-    date:
     album: Father Trilogy
-
-  Answer In The Wind:
-    status: released
-    date:
-
-  Bailando En El Oasis:
-    status: released
-    date:
-
-  Be The Brick:
-    status: released
-    date:
-
-  Body Art Of The Heart:
-    status: deferred
-    date:
-
-  Carpe Diem Seize The Day:
-    status: deferred
-    date:
-
-  Ella, Padre:
-    status: released
-    date:
-
-  El Vuelo Del Fénix:
-    status: released
-    date:
-
-  Faith And Change:
-    status: deferred
-    date:
-
-  Footsteps In A Day:
-    status: released
-    date:
-
-  Freedom Is Our Prayer:
-    status: released
-    date:
-
-  Genius Inside:
-    status: released
-    date:
-
-  Granja De Sueños:
-    status: released
-    date:
-
-  He'S Bent Up, But He'S Back:
+    date: null
     status: ignore
-    date:
-    album: Father Trilogy
-
-  Hear The Silence From Within:
-    status: released
-    date:
-
-  Hugely Small:
-    status: deferred
-    date:
-
-  I'm Trying:
-    status: deferred
-    date:
-
-  Let'S Write A Song:
-    status: ignore
-    date:
-
-  Memorabilia:
-    status: released
-    date:
-
-  Only A Picture To Remember:
-    status: released
-    date:
-
-  Rewrite The Moment:
-    status: released
-    date:
-
-  Song On The Cloud:
-    status: ignore
-    date:
-
-  Spitha:
-    status: deferred
-    date:
-
-  The Journey To Myself:
-    status: released
-    date:
-
-  The Unsung Song:
-    status: released
-    date:
-
-  This Time Around:
-    status: released
-    date:
-    album: Father Trilogy
-
-  Timeless Love:
-    status: ignore
-    date:
-
-  Under The Red Star:
-    status: released
-    date:
-
-  Youtuber Aventurero:
-    status: released
-    date:
-
-  You'Ll Always Be My Spark:
-    status: deferred
-    date:
-
-  Really Something:
-    status: deferred
-    date:
-
-  I Write The Songs:
-    status: deferred
-    date:
-
-  Slow Dancing In Time 1:
-    status: deferred
-    date:
-
-  Una Foto Para Recordar:
-    status: deferred
-    date:
-
-  Youtuber Anthem:
-    status: deferred
-    date:
-
-  Labyrinths Mine:
-    status: deferred
-    date:
-
-  Un Nuevo Amanecer:
-    status: deferred
-    date:
-
-  Eternamente En Deuda:
-    status: deferred
-    date:
-
-  # New songs from test_song_tags.yml
-  Enternament En Gracia:
-    status: deferred
-    date: ''
-    album: ''
-  The Journey'S The Destination:
-    status: released
-    date: ''
-    album: ''
-  Carpe Diem  Seize The Day:
-    status: deferred
-    date: ''
-    album: ''
-  Accompaniment:
-    status: deferred
-    date: ''
-    album: ''
-  Spanglish:
-    status: deferred
-    date: ''
-    album: ''
-  Desde Tu Vientre:
-    status: deferred
-    date: ''
-    album: ''
-  The Answer In The Wind:
-    status: released
-    date: ''
-    album: ''
-  We'Re Not Going Back:
-    status: released
-    date: ''
-    album: ''
-  Un Nuevo Amanezer:
-    status: deferred
-    date: ''
-    album: ''
-  Lend Me An Ear:
-    status: released
-    date: ''
-    album: ''
-  Hey Son:
-    status: released
-    date: ''
-    album: ''
-  How To Save Love:
-    status: released
-    date: ''
-    album: ''
-  Markings On The Road:
-    status: released
-    date: ''
-    album: ''
-  The Tone Of The Heart:
-    status: released
-    date: ''
-    album: ''
-  That Make Hearts Soar:
-    status: released
-    date: ''
-    album: ''
-  Why Today:
-    status: released
-    date: ''
-    album: ''
-  Under The Red Star. V2:
-    status: released
-    date: ''
-    album: ''
-  Escribió "Sí" En La Arena:
-    status: released
-    date: ''
-    album: ''
-  Hide The Evidence:
-    status: released
-    date: ''
-    album: ''
-  Slow Dancing In Time:
-    status: deferred
-    date: ''
-    album: ''
-  Connections:
-    status: deferred
-    date: ''
-    album: ''
-  Labyrinths Min:
-    status: deferred
-    date: ''
-    album: ''
-  Si No Fueras Tu:
-    status: released
-    date: ''
-    album: ''
-  Youtubero Aventurero:
-    status: released
-    date: ''
-    album: ''
-  Un Foto Para Recordar:
-    status: released
-    date: ''
-    album: ''
-  Open Your Heart:
-    status: released
-    date: ''
-    album: ''
-  The Hummingbird Knows:
-    status: released
-    date: ''
-    album: ''
-  ¿Habrá Un Mañana?:
-    status: released
-    date: ''
-    album: ''
-  Faro Y Reflejo:
-    status: deferred
-    date: ''
-    album: ''
-  Sleepless In Dreamland:
-    status: released
-    date: ''
-    album: ''
-  Timeless Purpose:
-    status: released
-    date: ''
-    album: ''
-  Y Aura T Il Demain?:
-    status: released
-    date: ''
-    album: ''
-  Madre E Hija A La Vez:
-    status: released
-    date: ''
-    album: ''
   A Son And His Father:
-    status: released
-    date: ''
     album: ''
-  Pockets:
-    status: released
     date: ''
-    album: ''
-  Journey To Myself:
     status: released
-    date: ''
+  Accompaniment:
     album: ''
-  As I Saw You Then:
-    status: released
     date: ''
-    album: ''
-  Madre Y Esposa A La Vez:
-    status: released
-    date: ''
-    album: ''
-  I'M Trying:
     status: deferred
-    date: ''
-    album: ''
   Ahora Como Entonces:
-    status: released
-    date: ''
     album: ''
+    date: ''
+    status: released
+  Answer In The Wind:
+    date: null
+    status: released
+  As I Saw You Then:
+    album: ''
+    date: ''
+    status: released
+  Bailando En El Oasis:
+    date: null
+    status: released
+  Be The Brick:
+    date: null
+    status: released
+  Body Art Of The Heart:
+    date: null
+    status: deferred
+  Carpe Diem  Seize The Day:
+    album: ''
+    date: ''
+    status: deferred
+  Carpe Diem Seize The Day:
+    date: null
+    status: deferred
+  Connections:
+    album: ''
+    date: ''
+    status: deferred
   Count Ten To One:
-    status: released
-    date: ''
     album: ''
-
-albums:
-  
+    date: ''
+    status: released
+  Desde Tu Vientre:
+    album: ''
+    date: ''
+    status: deferred
+  "El Vuelo Del F\xE9nix":
+    date: null
+    status: released
+  Enternament En Gracia:
+    album: ''
+    date: ''
+    status: deferred
+  "Escribi\xF3 \"S\xED\" En La Arena":
+    album: ''
+    date: ''
+    status: released
+  Eternamente En Deuda:
+    date: null
+    status: deferred
+  Faith And Change:
+    date: null
+    status: deferred
+  Faro Y Reflejo:
+    album: ''
+    date: ''
+    status: deferred
+  Footsteps In A Day:
+    date: null
+    status: released
+  Freedom Is Our Prayer:
+    date: null
+    status: released
+  Genius Inside:
+    date: null
+    status: released
+  "Granja De Sue\xF1os":
+    date: null
+    status: released
+  He'S Bent Up, But He'S Back:
+    album: Father Trilogy
+    date: null
+    status: ignore
+  Hear The Silence From Within:
+    date: null
+    status: released
+  Hey Son:
+    album: ''
+    date: ''
+    status: released
+  Hide The Evidence:
+    album: ''
+    date: ''
+    status: released
+  How To Save Love:
+    album: ''
+    date: ''
+    status: released
+  Hugely Small:
+    date: null
+    status: deferred
+  I Write The Songs:
+    date: null
+    status: deferred
+  I'M Trying:
+    album: ''
+    date: ''
+    status: deferred
+  I'm Trying:
+    date: null
+    status: deferred
+  Journey To Myself:
+    album: ''
+    date: ''
+    status: released
+  Labyrinths Min:
+    album: ''
+    date: ''
+    status: deferred
+  Labyrinths Mine:
+    date: null
+    status: deferred
+  Lend Me An Ear:
+    album: ''
+    date: ''
+    status: released
+  Let'S Write A Song:
+    date: null
+    status: ignore
+  Madre E Hija A La Vez:
+    album: ''
+    date: ''
+    status: released
+  Madre Y Esposa A La Vez:
+    album: ''
+    date: ''
+    status: released
+  Madre y Padre a la Vez:
+    date: null
+    status: released
+  Markings On The Road:
+    album: ''
+    date: ''
+    status: released
+  Memorabilia:
+    date: null
+    status: released
+  Only A Picture To Remember:
+    date: null
+    status: released
+  Open Your Heart:
+    album: ''
+    date: ''
+    status: released
+  Pockets:
+    album: ''
+    date: ''
+    status: released
+  Really Something:
+    date: null
+    status: deferred
+  Rewrite The Moment:
+    date: null
+    status: released
+  Si No Fueras Tu:
+    album: ''
+    date: ''
+    status: released
+  Sleepless In Dreamland:
+    album: ''
+    date: ''
+    status: released
+  Slow Dancing In Time:
+    album: ''
+    date: ''
+    status: deferred
+  Slow Dancing In Time 1:
+    date: null
+    status: deferred
+  Song On The Cloud:
+    date: null
+    status: ignore
+  Spanglish:
+    album: ''
+    date: ''
+    status: deferred
+  Spitha:
+    date: null
+    status: deferred
+  That Make Hearts Soar:
+    album: ''
+    date: ''
+    status: released
+  The Answer In The Wind:
+    album: ''
+    date: ''
+    status: released
+  The Hummingbird Knows:
+    album: ''
+    date: ''
+    status: released
+  The Journey To Myself:
+    date: null
+    status: released
+  The Journey'S The Destination:
+    album: ''
+    date: ''
+    status: released
+  The Tone Of The Heart:
+    album: ''
+    date: ''
+    status: released
+  The Unsung Song:
+    date: null
+    status: released
+  This Time Around:
+    album: Father Trilogy
+    date: null
+    status: released
+  Timeless Love:
+    date: null
+    status: ignore
+  Timeless Purpose:
+    album: ''
+    date: ''
+    status: released
+  Un Foto Para Recordar:
+    album: ''
+    date: ''
+    status: released
+  Un Nuevo Amanecer:
+    date: null
+    status: deferred
+  Un Nuevo Amanezer:
+    album: ''
+    date: ''
+    status: deferred
+  Una Foto Para Recordar:
+    date: null
+    status: deferred
+  Under The Red Star:
+    date: null
+    status: released
+  Under The Red Star. V2:
+    album: ''
+    date: ''
+    status: released
+  We'Re Not Going Back:
+    album: ''
+    date: ''
+    status: released
+  Why Today:
+    album: ''
+    date: ''
+    status: released
+  Y Aura T Il Demain?:
+    album: ''
+    date: ''
+    status: released
+  You'Ll Always Be My Spark:
+    date: null
+    status: deferred
+  Youtuber Anthem:
+    date: null
+    status: deferred
+  Youtuber Aventurero:
+    date: null
+    status: released
+  Youtubero Aventurero:
+    album: ''
+    date: ''
+    status: released
+  "\xBFHabr\xE1 Un Ma\xF1ana?":
+    album: ''
+    date: ''
+    status: released

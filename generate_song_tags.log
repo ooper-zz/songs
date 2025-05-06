@@ -171,3 +171,23 @@ Directories skipped due to hyphenated names:
 2025-05-06 00:01:38,471 - INFO - - Carpe Diem - Seize The Day
 2025-05-06 00:01:38,471 - INFO - 
 Successfully completed song tag generation
+2025-05-06 00:14:56,559 - INFO - 
+Songs in lyrics files but missing from song_tags.yml:
+2025-05-06 00:14:56,560 - INFO - - Madre y Padre a la Vez
+2025-05-06 00:14:56,560 - INFO - 
+Directories skipped due to hyphenated names:
+2025-05-06 00:14:56,560 - INFO - - Carpe Diem - seize the day
+2025-05-06 00:14:56,560 - INFO - - Carpe Diem - seize the day
+2025-05-06 00:14:56,560 - INFO - - Carpe Diem - seize the day
+2025-05-06 00:14:56,560 - INFO - - Carpe Diem - Seize The Day
+2025-05-06 00:14:56,560 - INFO - 
+Successfully completed song tag generation
+2025-05-06 00:15:33,904 - INFO - All songs in lyrics files are present in song_tags.yml
+2025-05-06 00:15:33,904 - INFO - 
+Directories skipped due to hyphenated names:
+2025-05-06 00:15:33,904 - INFO - - Carpe Diem - seize the day
+2025-05-06 00:15:33,904 - INFO - - Carpe Diem - seize the day
+2025-05-06 00:15:33,904 - INFO - - Carpe Diem - seize the day
+2025-05-06 00:15:33,904 - INFO - - Carpe Diem - Seize The Day
+2025-05-06 00:15:33,904 - INFO - 
+Successfully completed song tag generation

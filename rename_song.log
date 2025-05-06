@@ -1,0 +1,8 @@
+2025-05-06 00:23:34,403 - INFO - Renamed directory: Madre y Padre a la Vez -> Madre y Padre a la Vez (Test)
+2025-05-06 00:23:34,414 - INFO - Updated title in song_tags.yml: Madre y Padre a la Vez -> Madre y Padre a la Vez (Test)
+2025-05-06 00:23:34,434 - WARNING - Old title 'Madre y Padre a la Vez' not found in consolidated_songs.yml
+2025-05-06 00:23:34,434 - INFO - Successfully completed directory rename and YAML updates
+2025-05-06 00:23:50,020 - INFO - Renamed directory: Madre y Padre a la Vez (Test) -> Madre y Padre a la Vez
+2025-05-06 00:23:50,031 - INFO - Updated title in song_tags.yml: Madre y Padre a la Vez (Test) -> Madre y Padre a la Vez
+2025-05-06 00:23:50,052 - WARNING - Old title 'Madre y Padre a la Vez (Test)' not found in consolidated_songs.yml
+2025-05-06 00:23:50,052 - INFO - Successfully completed directory rename and YAML updates
