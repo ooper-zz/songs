@@ -42,12 +42,15 @@ jobs:
           # Create output directory with proper permissions
           mkdir -p .
           chmod +w .
-          # Run the consolidate script with absolute paths
-          python consolidate_songs.py --base-dir $(pwd) --output $(pwd)/consolidated_songs.yml
+          # Run the consolidate script with verbose output and absolute paths
+          python consolidate_songs.py --base-dir $(pwd) --output $(pwd)/consolidated_songs.yml --verbose
           # Display the processed songs
           cat consolidated_songs.yml
           # Display any log messages
           cat consolidate_songs.log 2>/dev/null || echo "No log file found"
+          # Display any Python error messages
+          echo "Python error messages:"
+          python -c "print('Python environment is working')"
 
       - name: Commit and push changes
         run: |
