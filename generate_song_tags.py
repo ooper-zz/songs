@@ -12,11 +12,6 @@ def get_song_title_from_file(file_path: str) -> str:
     if dir_name == ".":
         return None
     
-    # Check for hyphens and log as error
-    if '-' in dir_name:
-        logging.error(f"Directory name contains hyphen: {dir_name}")
-        return None
-    
     # Normalize spaces and case for matching
     normalized = ' '.join(dir_name.split())  # Normalize spaces
     return normalized
@@ -63,10 +58,15 @@ def generate_song_tags(base_dir: str) -> Dict:
             }
     
     # Remove songs that no longer exist
+    songs_to_remove = []
     for title in existing_tags["songs"]:
         if title not in new_tags["songs"]:
             logging.info(f"Removing deleted song from tags: {title}")
-            del existing_tags["songs"][title]
+            songs_to_remove.append(title)
+    
+    # Remove the songs after collecting all to remove
+    for title in songs_to_remove:
+        del existing_tags["songs"][title]
     
     return new_tags
 

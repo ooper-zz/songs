@@ -3,6 +3,10 @@ import yaml
 from yaml.representer import SafeRepresenter
 import logging
 from datetime import datetime
+import re
+
+# Track processed versions
+processed_versions = {}
 import time
 from tqdm import tqdm
 import shutil
@@ -40,11 +44,6 @@ def normalize_title(title):
     """Normalize song titles to match the expected format."""
     # Handle known special cases
     special_cases = {
-        "Carpe Diem -seize the day": "Carpe Diem   Seize The Day",
-        "The Journey's the Destination": "The Journey'S The Destination",
-        "The Tone of the Heart": "The Tone Of The Heart",
-        "The Journey to Myself": "The Journey To Myself",
-        "Youtubero Aventurero": "Youtuber Aventurero",
         "Faro y Reflejo": "Faro Y Reflejo",
         "¿Habrá Un Mañana?": "¿Habrá Un Mañana?",
         "Y Aura-t-il Demain?": "¿Habrá Un Mañana?",
@@ -56,28 +55,31 @@ def normalize_title(title):
         "Under The Red Star. V2": "Under The Red Star"
     }
     
+    # Extract version number if present
+    version_match = re.search(r'v(\d+)(?:\.\d+)?$', title)
+    version = version_match.group(1) if version_match else None
+    
+    # Remove version suffix for title comparison
+    if version:
+        title = title[:version_match.start()].strip()
+    
     # Normalize spacing
-    normalized = title.replace("-", " ").replace("_", " ").strip()
+    title = ' '.join(title.split())
     
-    # Remove number suffixes first
-    normalized = normalized.replace(" 1", "").replace(". V2", "")
+    # Remove special characters
+    title = ''.join(c if c.isalnum() or c.isspace() else ' ' for c in title)
     
-    # Handle special characters
-    # Use proper unicode normalization
-    normalized = normalized.encode('utf-8').decode('utf-8')
+    # Normalize spacing again after special character removal
+    title = ' '.join(title.split())
     
-    # Convert to title case
-    normalized = normalized.title()
+    # Remove numbers unless they're part of a version suffix
+    if not version:
+        title = ''.join(c for c in title if not c.isdigit())
     
-    # Apply special cases
-    if normalized in special_cases:
-        normalized = special_cases[normalized]
+    # Normalize spacing one final time
+    title = ' '.join(title.split())
     
-    # Remove any remaining numbers at the end if they're not part of a special case
-    if normalized and normalized[-1].isdigit() and normalized not in special_cases.values():
-        normalized = normalized[:-1].strip()
-    
-    return normalized
+    return title, version
 
 def read_lyrics_file(file_path):
     """Read the lyrics file and return its content."""
@@ -131,6 +133,7 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     lyrics_files = [f for f in lyrics_files if not os.path.basename(f) == "consolidated_songs_lyrics.txt"]
     
     processed_titles = set()
+    processed_normalized_titles = set()
     duplicates = set()
     
     # Process files to get current songs
@@ -138,16 +141,41 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     for file in lyrics_files:
         try:
             logging.info(f"Processing file: {file}")
-            song_data = read_lyrics_file(file)
-            title = song_data["title"]
+            # Use folder name as title
+            title = os.path.basename(os.path.dirname(file))
             
-            # Skip if we've already processed this title
-            if title in processed_titles:
-                duplicates.add(title)
-                logging.info(f"Skipping duplicate: {title}")
-                continue
-                
+            # Normalize title and extract version
+            normalized_title, version = normalize_title(title)
+            
+            # Read lyrics content
+            with open(file, "r", encoding='utf-8') as f:
+                lyrics = f.read().strip()
+            
+            # Create song data with folder name as title
+            song_data = {
+                "title": title,
+                "lyrics": lyrics,
+                "timestamp": datetime.now().isoformat(),
+                "version": version
+            }
+            
+            # Check if we have a newer version of this song
+            if normalized_title in processed_normalized_titles:
+                existing_version = processed_versions.get(normalized_title)
+                if existing_version and version:
+                    if int(version) <= int(existing_version):
+                        duplicates.add(title)
+                        logging.info(f"Skipping older version: {title} (v{version})")
+                        continue
+                else:
+                    duplicates.add(title)
+                    logging.info(f"Skipping duplicate: {title}")
+                    continue
+            
             processed_titles.add(title)
+            processed_normalized_titles.add(normalized_title)
+            if version:
+                processed_versions[normalized_title] = version
             current_songs.append(song_data)
         except Exception as e:
             logging.error(f"Error processing {file}: {str(e)}")
@@ -166,19 +194,17 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     # Add current songs
     for song in current_songs:
         title = song["title"]
-        if title in processed_titles:
-            duplicates.add(title)
-            logging.info(f"Skipping duplicate: {title}")
-        else:
-            logging.info(f"Adding song: {title}")
-            songs.append(song)
-            processed_titles.add(title)
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
     
     # Remove songs that no longer exist
     for song in existing_songs:
         title = song["title"]
-        if title in processed_titles:
-            songs.append(song)
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
 
     if songs:
         try:
