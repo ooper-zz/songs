@@ -1,224 +1,41 @@
-albums:
-  Father Trilogy:
-    songs:
-      - A Son And A Father
-    year: null
-    notes: []
-  Another Album:
-    songs:
-      - A Son And His Father
-      - Accompaniment
-      - Ahora Como Entonces
-    year: null
-    notes: []
-
 songs:
-  A Son And A Father:
-    date: null
-    status: ignore
-  A Son And His Father:
-    date: ''
-    status: released
-  Accompaniment:
-    date: ''
-    status: deferred
   Ahora Como Entonces:
     date: ''
-    status: released
-  Answer In The Wind:
-    date: null
     status: released
   As I Saw You Then:
     date: ''
     status: released
-  Bailando En El Oasis:
-    date: null
-    status: released
-  Be The Brick:
-    date: null
-    status: released
-  Body Art Of The Heart:
-    date: null
-    status: deferred
-  Carpe Diem  Seize The Day:
-    date: ''
-    status: deferred
   Carpe Diem Seize The Day:
     date: null
     status: deferred
-  Connections:
-    date: ''
-    status: deferred
-  Count Ten To One:
-    date: ''
-    status: released
   Desde Tu Vientre:
     date: ''
-    date: ''
     status: deferred
-  "El Vuelo Del F\xE9nix":
-    date: null
-    status: released
-  Enternament En Gracia:
-    album: ''
-    date: ''
-    status: deferred
-  "Escribi\xF3 \"S\xED\" En La Arena":
-    album: ''
-    date: ''
-    status: released
-  Eternamente En Deuda:
-    date: null
-    status: deferred
-  Faith And Change:
-    date: null
-    status: deferred
-  Faro Y Reflejo:
-    album: ''
-    date: ''
-    status: deferred
-  Footsteps In A Day:
-    date: null
-    status: released
-  Freedom Is Our Prayer:
-    date: null
-    status: released
   Genius Inside:
     date: null
     status: released
-  "Granja De Sue\xF1os":
-    date: null
-    status: released
-  He'S Bent Up, But He'S Back:
-    album: Father Trilogy
-    date: null
-    status: ignore
-  Hear The Silence From Within:
-    date: null
-    status: released
   Hey Son:
-    album: ''
-    date: ''
-    status: released
-  Hide The Evidence:
-    album: ''
-    date: ''
-    status: released
-  How To Save Love:
-    album: ''
     date: ''
     status: released
   Hugely Small:
     date: null
     status: deferred
-  I Write The Songs:
-    date: null
-    status: deferred
-  I'M Trying:
-    album: ''
-    date: ''
-    status: deferred
   I'm Trying:
     date: null
     status: deferred
-  Journey To Myself:
-    album: ''
-    date: ''
-    status: released
-  Labyrinths Min:
-    album: ''
-    date: ''
-    status: deferred
-  Labyrinths Mine:
-    date: null
-    status: deferred
-  Lend Me An Ear:
-    album: ''
-    date: ''
-    status: released
-  Let'S Write A Song:
-    date: null
-    status: ignore
-  Madre E Hija A La Vez:
-    album: ''
-    date: ''
-    status: released
-  Madre Y Esposa A La Vez:
-    album: ''
-    date: ''
-    status: released
   Madre y Padre a la Vez:
     date: null
-    status: released
-  Markings On The Road:
-    album: ''
-    date: ''
     status: released
   Memorabilia:
     date: null
     status: released
-  Only A Picture To Remember:
-    date: null
-    status: released
-  Open Your Heart:
-    album: ''
-    date: ''
-    status: released
-  Pockets:
-    album: ''
-    date: ''
-    status: released
   Really Something:
     date: null
     status: deferred
-  Rewrite The Moment:
-    date: null
-    status: released
-  Si No Fueras Tu:
-    album: ''
-    date: ''
-    status: released
-  Sleepless In Dreamland:
-    album: ''
-    date: ''
-    status: released
-  Slow Dancing In Time:
-    album: ''
-    date: ''
-    status: deferred
-  Slow Dancing In Time 1:
-    date: null
-    status: deferred
-  Song On The Cloud:
-    date: null
-    status: ignore
   Spanglish:
-    album: ''
     date: ''
     status: deferred
-  Spitha:
-    date: null
-    status: deferred
-  That Make Hearts Soar:
-    album: ''
-    date: ''
-    status: released
-  The Answer In The Wind:
-    album: ''
-    date: ''
-    status: released
   The Hummingbird Knows:
-    album: ''
-    date: ''
-    status: released
-  The Journey To Myself:
-    date: null
-    status: released
-  The Journey'S The Destination:
-    album: ''
-    date: ''
-    status: released
-  The Tone Of The Heart:
     album: ''
     date: ''
     status: released
@@ -236,53 +53,239 @@ songs:
     album: ''
     date: ''
     status: released
-  Un Foto Para Recordar:
-    album: ''
-    date: ''
-    status: released
-  Un Nuevo Amanecer:
-    date: null
-    status: deferred
-  Un Nuevo Amanezer:
-    album: ''
-    date: ''
-    status: deferred
-  Una Foto Para Recordar:
-    date: null
-    status: deferred
-  Under The Red Star:
-    date: null
-    status: released
-  Under The Red Star. V2:
-    album: ''
-    date: ''
-    status: released
-  We'Re Not Going Back:
-    album: ''
-    date: ''
-    status: released
-  Why Today:
-    album: ''
-    date: ''
-    status: released
-  Y Aura T Il Demain?:
-    album: ''
-    date: ''
-    status: released
-  You'Ll Always Be My Spark:
-    date: null
-    status: deferred
   Youtuber Anthem:
     date: null
     status: deferred
   Youtuber Aventurero:
     date: null
     status: released
-  Youtubero Aventurero:
-    album: ''
-    date: ''
-    status: released
-  "\xBFHabr\xE1 Un Ma\xF1ana?":
-    album: ''
-    date: ''
-    status: released
+  Madre y Esposa a la Vez:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Faro y Reflejo:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  eternamente en deuda:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Be the Brick:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Slow Dancing in Time:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  We're not going back:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Answer in the Wind:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  I Write the Songs:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Faith and change:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Mar y Tierra:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  You'll always be my spark:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  ¿habrá un mañana?:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  una foto para recordar:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Labyrinths mine:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  si no fueras tu:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  sleepless in Dreamland:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  freedom is our prayer:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Hear the silence from Within:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Body Art of the Heart:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  El Vuelo del Fénix:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Journey to Myself:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  open your heart:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  only a picture to remember:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  pockets:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Song on the Cloud:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Footsteps in a Day:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Let's Write a Song:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  under the red star:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  un nuevo amanecer:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  He's bent up, but he's back:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  How to Save Love:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Granja de Sueños:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Escribió "Sí" en la Arena:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Bailando en el Oasis:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Madre e hija a la vez:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  why today:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Markings on the Road:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Lend me an Ear:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Count Ten to One:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Hide the evidence:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  The Journey to Myself:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  a son and a father:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  The Tone of the Heart:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  The Journey's the Destination:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Rewrite the Moment:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  spitha:
+    tags: []
+    artists: []
+    year: null
+    notes: []

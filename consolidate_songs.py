@@ -128,13 +128,15 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
         shutil.copy2(output_file, backup_file)
         logging.info(f"Created backup: {backup_file}")
     
+    # Initialize sets for tracking processed songs and versions
+    processed_titles = set()
+    processed_normalized_titles = set()
+    processed_versions = {}
+    duplicates = set()
+    
     # Process all files, including those in subdirectories
     # Skip the consolidated_songs_lyrics.txt file if it exists
     lyrics_files = [f for f in lyrics_files if not os.path.basename(f) == "consolidated_songs_lyrics.txt"]
-    
-    processed_titles = set()
-    processed_normalized_titles = set()
-    duplicates = set()
     
     # Process files to get current songs
     current_songs = []
@@ -154,10 +156,15 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             # Create song data with folder name as title
             song_data = {
                 "title": title,
-                "lyrics": lyrics,
-                "timestamp": datetime.now().isoformat(),
-                "version": version
+                "lyrics": lyrics
             }
+            
+            # Add optional fields if they exist
+            if version:
+                song_data["version"] = version
+            # Timestamp is only added for new songs
+            if title not in existing_titles:
+                song_data["timestamp"] = datetime.now().isoformat()
             
             # Check if we have a newer version of this song
             if normalized_title in processed_normalized_titles:
@@ -184,9 +191,13 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     # Load existing songs if file exists
     existing_songs = []
     if os.path.exists(output_file):
-        with open(output_file, 'r', encoding='utf-8') as f:
-            existing_songs = yaml.safe_load(f).get('songs', [])
-
+        try:
+            with open(output_file, 'r', encoding='utf-8') as f:
+                existing_songs = yaml.safe_load(f).get('songs', [])
+        except Exception as e:
+            logging.error(f"Error loading existing songs: {str(e)}")
+            existing_songs = []
+    
     # Create final list of songs
     songs = []
     existing_titles = {song["title"] for song in existing_songs}
@@ -197,7 +208,7 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
         logging.info(f"Adding song: {title}")
         songs.append(song)
     
-    # Remove songs that no longer exist
+    # Add existing songs
     for song in existing_songs:
         title = song["title"]
         normalized_title, _ = normalize_title(title)
@@ -205,6 +216,210 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             logging.info(f"Removing song that no longer exists: {title}")
             continue
         songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
+        normalized_title, _ = normalize_title(title)
+        if normalized_title not in processed_normalized_titles:
+            logging.info(f"Removing song that no longer exists: {title}")
+            continue
+        songs.append(song)
+    
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        logging.info(f"Adding song: {title}")
+        songs.append(song)
+    
+    # Add existing songs
+    for song in existing_songs:
+        title = song["title"]
 
     if songs:
         try:

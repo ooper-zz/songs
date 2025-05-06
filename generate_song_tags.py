@@ -34,21 +34,24 @@ def generate_song_tags(base_dir: str) -> Dict:
             if file.endswith("_lyrics.txt"):
                 lyrics_files.append(os.path.join(root, file))
     
-    # Generate new tags
-    new_tags = {"songs": {}}
-    
-    # Process all current songs
+    # Get current song titles from lyrics files
+    current_songs = set()
     for file_path in lyrics_files:
         title = get_song_title_from_file(file_path)
-        if title is None:  # Skip root directory
-            continue
-        
-        # Check if song exists in existing tags
-        if title in existing_tags["songs"]:
-            # Copy existing tags for this song
+        if title is not None:  # Skip root directory
+            current_songs.add(title)
+    
+    # Create new tags structure
+    new_tags = {"songs": {}}
+    
+    # Copy existing tags for songs that still exist
+    for title in existing_tags["songs"]:
+        if title in current_songs:
             new_tags["songs"][title] = existing_tags["songs"][title]
-        else:
-            # Create new tags for this song
+    
+    # Add new songs with default tags
+    for title in current_songs:
+        if title not in new_tags["songs"]:
             new_tags["songs"][title] = {
                 "tags": [],
                 "artists": [],
@@ -56,22 +59,11 @@ def generate_song_tags(base_dir: str) -> Dict:
                 "notes": []
             }
     
-    # Remove songs that no longer exist
-    songs_to_remove = []
-    for title in existing_tags["songs"]:
-        if title not in new_tags["songs"]:
-            logging.info(f"Removing deleted song from tags: {title}")
-            songs_to_remove.append(title)
-    
-    # Remove the songs after collecting all to remove
-    for title in songs_to_remove:
-        del existing_tags["songs"][title]
-    
     return new_tags
 
-def write_test_file(new_tags: Dict, test_file: str = "test_song_tags.yml"):
-    """Write the generated tags to a test file."""
-    with open(test_file, "w") as f:
+def write_tags(new_tags: Dict, target_file: str = "song_tags.yml"):
+    """Write the generated tags to the main song_tags.yml file."""
+    with open(target_file, "w") as f:
         yaml.dump(new_tags, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 def compare_tags(existing_tags: Dict, new_tags: Dict) -> List[str]:
@@ -114,8 +106,8 @@ def main():
             logging.error("Failed to generate new tags")
             return
         
-        # Write to test file
-        write_test_file(new_tags)
+        # Write to main file
+        write_tags(new_tags)
         
         # Load existing tags for comparison
         with open("song_tags.yml", "r") as f:
@@ -132,7 +124,7 @@ def main():
         else:
             logging.info("All songs in lyrics files are present in song_tags.yml")
         
-        # Log any directories that were skipped due to hyphens
+        # Log any directories that were skipped due to hyphenated names
         with open('generate_song_tags.log', 'r') as f:
             log_content = f.read()
         hyphen_logs = [line.split(': ')[1] for line in log_content.split('\n') 
