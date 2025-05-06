@@ -34,7 +34,10 @@ jobs:
 
       - name: Run consolidate script
         run: |
-          python consolidate_songs.py --base-dir .
+          # Ensure we have write permissions
+          chmod +w .
+          # Run the consolidate script with output file
+          python consolidate_songs.py --base-dir . --output-file consolidated_songs.yml
           # Display the processed songs
           cat consolidated_songs.yml
 
