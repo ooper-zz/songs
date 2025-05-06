@@ -5,9 +5,21 @@ import logging
 import sys
 
 def get_song_title_from_file(file_path: str) -> str:
-    """Extract song title from file path by removing '_lyrics.txt' suffix."""
-    base_name = os.path.basename(file_path)
-    return base_name.replace("_lyrics.txt", "").replace("-", " ").title()
+    """Extract song title from file path using directory name."""
+    dir_name = os.path.basename(os.path.dirname(file_path))
+    
+    # Skip the root directory
+    if dir_name == ".":
+        return None
+    
+    # Check for hyphens and log as error
+    if '-' in dir_name:
+        logging.error(f"Directory name contains hyphen: {dir_name}")
+        return None
+    
+    # Normalize spaces and case for matching
+    normalized = ' '.join(dir_name.split())  # Normalize spaces
+    return normalized
 
 def generate_song_tags(base_dir: str) -> Dict:
     """
@@ -32,6 +44,8 @@ def generate_song_tags(base_dir: str) -> Dict:
     
     for file_path in lyrics_files:
         title = get_song_title_from_file(file_path)
+        if title is None:  # Skip root directory
+            continue
         
         # Check if song exists in existing tags
         if title in existing_tags["songs"]:
@@ -53,17 +67,30 @@ def write_test_file(new_tags: Dict, test_file: str = "test_song_tags.yml"):
 
 def compare_tags(existing_tags: Dict, new_tags: Dict) -> List[str]:
     """Compare existing tags with new tags and return list of missing songs."""
-    existing_songs = set(existing_tags["songs"]) if "songs" in existing_tags else set()
+    if "songs" not in existing_tags:
+        return []
+    
+    # Get existing song titles (case-insensitive and normalized spaces)
+    existing_songs = {title.lower(): title for title in existing_tags["songs"]}
+    
+    # Get new song titles
     new_songs = set(new_tags["songs"]) if "songs" in new_tags else set()
     
-    # Songs in new tags but not in existing
-    missing_songs = new_songs - existing_songs
-    return list(missing_songs)
+    # Songs in new tags but not in existing (case-insensitive)
+    missing_songs = []
+    for new_song in new_songs:
+        # Normalize spaces and hyphens for comparison
+        normalized = ' '.join(new_song.split())
+        normalized = normalized.replace('-', ' ')
+        if normalized.lower() not in existing_songs:
+            missing_songs.append(new_song)
+    
+    return missing_songs
 
-if __name__ == "__main__":
-    # Set up logging
+def main():
+    """Main function to generate song tags."""
     logging.basicConfig(
-        level=logging.DEBUG,
+        level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
         handlers=[
             logging.FileHandler('generate_song_tags.log'),
@@ -74,11 +101,12 @@ if __name__ == "__main__":
     try:
         # Generate new tags
         new_tags = generate_song_tags(".")
-        logging.info("Successfully generated new song tags")
+        if not new_tags:
+            logging.error("Failed to generate new tags")
+            return
         
         # Write to test file
         write_test_file(new_tags)
-        logging.info("Successfully wrote test file")
         
         # Load existing tags for comparison
         with open("song_tags.yml", "r") as f:
@@ -87,11 +115,29 @@ if __name__ == "__main__":
         # Find missing songs
         missing_songs = compare_tags(existing_tags, new_tags)
         
-        print(f"\nGenerated test file: test_song_tags.yml")
-        print(f"\nSongs in lyrics files but missing from song_tags.yml:")
-        for song in missing_songs:
-            print(f"- {song}")
-            logging.info(f"Missing song: {song}")
+        # Log missing songs
+        if missing_songs:
+            logging.info(f"\nSongs in lyrics files but missing from song_tags.yml:")
+            for song in missing_songs:
+                logging.info(f"- {song}")
+        else:
+            logging.info("All songs in lyrics files are present in song_tags.yml")
+        
+        # Log any directories that were skipped due to hyphens
+        with open('generate_song_tags.log', 'r') as f:
+            log_content = f.read()
+        hyphen_logs = [line.split(': ')[1] for line in log_content.split('\n') 
+                      if 'Directory name contains hyphen' in line]
+        if hyphen_logs:
+            logging.info("\nDirectories skipped due to hyphenated names:")
+            for log in hyphen_logs:
+                logging.info(f"- {log}")
+        
+        logging.info("\nSuccessfully completed song tag generation")
+        
     except Exception as e:
         logging.error(f"Error in main execution: {str(e)}")
         sys.exit(1)
+
+if __name__ == "__main__":
+    main()
