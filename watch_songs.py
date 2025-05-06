@@ -55,14 +55,9 @@ class SongFolderHandler(FileSystemEventHandler):
             self.process_folder(folder_name)
             self.last_update = current_time
 
-def main():
-    if len(sys.argv) > 1:
-        base_dir = sys.argv[1]
-    else:
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-    
+def start_watcher(base_dir):
     print("Starting song folder watcher...")
-    print("Press Ctrl+C to stop")
+    print("Use 'python watch_songs.py stop' to stop")
     
     event_handler = SongFolderHandler(base_dir)
     observer = Observer()
@@ -75,6 +70,35 @@ def main():
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
+
+def stop_watcher():
+    import psutil
+    import signal
+    
+    print("Stopping song folder watcher...")
+    
+    # Find and terminate the watcher process
+    for proc in psutil.process_iter(['name']):
+        if proc.info['name'] == 'python' and any('watch_songs.py' in arg for arg in proc.cmdline()):
+            try:
+                proc.send_signal(signal.SIGINT)
+                print(f"Stopped process: {proc.pid}")
+            except psutil.NoSuchProcess:
+                pass
+
+def main():
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Watch song folders for changes')
+    parser.add_argument('command', choices=['start', 'stop'], help='Command to execute')
+    parser.add_argument('--base-dir', default='.', help='Base directory to watch')
+    
+    args = parser.parse_args()
+    
+    if args.command == 'start':
+        start_watcher(args.base_dir)
+    elif args.command == 'stop':
+        stop_watcher()
 
 if __name__ == "__main__":
     main()

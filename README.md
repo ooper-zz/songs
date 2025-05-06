@@ -35,7 +35,12 @@ This repository contains song lyrics and metadata organized in a structured form
    ```
 4. Start the watcher:
    ```bash
-   python watch_songs.py
+   python watch_songs.py start
+   ```
+
+5. Stop the watcher:
+   ```bash
+   python watch_songs.py stop
    ```
 
 ## Development
