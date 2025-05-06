@@ -58,9 +58,9 @@ jobs:
           # Disable progress bars for GitHub Actions
           export PROGRESS_DISABLE=1
           # Capture full error output
-          python consolidate_songs.py --base-dir $(pwd) --output $(pwd)/consolidated_songs.yml --verbose 2>&1 | tee consolidate_output.txt
+          python consolidate_songs.py --base-dir $(pwd) --output $(pwd)/song_tags.yml --verbose 2>&1 | tee consolidate_output.txt
           # Display the processed songs
-          cat consolidated_songs.yml 2>/dev/null || echo "No consolidated songs file found"
+          cat song_tags.yml 2>/dev/null || echo "No song tags file found"
           # Display any log messages
           cat consolidate_songs.log 2>/dev/null || echo "No log file found"
           # Display the captured output
@@ -71,7 +71,7 @@ jobs:
           python -c "print('Python environment is working')"
           # Verify file permissions
           echo "=== File Permissions ==="
-          ls -l consolidated_songs.yml 2>/dev/null || echo "No consolidated songs file found"
+          ls -l song_tags.yml 2>/dev/null || echo "No song tags file found"
           # Verify directory permissions
           echo "=== Directory Permissions ==="
           ls -l .
@@ -86,6 +86,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add consolidated_songs.yml
-          git commit -m "Add consolidated songs YAML" || echo "No changes to commit"
+          git add song_tags.yml
+          git commit -m "Add song tags YAML" || echo "No changes to commit"
           git push
