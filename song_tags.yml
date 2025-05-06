@@ -2,9 +2,6 @@ songs:
   Ahora Como Entonces:
     date: ''
     status: released
-  As I Saw You Then:
-    date: ''
-    status: released
   Carpe Diem Seize The Day:
     date: null
     status: deferred
@@ -59,141 +56,229 @@ songs:
   Youtuber Aventurero:
     date: null
     status: released
-  Madre y Esposa a la Vez:
-  date: ""
-  status: deferred
-Faro y Reflejo:
-  date: ""
-  status: deferred
-eternamente en deuda:
-  date: ""
-  status: deferred
-Be the Brick:
-  date: ""
-  status: deferred
-Slow Dancing in Time:
-  date: ""
-  status: deferred
-We're not going back:
-  date: ""
-  status: deferred
-Answer in the Wind:
-  date: ""
-  status: deferred
-I Write the Songs:
-  date: ""
-  status: deferred
-Faith and change:
-  date: ""
-  status: deferred
-Mar y Tierra:
-  date: ""
-  status: deferred
-You'll always be my spark:
-  date: ""
-  status: deferred
-¿habrá un mañana?:
-  date: ""
-  status: deferred
-una foto para recordar:
-  date: ""
-  status: deferred
-Labyrinths mine:
-  date: ""
-  status: deferred
-si no fueras tu:
-  date: ""
-  status: deferred
-sleepless in Dreamland:
-  date: ""
-  status: deferred
-freedom is our prayer:
-  date: ""
-  status: deferred
-Hear the silence from Within:
-  date: ""
-  status: deferred
-Body Art of the Heart:
-  date: ""
-  status: deferred
-El Vuelo del Fénix:
-  date: ""
-  status: deferred
-Journey to Myself:
-  date: ""
-  status: deferred
-open your heart:
-  date: ""
-  status: deferred
-only a picture to remember:
-  date: ""
-  status: deferred
-pockets:
-  date: ""
-  status: deferred
-Song on the Cloud:
-  date: ""
-  status: deferred
-Footsteps in a Day:
-  date: ""
-  status: deferred
-Let's Write a Song:
-  date: ""
-  status: deferred
-under the red star:
-  date: ""
-  status: deferred
-un nuevo amanecer:
-  date: ""
-  status: deferred
-He's bent up, but he's back:
-  date: ""
-  status: deferred
-How to Save Love:
-  date: ""
-  status: deferred
-Granja de Sueños:
-  date: ""
-  status: deferred
-Escribió "Sí" en la Arena:
-  date: ""
-  status: deferred
-Bailando en el Oasis:
-  date: ""
-  status: deferred
-Madre e hija a la vez:
-  date: ""
-  status: deferred
-why today:
-  date: ""
-  status: deferred
-Markings on the Road:
-  date: ""
-  status: deferred
-Lend me an Ear:
-  date: ""
-  status: deferred
-Count Ten to One:
-  date: ""
-  status: deferred
-Hide the evidence:
-  date: ""
-  status: deferred
-The Journey to Myself:
-  date: ""
-  status: deferred
-a son and a father:
-  date: ""
-  status: deferred
-The Tone of the Heart:
-  date: ""
-  status: deferred
-The Journey's the Destination:
-  date: ""
-  status: deferred
-Rewrite the Moment:
-  date: ""
-  status: deferred
-spitha:
-  date: ""
-  status: deferred
+  Madre y Esposa a la Vez: null
+  pockets:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Lend me an Ear:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  only a picture to remember:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  sleepless in Dreamland:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Hide the evidence:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Bailando en el Oasis:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Faro y Reflejo:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Madre e hija a la vez:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Markings on the Road:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  freedom is our prayer:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Let's Write a Song:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Body Art of the Heart:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  He's bent up, but he's back:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  The Journey's the Destination:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Count Ten to One:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Labyrinths mine:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  I Write the Songs:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  ¿habrá un mañana?:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Song on the Cloud:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  We're not going back:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  The Tone of the Heart:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  eternamente en deuda:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  You'll always be my spark:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  why today:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Answer in the Wind:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  How to Save Love:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  open your heart:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  under the red star:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Mar y Tierra:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Journey to Myself:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  spitha:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  El Vuelo del Fénix:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  un nuevo amanecer:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Slow Dancing in Time:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Granja de Sueños:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Be the Brick:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  The Journey to Myself:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Footsteps in a Day:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Hear the silence from Within:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  a son and a father:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  si no fueras tu:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Escribió "Sí" en la Arena:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Faith and change:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  una foto para recordar:
+    tags: []
+    artists: []
+    year: null
+    notes: []
+  Rewrite the Moment:
+    tags: []
+    artists: []
+    year: null
+    notes: []

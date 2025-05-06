@@ -92,7 +92,7 @@ def main():
     """Main function to generate song tags."""
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
+        format='%(message)s',
         handlers=[
             logging.FileHandler('generate_song_tags.log'),
             logging.StreamHandler()
@@ -105,6 +105,19 @@ def main():
         if not new_tags:
             logging.error("Failed to generate new tags")
             return
+        
+        # Check if file exists and compare with existing
+        if os.path.exists("song_tags.yml"):
+            with open("song_tags.yml", "r") as f:
+                existing_tags = yaml.safe_load(f)
+            
+            # Compare existing and new tags
+            existing_songs = set(existing_tags.get("songs", {}).keys())
+            new_songs = set(new_tags.get("songs", {}).keys())
+            
+            if existing_songs == new_songs:
+                print("No changes detected in song_tags.yml")
+                return
         
         # Write to main file
         write_tags(new_tags)
@@ -123,16 +136,6 @@ def main():
                 logging.info(f"- {song}")
         else:
             logging.info("All songs in lyrics files are present in song_tags.yml")
-        
-        # Log any directories that were skipped due to hyphenated names
-        with open('generate_song_tags.log', 'r') as f:
-            log_content = f.read()
-        hyphen_logs = [line.split(': ')[1] for line in log_content.split('\n') 
-                      if 'Directory name contains hyphen' in line]
-        if hyphen_logs:
-            logging.info("\nDirectories skipped due to hyphenated names:")
-            for log in hyphen_logs:
-                logging.info(f"- {log}")
         
         logging.info("\nSuccessfully completed song tag generation")
         

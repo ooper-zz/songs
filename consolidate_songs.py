@@ -124,8 +124,10 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     
     # Create backup of existing file if it exists and we're not in dry-run mode
     if os.path.exists(output_file) and not dry_run:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        backup_file = f"{output_file}.bak_{timestamp}"
+        backup_file = f"{output_file}.bak"
+        if os.path.exists(backup_file):
+            # If backup exists, remove it first
+            os.remove(backup_file)
         shutil.copy2(output_file, backup_file)
         logging.info(f"Created backup: {backup_file}")
         print(f"Backup created: {backup_file}")
@@ -179,10 +181,26 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             logging.error(f"Error processing {file}: {str(e)}")
             continue
 
-    # Always regenerate from current songs
-    songs = current_songs
-    logging.info(f"Regenerating {output_file} from {len(songs)} current songs")
-    print(f"Regenerating {output_file} from {len(songs)} current songs")
+    # Only regenerate if there are changes
+    if not os.path.exists(output_file):
+        songs = current_songs
+        print(f"Creating {output_file} from {len(songs)} songs")
+    else:
+        # Load existing songs
+        with open(output_file, "r", encoding='utf-8') as f:
+            existing_data = yaml.safe_load(f)
+            existing_songs = existing_data.get("songs", [])
+            
+        # Compare existing and current songs
+        existing_titles = {song["title"] for song in existing_songs}
+        current_titles = {song["title"] for song in current_songs}
+        
+        if existing_titles != current_titles:
+            songs = current_songs
+            print(f"Updating {output_file} with {len(songs)} songs")
+        else:
+            print(f"No changes detected in {output_file}")
+            return
 
     if songs:
         try:
@@ -230,10 +248,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     # Set up logging
-    log_level = logging.DEBUG if args.verbose else logging.INFO
     logging.basicConfig(
-        level=log_level,
-        format='%(asctime)s - %(levelname)s - %(message)s',
+        level=logging.INFO,
+        format='%(message)s',
         handlers=[
             logging.FileHandler('consolidate_songs.log'),
             logging.StreamHandler()
