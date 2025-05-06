@@ -124,9 +124,11 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     
     # Create backup of existing file if it exists and we're not in dry-run mode
     if os.path.exists(output_file) and not dry_run:
-        backup_file = f"{output_file}.bak"
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        backup_file = f"{output_file}.bak_{timestamp}"
         shutil.copy2(output_file, backup_file)
         logging.info(f"Created backup: {backup_file}")
+        print(f"Backup created: {backup_file}")
     
     # Initialize sets for tracking processed songs and versions
     processed_titles = set()
@@ -176,8 +178,10 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             logging.error(f"Error processing {file}: {str(e)}")
             continue
 
-    # Create final list of songs
+    # Always regenerate from current songs
     songs = current_songs
+    logging.info(f"Regenerating {output_file} from {len(songs)} current songs")
+    print(f"Regenerating {output_file} from {len(songs)} current songs")
 
     if songs:
         try:
