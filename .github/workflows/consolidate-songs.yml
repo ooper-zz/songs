@@ -4,13 +4,13 @@ on:
   push:
     paths:
       - '**/*_lyrics.txt'
-      - '**/*'  # Trigger on any file changes
     paths-exclude:
       - '**/*.gitignore'
       - '**/*.log'
       - '**/*.pyc'
       - '**/__pycache__/**'
       - '**/*.swp'
+      - 'consolidated_songs.yml'
   workflow_dispatch:
 
 permissions:
