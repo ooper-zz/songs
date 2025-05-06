@@ -158,7 +158,8 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             # Create song data with folder name as title
             song_data = {
                 "title": title,
-                "lyrics": lyrics
+                "date": "",
+                "status": "deferred"
             }
             
             # No version or timestamp fields
