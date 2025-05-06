@@ -224,6 +224,8 @@ songs:
     Nuestros corazones siguen, en un eterno vals
     Amor sin igual, más allá de las dunas
     Bailando en el oasis, y nadie más
+- title: Baz
+  lyrics: Test lyrics
 - title: Be The Brick
   lyrics: |-
     [Intro Grand piano]
@@ -1514,6 +1516,8 @@ songs:
     \nAnd that?\nThat was really something.\n\nOutro \nTook months before we even\
     \ kissed...\nBut that fateful night?\nYou reached out first.\nNot by chance —\n\
     but part of God’s grand design.\n\nAnd we can never let go. \n"
+- title: Remove Me
+  lyrics: this is a dummy test lyrics that do  nothing
 - title: Rewrite The Moment
   lyrics: |-
     [Verse 1]

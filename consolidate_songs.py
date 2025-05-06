@@ -139,9 +139,10 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     processed_titles = set()
     duplicates = set()
     
-    # Process files with progress bar
-    for file in tqdm(lyrics_files, desc="Processing songs", unit="file"):
+    # Process files
+    for file in lyrics_files:
         try:
+            logging.info(f"Processing file: {file}")
             song_data = read_lyrics_file(file)
             title = song_data["title"]
             
@@ -149,6 +150,8 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             if title in processed_titles:
                 duplicates.add(title)
                 logging.info(f"Skipping duplicate: {title}")
+            else:
+                logging.info(f"Adding song: {title}")
                 continue
                 
             processed_titles.add(title)
