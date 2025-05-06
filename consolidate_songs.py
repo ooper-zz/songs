@@ -132,7 +132,8 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
         shutil.copy2(output_file, backup_file)
         logging.info(f"Created backup: {backup_file}")
     
-    # Skip the root directory file if it exists
+    # Process all files, including those in subdirectories
+    # Skip the consolidated_songs_lyrics.txt file if it exists
     lyrics_files = [f for f in lyrics_files if not os.path.basename(f) == "consolidated_songs_lyrics.txt"]
     
     processed_titles = set()
