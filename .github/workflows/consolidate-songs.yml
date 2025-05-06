@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '**/*_lyrics.txt'
+      - '**/'  # Trigger on any directory changes
     paths-exclude:
       - '**/*.gitignore'
       - '**/*.log'
