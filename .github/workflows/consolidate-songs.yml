@@ -12,7 +12,15 @@ on:
       - '**/__pycache__/**'
       - '**/*.swp'
       - 'consolidated_songs.yml'
+      - '.github/workflows/**'
   workflow_dispatch:
+    description: 'Manually trigger the consolidate songs workflow'
+    inputs:
+      debug:
+        description: 'Enable debug mode'
+        required: false
+        default: 'false'
+        type: boolean
 
 permissions:
   contents: write  # Grants permission to write to the repository

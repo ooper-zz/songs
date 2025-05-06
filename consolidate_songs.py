@@ -17,15 +17,18 @@ def find_lyrics_files(base_dir):
     
     try:
         for root, dirs, files in os.walk(base_dir):
+            logging.debug(f"Searching directory: {root}")
             for file in files:
                 if file.endswith('_lyrics.txt'):
                     full_path = os.path.join(root, file)
+                    logging.debug(f"Found potential lyrics file: {full_path}")
                     # Validate file exists and is readable
                     if os.path.isfile(full_path) and os.access(full_path, os.R_OK):
                         lyrics_files.append(full_path)
-                        logging.debug(f"Found lyrics file: {full_path}")
+                        logging.info(f"Found valid lyrics file: {full_path}")
                     else:
                         logging.warning(f"Skipping invalid file: {full_path}")
+        logging.debug(f"All directories searched")
     except Exception as e:
         logging.error(f"Error searching directory {base_dir}: {str(e)}")
         raise
