@@ -42,6 +42,7 @@ def generate_song_tags(base_dir: str) -> Dict:
     # Generate new tags
     new_tags = {"songs": {}, "albums": existing_tags.get("albums", {})}
     
+    # Process all current songs
     for file_path in lyrics_files:
         title = get_song_title_from_file(file_path)
         if title is None:  # Skip root directory
@@ -49,14 +50,22 @@ def generate_song_tags(base_dir: str) -> Dict:
         
         # Check if song exists in existing tags
         if title in existing_tags["songs"]:
+            # Copy existing tags for this song
             new_tags["songs"][title] = existing_tags["songs"][title]
         else:
-            # Generate default tags based on existing pattern
+            # Create new tags for this song
             new_tags["songs"][title] = {
-                "status": "deferred",
-                "date": "",
-                "album": ""
+                "tags": [],
+                "albums": [],
+                "artists": [],
+                "year": None,
+                "notes": []
             }
+    
+    # Remove songs that no longer exist
+    for title in existing_tags["songs"]:
+        if title not in new_tags["songs"]:
+            logging.info(f"Removing deleted song from tags: {title}")
     
     return new_tags
 

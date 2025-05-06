@@ -124,7 +124,6 @@ yaml.add_representer(str, str_presenter)
 
 def consolidate_songs(base_dir, output_file, dry_run=False):
     """Consolidate all lyrics files into a single YAML file."""
-    songs = []
     lyrics_files = find_lyrics_files(base_dir)
     
     # Create backup of existing file if it exists and we're not in dry-run mode
@@ -139,7 +138,8 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     processed_titles = set()
     duplicates = set()
     
-    # Process files
+    # Process files to get current songs
+    current_songs = []
     for file in lyrics_files:
         try:
             logging.info(f"Processing file: {file}")
@@ -150,15 +150,42 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             if title in processed_titles:
                 duplicates.add(title)
                 logging.info(f"Skipping duplicate: {title}")
-            else:
-                logging.info(f"Adding song: {title}")
                 continue
                 
             processed_titles.add(title)
-            songs.append(song_data)
+            current_songs.append(song_data)
         except Exception as e:
             logging.error(f"Error processing {file}: {str(e)}")
             continue
+
+    # Load existing songs if file exists
+    existing_songs = []
+    if os.path.exists(output_file):
+        with open(output_file, 'r', encoding='utf-8') as f:
+            existing_songs = yaml.safe_load(f).get('songs', [])
+
+    # Create final list of songs
+    songs = []
+    existing_titles = {song["title"] for song in existing_songs}
+    
+    # Add current songs
+    for song in current_songs:
+        title = song["title"]
+        if title in processed_titles:
+            duplicates.add(title)
+            logging.info(f"Skipping duplicate: {title}")
+        else:
+            logging.info(f"Adding song: {title}")
+            songs.append(song)
+            processed_titles.add(title)
+    
+    # Remove songs that no longer exist
+    for song in existing_songs:
+        title = song["title"]
+        if title not in processed_titles:
+            logging.info(f"Removing deleted song: {title}")
+            songs.append(song)
+            processed_titles.add(title)
 
     if songs:
         try:
