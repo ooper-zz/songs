@@ -45,19 +45,23 @@ jobs:
           # Run the consolidate script with verbose output and absolute paths
           # Disable progress bars for GitHub Actions
           export PROGRESS_DISABLE=1
-          python consolidate_songs.py --base-dir $(pwd) --output $(pwd)/consolidated_songs.yml --verbose
+          # Capture full error output
+          python consolidate_songs.py --base-dir $(pwd) --output $(pwd)/consolidated_songs.yml --verbose 2>&1 | tee consolidate_output.txt
           # Display the processed songs
-          cat consolidated_songs.yml
+          cat consolidated_songs.yml 2>/dev/null || echo "No consolidated songs file found"
           # Display any log messages
           cat consolidate_songs.log 2>/dev/null || echo "No log file found"
+          # Display the captured output
+          echo "=== Captured Output ==="
+          cat consolidate_output.txt
           # Display any Python error messages
-          echo "Python error messages:"
+          echo "=== Python Environment ==="
           python -c "print('Python environment is working')"
           # Verify file permissions
-          echo "File permissions check:"
-          ls -l consolidated_songs.yml
+          echo "=== File Permissions ==="
+          ls -l consolidated_songs.yml 2>/dev/null || echo "No consolidated songs file found"
           # Verify directory permissions
-          echo "Directory permissions check:"
+          echo "=== Directory Permissions ==="
           ls -l .
 
       - name: Commit and push changes
