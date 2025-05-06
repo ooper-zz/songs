@@ -38,18 +38,28 @@ def save_yaml_file(data: dict, file_path: str):
 
 def update_song_title(file_path: str, old_title: str, new_title: str):
     """Update a song title in a YAML file."""
-    data = load_yaml_file(file_path)
-    
-    if "songs" in data:
-        if old_title in data["songs"]:
-            data["songs"][new_title] = data["songs"][old_title]
-            del data["songs"][old_title]
-            save_yaml_file(data, file_path)
-            logging.info(f"Updated title in {file_path}: {old_title} -> {new_title}")
-        else:
-            logging.warning(f"Old title '{old_title}' not found in {file_path}")
+    if file_path == "consolidated_songs.yml":
+        # For consolidated_songs.yml, we need to run consolidate_songs.py
+        import subprocess
+        try:
+            subprocess.run(["python3", "consolidate_songs.py", "--base-dir", ".", "--output", file_path], check=True)
+            logging.info(f"Updated consolidated_songs.yml by running consolidate_songs.py")
+        except subprocess.CalledProcessError as e:
+            logging.error(f"Error running consolidate_songs.py: {str(e)}")
     else:
-        logging.warning(f"No songs section found in {file_path}")
+        # For song_tags.yml, we can update it directly
+        data = load_yaml_file(file_path)
+        
+        if "songs" in data:
+            if old_title in data["songs"]:
+                data["songs"][new_title] = data["songs"][old_title]
+                del data["songs"][old_title]
+                save_yaml_file(data, file_path)
+                logging.info(f"Updated title in {file_path}: {old_title} -> {new_title}")
+            else:
+                logging.warning(f"Old title '{old_title}' not found in {file_path}")
+        else:
+            logging.warning(f"No songs section found in {file_path}")
 
 def rename_song_directory(old_dir: str, new_dir: str):
     """Rename a song directory and update YAML files."""

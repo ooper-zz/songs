@@ -331,7 +331,7 @@ songs:
     Marks etched deep in each heart,
     Choosing heart over skin, with hope and art,
     In this body art of the heart.
-- title: Carpe Diem   Seize The Day
+- title: Carpe Diem Seize The Day
   lyrics: |-
     [Intro]
     [Soft Piano and Strings Intro]
@@ -548,20 +548,6 @@ songs:
     Susurros de integración
     El vuelo del fénix suelta plumas de esperanza
     Unidos sí, o sí
-- title: Ella, Padre
-  lyrics: |-
-    Genre:
-    Acoustic Ballad with elements of Latin pop or folk. This genre will allow the emotional depth of the lyrics to take center stage while keeping the instrumentation relatively simple and poignant.
-    Think along the lines of artists like Alejandro Sanz or Natalia Lafourcade, where the focus is on voice and lyrics, with gentle yet powerful musical backing.
-    Instrumentation:
-    Acoustic Guitar: A soft fingerpicked pattern or gentle strumming will give the song warmth and intimacy. It also allows the lyrics to breathe, making it perfect for storytelling.
-    Piano: Light piano chords can add emotional depth, especially in the chorus and bridge. The piano would provide a gentle rise in dynamics without overwhelming the vocals.
-    Strings (optional): A soft cello or violin could be added to the bridge or outro to bring a sense of swelling emotion, particularly when you're celebrating her strength.
-    Percussion: Keep it minimal—maybe just a cajón or light drums for rhythm in the chorus, with brushes or a soft snare for a laid-back vibe. This would add texture without overpowering the vocals.
-    Chord Progressions:
-    Verses: Something simple, like I-IV-I-V (in C major, this would be C-F-C-G), which keeps the focus on the story and doesn’t distract from the lyrics.
-    Chorus: A slightly more dramatic progression, like I-V-vi-IV (in C major, C-G-Am-F), which is a popular progression for emotional ballads.
-    Bridge: For contrast, you could use a minor progression, like vi-IV-I-V (Am-F-C-G), to emphasize the reflection and strength.
 - title: Escribió "Sí" En La Arena
   lyrics: "[intro]\n\nEscribió \"Sí\" en la Arena...\n\n[very short pause]\n\n#Verse\
     \ \nMi corazón latía\nCon la brisa del mar\nAl compás de las olas\nY las palmeras\n\
@@ -1330,6 +1316,50 @@ songs:
     Eres el ritmo que ordena mi canción!
 
     [ end with fading out grand piano solo]
+- title: Madre Y Padre A La Vez
+  lyrics: |-
+    [Verse 1]
+    Donde no había reyes, fuiste reina,
+    y formaste tu reino en soledad,
+    Hoy le canto a tu valentía,
+    Con la canción escrita con tu vida.
+
+    [Chorus]
+    Madre y padre a la vez, un sólo camino
+    caballeros y doncellas, tus hijos, tu legado.
+    Ideaste castillos,
+    para juntos fundarlos! o-o-o-o!
+    Madre y padre a la vez, un sólo camino!
+
+    [short pause]
+
+    [Verse 2]
+
+    Cuento de hadas, nunca ha llegado,
+    Príncipe falso, anfibio se ha quedado.
+    Buscando amor, hallaste espinas,
+    Corona de un reino prometido.
+
+    [Chorus]
+    Madre y padre a la vez, un sólo camino
+    caballeros y doncellas, tus hijos, tu legado.
+    Ideaste castillos,
+    para juntos fundarlos! o-o-o-o!
+    Madre y padre a la vez, un sólo camino!
+
+    [Interlude]
+    [Bridge]
+
+    De princesa pasaste a guerrera,
+    He aquí una canción,
+    donde el cuento real, lo escribiste tú.
+
+    Fuiste Madre y padre...un sólo destino a la vez o-o-o!
+
+    Un sólo destino...
+
+    [fade out]
+    [end]
 - title: Markings On The Road
   lyrics: "\n[Lead in - solo piano interlude Transition]\n\nMarkings on the road...\n\
     \n[very short pause]\n\n[Verse 1]\nOut for a stroll, geared up and all,\nCement\
