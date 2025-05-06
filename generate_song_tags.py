@@ -66,6 +66,7 @@ def generate_song_tags(base_dir: str) -> Dict:
     for title in existing_tags["songs"]:
         if title not in new_tags["songs"]:
             logging.info(f"Removing deleted song from tags: {title}")
+            del existing_tags["songs"][title]
     
     return new_tags
 

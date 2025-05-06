@@ -182,10 +182,8 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     # Remove songs that no longer exist
     for song in existing_songs:
         title = song["title"]
-        if title not in processed_titles:
-            logging.info(f"Removing deleted song: {title}")
+        if title in processed_titles:
             songs.append(song)
-            processed_titles.add(title)
 
     if songs:
         try:
