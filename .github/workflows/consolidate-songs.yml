@@ -39,8 +39,11 @@ jobs:
           # Create log directory with proper permissions
           mkdir -p logs
           chmod +w logs
-          # Run the consolidate script with output file
-          python consolidate_songs.py --base-dir . --output consolidated_songs.yml
+          # Create output directory with proper permissions
+          mkdir -p .
+          chmod +w .
+          # Run the consolidate script with absolute paths
+          python consolidate_songs.py --base-dir $(pwd) --output $(pwd)/consolidated_songs.yml
           # Display the processed songs
           cat consolidated_songs.yml
           # Display any log messages
