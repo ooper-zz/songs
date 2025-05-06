@@ -33,7 +33,7 @@ jobs:
         run: pip install pyyaml
 
       - name: Run consolidate script
-        run: python consolidate_songs.py
+        run: python consolidate_songs.py --base-dir .
 
       - name: Commit and push changes
         run: |
