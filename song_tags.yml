@@ -1,26 +1,34 @@
-albums: null
+albums:
+  Father Trilogy:
+    songs:
+      - A Son And A Father
+    year: null
+    notes: []
+  Another Album:
+    songs:
+      - A Son And His Father
+      - Accompaniment
+      - Ahora Como Entonces
+    year: null
+    notes: []
+
 songs:
   A Son And A Father:
-    album: Father Trilogy
     date: null
     status: ignore
   A Son And His Father:
-    album: ''
     date: ''
     status: released
   Accompaniment:
-    album: ''
     date: ''
     status: deferred
   Ahora Como Entonces:
-    album: ''
     date: ''
     status: released
   Answer In The Wind:
     date: null
     status: released
   As I Saw You Then:
-    album: ''
     date: ''
     status: released
   Bailando En El Oasis:
@@ -33,22 +41,19 @@ songs:
     date: null
     status: deferred
   Carpe Diem  Seize The Day:
-    album: ''
     date: ''
     status: deferred
   Carpe Diem Seize The Day:
     date: null
     status: deferred
   Connections:
-    album: ''
     date: ''
     status: deferred
   Count Ten To One:
-    album: ''
     date: ''
     status: released
   Desde Tu Vientre:
-    album: ''
+    date: ''
     date: ''
     status: deferred
   "El Vuelo Del F\xE9nix":

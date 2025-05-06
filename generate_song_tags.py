@@ -19,7 +19,7 @@ def get_song_title_from_file(file_path: str) -> str:
 def generate_song_tags(base_dir: str) -> Dict:
     """
     Generate song tags for all _lyrics.txt files in the directory.
-    Follows the pattern from existing song_tags.yml.
+    Focuses on maintaining song metadata without album information.
     """
     existing_tags = {}
     
@@ -35,7 +35,7 @@ def generate_song_tags(base_dir: str) -> Dict:
                 lyrics_files.append(os.path.join(root, file))
     
     # Generate new tags
-    new_tags = {"songs": {}, "albums": existing_tags.get("albums", {})}
+    new_tags = {"songs": {}}
     
     # Process all current songs
     for file_path in lyrics_files:
@@ -51,7 +51,6 @@ def generate_song_tags(base_dir: str) -> Dict:
             # Create new tags for this song
             new_tags["songs"][title] = {
                 "tags": [],
-                "albums": [],
                 "artists": [],
                 "year": None,
                 "notes": []
