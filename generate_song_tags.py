@@ -54,9 +54,9 @@ def generate_song_tags(base_dir: str) -> Dict:
         if title not in new_tags["songs"]:
             new_tags["songs"][title] = {
                 "tags": [],
-                "artists": [],
-                "year": None,
-                "notes": []
+                "date": "",
+                "notes": [],
+                "status": "deferred"
             }
     
     return new_tags
