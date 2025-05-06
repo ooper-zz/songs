@@ -36,10 +36,15 @@ jobs:
         run: |
           # Ensure we have write permissions
           chmod +w .
+          # Create log directory with proper permissions
+          mkdir -p logs
+          chmod +w logs
           # Run the consolidate script with output file
-          python consolidate_songs.py --base-dir . --output-file consolidated_songs.yml
+          python consolidate_songs.py --base-dir . --output consolidated_songs.yml
           # Display the processed songs
           cat consolidated_songs.yml
+          # Display any log messages
+          cat consolidate_songs.log 2>/dev/null || echo "No log file found"
 
       - name: Commit and push changes
         run: |
