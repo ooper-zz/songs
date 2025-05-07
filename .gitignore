@@ -7,3 +7,7 @@ test_generate_song_tags.py
 consolidate_songs.log
 test_song_tags.yml
 song_tags.yml.bak_20250506_071516
+*.log
+*.log
+*.log
+generate_song_tags.log

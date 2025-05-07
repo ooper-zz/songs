@@ -194,11 +194,6 @@ songs:
     date: ''
     notes: []
     status: deferred
-  Test Song 2:
-    tags: []
-    date: ''
-    notes: []
-    status: deferred
   Slow Dancing in Time:
     tags: []
     date: ''
@@ -230,11 +225,6 @@ songs:
     notes: []
     status: deferred
   Let's Write a Song:
-    tags: []
-    date: ''
-    notes: []
-    status: deferred
-  Test Song 3:
     tags: []
     date: ''
     notes: []

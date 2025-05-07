@@ -1366,14 +1366,6 @@ songs:
   lyrics: |-
     [Verse 1]
     Test lyrics with special characters: áéíóúñ
-- title: Test Song 2
-  lyrics: |-
-    [Verse 1]
-    Test lyrics
-- title: Test Song 3
-  lyrics: |-
-    [Verse 1]
-    Test lyrics
 - title: The Hummingbird Knows
   lyrics: "Verse 1\nFrom Galilee to Assisi’s hills to Ligurian sea, \nto the New World\
     \ it sailed—\nThe fog rolls in low—did the ocean exhale?\nIt moves like a robe\
