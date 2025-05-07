@@ -55,31 +55,13 @@ def normalize_title(title):
         "Under The Red Star. V2": "Under The Red Star"
     }
     
-    # Extract version number if present
-    version_match = re.search(r'v(\d+)(?:\.\d+)?$', title)
-    version = version_match.group(1) if version_match else None
-    
-    # Remove version suffix for title comparison
-    if version:
-        title = title[:version_match.start()].strip()
+    # Apply special case normalization if needed
+    title = special_cases.get(title, title)
     
     # Normalize spacing
     title = ' '.join(title.split())
     
-    # Remove special characters
-    title = ''.join(c if c.isalnum() or c.isspace() else ' ' for c in title)
-    
-    # Normalize spacing again after special character removal
-    title = ' '.join(title.split())
-    
-    # Remove numbers unless they're part of a version suffix
-    if not version:
-        title = ''.join(c for c in title if not c.isdigit())
-    
-    # Normalize spacing one final time
-    title = ' '.join(title.split())
-    
-    return title, version
+    return title
 
 def read_lyrics_file(file_path):
     """Read the lyrics file and return its content."""
@@ -88,10 +70,9 @@ def read_lyrics_file(file_path):
         if not os.path.isfile(file_path) or not os.access(file_path, os.R_OK):
             raise ValueError(f"File {file_path} is not accessible")
             
-        # Read file content
+        # Read file content with proper encoding
         with open(file_path, "r", encoding='utf-8') as f:
-            lines = f.read().splitlines()
-        content = "\n".join(lines)
+            lyrics = f.read().strip()
         
         # Get the title from the directory name
         dir_name = os.path.basename(os.path.dirname(file_path))
@@ -101,7 +82,7 @@ def read_lyrics_file(file_path):
         
         return {
             "title": title,
-            "lyrics": content
+            "lyrics": lyrics
         }
     except (ValueError, UnicodeDecodeError) as e:
         logging.error(f"Error reading {file_path}: {str(e)}")
@@ -134,8 +115,6 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     
     # Initialize sets for tracking processed songs and versions
     processed_titles = set()
-    processed_normalized_titles = set()
-    processed_versions = {}
     duplicates = set()
     
     # Process all files, including those in subdirectories
@@ -147,37 +126,17 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     for file in lyrics_files:
         try:
             logging.info(f"Processing file: {file}")
-            # Use folder name as title
-            title = os.path.basename(os.path.dirname(file))
             
-            # Normalize title and extract version
-            normalized_title, version = normalize_title(title)
+            # Read lyrics file and get title
+            song_data = read_lyrics_file(file)
             
-            # Read lyrics content
-            with open(file, "r", encoding='utf-8') as f:
-                lyrics = f.read().strip()
-            
-            # Create song data with folder name as title
-            song_data = {
-                "title": title,
-                "date": "",
-                "status": "deferred",
-                "tags": [],
-                "notes": []
-            }
-            
-            # No version or timestamp fields
-            
-            # Check if we have a newer version of this song
-            if normalized_title in processed_normalized_titles:
-                duplicates.add(title)
-                logging.info(f"Skipping duplicate: {title}")
+            # Check for duplicates
+            if song_data["title"] in processed_titles:
+                duplicates.add(song_data["title"])
+                logging.info(f"Skipping duplicate: {song_data["title"]}")
                 continue
             
-            processed_titles.add(title)
-            processed_normalized_titles.add(normalized_title)
-            if version:
-                processed_versions[normalized_title] = version
+            processed_titles.add(song_data["title"])
             current_songs.append(song_data)
         except Exception as e:
             logging.error(f"Error processing {file}: {str(e)}")

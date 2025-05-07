@@ -56,229 +56,186 @@ songs:
   Youtuber Aventurero:
     date: null
     status: released
-  Madre y Esposa a la Vez: null
+  Madre y Esposa a la Vez:
+    date: null
+    status: released
   pockets:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Lend me an Ear:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   only a picture to remember:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   sleepless in Dreamland:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Hide the evidence:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Bailando en el Oasis:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  Faro y Reflejo:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Madre e hija a la vez:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Markings on the Road:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   freedom is our prayer:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  Let's Write a Song:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  Body Art of the Heart:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  He's bent up, but he's back:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   The Journey's the Destination:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Count Ten to One:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  Labyrinths mine:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  I Write the Songs:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   ¿habrá un mañana?:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Song on the Cloud:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   We're not going back:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   The Tone of the Heart:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  eternamente en deuda:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  You'll always be my spark:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  why today:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Answer in the Wind:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   How to Save Love:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   open your heart:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   under the red star:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  Mar y Tierra:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Journey to Myself:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  spitha:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   El Vuelo del Fénix:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  un nuevo amanecer:
-    tags: []
-    artists: []
-    year: null
-    notes: []
-  Slow Dancing in Time:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Granja de Sueños:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Be the Brick:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   The Journey to Myself:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Footsteps in a Day:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
   Hear the silence from Within:
-    tags: []
-    artists: []
-    year: null
-    notes: []
+    date: null
+    status: released
+  si no fueras tu:
+    date: null
+    status: released
+  Escribió "Sí" en la Arena:
+    date: null
+    status: released
+  una foto para recordar:
+    date: null
+    status: released
+  Rewrite the Moment:
+    date: null
+    status: released
   a son and a father:
     tags: []
-    artists: []
-    year: null
+    date: ''
     notes: []
-  si no fueras tu:
+    status: deferred
+  Labyrinths mine:
     tags: []
-    artists: []
-    year: null
+    date: ''
     notes: []
-  Escribió "Sí" en la Arena:
+    status: deferred
+  You'll always be my spark:
     tags: []
-    artists: []
-    year: null
+    date: ''
     notes: []
+    status: deferred
+  I Write the Songs:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  un nuevo amanecer:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  Faro y Reflejo:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  eternamente en deuda:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  Test Song:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  He's bent up, but he's back:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  Test Song 2:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  Slow Dancing in Time:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  spitha:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  Body Art of the Heart:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
   Faith and change:
     tags: []
-    artists: []
-    year: null
+    date: ''
     notes: []
-  una foto para recordar:
+    status: deferred
+  Mar y Tierra:
     tags: []
-    artists: []
-    year: null
+    date: ''
     notes: []
-  Rewrite the Moment:
+    status: deferred
+  why today:
     tags: []
-    artists: []
-    year: null
+    date: ''
     notes: []
+    status: deferred
+  Let's Write a Song:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  Test Song 3:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred

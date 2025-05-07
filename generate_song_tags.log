@@ -1357,3 +1357,19 @@ Successfully completed song tag generation
 All songs in lyrics files are present in song_tags.yml
 
 Successfully completed song tag generation
+Error in main execution: mapping values are not allowed here
+  in "song_tags.yml", line 70, column 11
+Error in main execution: mapping values are not allowed here
+  in "song_tags.yml", line 70, column 11
+Error in main execution: mapping values are not allowed here
+  in "song_tags.yml", line 70, column 11
+Error in main execution: mapping values are not allowed here
+  in "song_tags.yml", line 70, column 11
+Error in main execution: mapping values are not allowed here
+  in "song_tags.yml", line 70, column 11
+All songs in lyrics files are present in song_tags.yml
+
+Successfully completed song tag generation
+All songs in lyrics files are present in song_tags.yml
+
+Successfully completed song tag generation
