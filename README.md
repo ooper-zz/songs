@@ -10,6 +10,37 @@ The system helps maintain a centralized database of song lyrics and their associ
 3. Supporting multiple language versions of the same song
 4. Automatically updating files when changes are detected
 
+## Folder Naming Convention
+
+To ensure consistency and compatibility across different systems, song folders follow a specific naming convention:
+
+1. **Format**: All folder names are in lowercase with hyphens separating words (kebab-case)
+   - Example: `madre-y-padre-a-la-vez`
+   - Special characters are removed or replaced with appropriate text
+
+2. **Actual Song Titles**:
+   - The actual song titles (with proper capitalization and special characters) are stored in the `song_tags.yml` file under the `actual_title` key
+   - This allows for proper display of titles while maintaining a consistent folder structure
+
+3. **Language Support**:
+   - The system supports multiple languages while maintaining a consistent folder structure
+   - Special characters from different languages (e.g., French accents, Spanish question marks) are preserved in the actual titles but normalized in folder names
+
+4. **Benefits**:
+   - Git-friendly folder names that work across different operating systems
+   - Consistent structure for automation and scripting
+   - Preserved actual song titles for display and content generation
+   - Easy to read and maintain folder structure
+
+5. **Examples**:
+   - Original: `Aura-t-il Demain ?`
+   - Normalized: `aura-t-il-demain`
+   - Actual title in song_tags.yml: `Aura-t-il Demain ?`
+
+   - Original: `¿Habrá un Mañana?`
+   - Normalized: `habra-un-mañana`
+   - Actual title in song_tags.yml: `¿Habrá un Mañana?`
+
 ## Scripts
 
 All scripts are located in the `tools/` directory.
