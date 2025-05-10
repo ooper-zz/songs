@@ -412,3 +412,9 @@ songs:
     tags: []
     status: deferred
     notes: []
+  flickering-candle:
+    actual_title: Flickering Candle
+    original_lyrics_name: Flickering Candle_lyrics.txt
+    tags: []
+    status: deferred
+    notes: []
