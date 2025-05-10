@@ -136,9 +136,9 @@ class SongMetadataManager:
             
         metadata = {}
         
-        # Use the normalized title as the actual title
+        # Use the original title as the actual title
         if "actual_title" not in existing_data:
-            metadata["actual_title"] = self._normalize_song_key(input("\nEnter the song title: ").strip())
+            metadata["actual_title"] = input("\nEnter the song title: ").strip()
         else:
             metadata["actual_title"] = existing_data["actual_title"]
             
