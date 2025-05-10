@@ -4,7 +4,17 @@ import yaml
 from typing import Dict, List, Optional
 import logging
 import sys
+import signal
 from normalize_new_song import normalize_title
+
+def signal_handler(signum, frame):
+    """Handle interrupt signals gracefully."""
+    print("\n\nExiting gracefully...")
+    sys.exit(0)
+
+# Register signal handlers
+signal.signal(signal.SIGINT, signal_handler)  # Handle Ctrl+C
+signal.signal(signal.SIGTERM, signal_handler) # Handle termination signal
 
 class SongMetadataManager:
     def __init__(self, base_dir: str):
