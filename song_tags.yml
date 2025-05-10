@@ -17,11 +17,6 @@ songs:
     notes: []
     status: released
     actual_title: pockets
-  Test Song:
-    tags: []
-    date: ''
-    notes: []
-    status: deferred
   spitha:
     tags: []
     date: ''
@@ -238,18 +233,6 @@ songs:
     notes: []
     status: released
     actual_title: Journey to Myself
-  el-vuelo-del-fénix:
-    tags: []
-    date: null
-    notes: []
-    status: released
-    actual_title: El Vuelo del Fénix
-  granja-de-sueños:
-    tags: []
-    date: null
-    notes: []
-    status: released
-    actual_title: Granja de Sueños
   be-the-brick:
     tags: []
     date: null
@@ -280,12 +263,6 @@ songs:
     notes: []
     status: released
     actual_title: si no fueras tu
-  escribió-sí-en-la-arena:
-    tags: []
-    date: null
-    notes: []
-    status: released
-    actual_title: Escribió "Sí" en la Arena
   una-foto-para-recordar:
     tags: []
     date: null
@@ -394,13 +371,36 @@ songs:
     notes: []
     status: deferred
     actual_title: Aura-t-il Demain ?
-  ci-sarà-un-domani:
+  test-song:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  el-vuelo-del-fenix:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: El Vuelo del Fénix
+  granja-de-suenos:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Granja de Sueños
+  escribio-si-en-la-arena:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Escribió "Sí" en la Arena
+  ci-sara-un-domani:
     tags: []
     date: ''
     notes: []
     status: deferred
     actual_title: Ci Sarà un Domani?
-  habrá-un-mañana:
+  habra-un-manana:
     tags: []
     date: ''
     notes: []
