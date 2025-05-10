@@ -2,6 +2,35 @@
 
 This repository contains scripts for managing and consolidating song lyrics and metadata.
 
+## Installation Requirements
+
+To use all features of the system, including diagram visualization, you'll need to install the following dependencies:
+
+1. **Java** (required for PlantUML):
+   ```bash
+   brew install openjdk
+   ```
+
+2. **Graphviz** (for diagram rendering):
+   ```bash
+   brew install graphviz
+   ```
+
+3. **PlantUML** (for diagram visualization):
+   ```bash
+   brew install plantuml
+   ```
+
+After installation, the system diagrams in the README will be properly rendered.
+
+## Purpose
+
+The system helps maintain a centralized database of song lyrics and their associated metadata (tags, notes, etc.) by:
+1. Automatically consolidating lyrics from multiple files
+2. Maintaining consistent metadata across different versions of songs
+3. Supporting multiple language versions of the same song
+4. Automatically updating files when changes are detected
+
 ## Purpose
 
 The system helps maintain a centralized database of song lyrics and their associated metadata (tags, notes, etc.) by:
@@ -12,67 +41,52 @@ The system helps maintain a centralized database of song lyrics and their associ
 
 ## Workflow
 
-```mermaid
-graph TD
-    A[Start] --> B{Add New Song?}
-    B -->|Yes| C[Create Song Folder]
-    C --> D[Add Lyrics File]
-    D --> E[Normalize Folder Name]
-    E --> F[Add Metadata]
-    
-    B -->|No| G{Update Existing Song?}
-    G -->|Yes| H{Update Lyrics?}
-    H -->|Yes| I[Edit Lyrics File]
-    H -->|No| J{Update Metadata?}
-    J -->|Yes| K[Update Metadata]
-    J -->|No| L{Rename Song?}
-    L -->|Yes| M[Rename Song]
-    L -->|No| N[End]
-    
-    G -->|No| O{Manage Versions?}
-    O -->|Yes| P[Add New Version]
-    P --> Q[Consolidate Lyrics]
-    Q --> N
-    
-    O -->|No| N
-    
-    subgraph "Song Creation"
-        C --> D --> E --> F
-    end
-    
-    subgraph "Song Updates"
-        I --> K --> M --> N
-    end
-    
-    subgraph "Version Management"
-        P --> Q
-    end
-    
-    subgraph "Metadata Management"
-        K --> M
-    end
-    
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style G fill:#bbf,stroke:#333,stroke-width:2px
-    style O fill:#bbf,stroke:#333,stroke-width:2px
-    style H fill:#bbf,stroke:#333,stroke-width:2px
-    style J fill:#bbf,stroke:#333,stroke-width:2px
-    style L fill:#bbf,stroke:#333,stroke-width:2px
-    
-    style C fill:#bfb,stroke:#333,stroke-width:2px
-    style D fill:#bfb,stroke:#333,stroke-width:2px
-    style E fill:#bfb,stroke:#333,stroke-width:2px
-    style F fill:#bfb,stroke:#333,stroke-width:2px
-    
-    style I fill:#bfb,stroke:#333,stroke-width:2px
-    style K fill:#bfb,stroke:#333,stroke-width:2px
-    style M fill:#bfb,stroke:#333,stroke-width:2px
-    
-    style P fill:#bfb,stroke:#333,stroke-width:2px
-    style Q fill:#bfb,stroke:#333,stroke-width:2px
-    
-    style N fill:#fbb,stroke:#333,stroke-width:2px
+```plantuml
+@startuml
+
+skinparam defaultFontSize 12
+skinparam defaultFontName Arial
+skinparam shadowing false
+
+start
+
+:Start;
+
+repeat
+    :Add New Song?;
+    if (Yes) then (No)
+        :Create Song Folder;
+        :Add Lyrics File;
+        :Normalize Folder Name;
+        :Add Metadata;
+    else (No)
+        :Update Existing Song?;
+        if (Yes) then (No)
+            :Update Lyrics?;
+            if (Yes) then (No)
+                :Edit Lyrics File;
+            endif
+            :Update Metadata?;
+            if (Yes) then (No)
+                :Update Metadata;
+            endif
+            :Rename Song?;
+            if (Yes) then (No)
+                :Rename Song;
+            endif
+        else (No)
+            :Manage Versions?;
+            if (Yes) then (No)
+                :Add New Version;
+                :Consolidate Lyrics;
+            endif
+        endif
+    endif
+repeat while (not finished)
+
+stop
+
+@enduml
 ```
 
 ### 1. Adding a New Song
@@ -219,13 +233,13 @@ This script will:
 2. Update `song_metadata.yml` with the actual song title
 3. Ensure consistent naming across all songs
 
-### 2. `tools/normalize_song_tags.py`
+### 2. `tools/normalize_song_metadata.py`
 
 Purpose: Normalize song keys in `song_metadata.yml` to match the folder naming convention
 
 Usage:
 ```bash
-python normalize_song_tags.py
+python normalize_song_metadata.py
 ```
 
 This script will:
@@ -248,18 +262,18 @@ Options:
 - `--dry-run`: Preview changes without writing to output file
 - `--verbose`: Enable verbose logging
 
-### 2. `tools/generate_song_tags.py`
+### 2. `tools/generate_song_metadata.py`
 
-Purpose: Generates and maintains metadata tags for each song.
+Purpose: Generates and maintains song metadata.
 
 Usage:
 ```bash
-python tools/generate_song_tags.py --base-dir .. --output ../song_tags.yml
+python tools/generate_song_metadata.py --base-dir .. --output ../song_metadata.yml
 ```
 
 Options:
 - `--base-dir`: Directory containing the lyrics files (default: parent directory)
-- `--output`: Output YAML file path (default: parent directory/song_tags.yml)
+- `--output`: Output YAML file path (default: parent directory/song_metadata.yml)
 
 ### 3. `tools/watch_songs.py`
 
