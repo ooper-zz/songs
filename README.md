@@ -103,7 +103,7 @@ stop
 
 3. **Normalize Folder Name**
    ```bash
-   python tools/normalize_new_song.py "Madre y Padre a la Vez"
+   python tools/normalize_song_metadata.py "Madre y Padre a la Vez"
    ```
    - This script will:
      - Normalize the folder name
