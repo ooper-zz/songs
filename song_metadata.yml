@@ -1,0 +1,408 @@
+songs:
+  Memorabilia:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Memorabilia
+  Spanglish:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Spanglish
+  pockets:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: pockets
+  spitha:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: spitha
+  ahora-como-entonces:
+    tags: []
+    date: ''
+    notes: []
+    status: released
+    actual_title: Ahora Como Entonces
+  carpe-diem-seize-the-day:
+    tags: []
+    date: null
+    notes: []
+    status: deferred
+    actual_title: Carpe Diem Seize The Day
+  desde-tu-vientre:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Desde Tu Vientre
+  genius-inside:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Genius Inside
+  hey-son:
+    tags: []
+    date: ''
+    notes: []
+    status: released
+    actual_title: Hey Son
+  hugely-small:
+    tags: []
+    date: null
+    notes: []
+    status: deferred
+    actual_title: Hugely Small
+  im-trying:
+    tags: []
+    date: null
+    notes: []
+    status: deferred
+    actual_title: I'm Trying
+  madre-y-padre-a-la-vez:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Madre y Padre a la Vez
+  really-something:
+    tags: []
+    date: null
+    notes: []
+    status: deferred
+    actual_title: Really Something
+  the-hummingbird-knows:
+    tags: []
+    date: ''
+    notes: []
+    status: released
+    actual_title: The Hummingbird Knows
+  the-unsung-song:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: The Unsung Song
+  this-time-around:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: This Time Around
+  timeless-love:
+    tags: []
+    date: null
+    notes: []
+    status: ignore
+    actual_title: Timeless Love
+  timeless-purpose:
+    tags: []
+    date: ''
+    notes: []
+    status: released
+    actual_title: Timeless Purpose
+  youtuber-anthem:
+    tags: []
+    date: null
+    notes: []
+    status: deferred
+    actual_title: Youtuber Anthem
+  youtuber-aventurero:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Youtuber Aventurero
+  madre-y-esposa-a-la-vez:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Madre y Esposa a la Vez
+  lend-me-an-ear:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Lend me an Ear
+  only-a-picture-to-remember:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: only a picture to remember
+  sleepless-in-dreamland:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: sleepless in Dreamland
+  hide-the-evidence:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Hide the evidence
+  bailando-en-el-oasis:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Bailando en el Oasis
+  madre-e-hija-a-la-vez:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Madre e hija a la vez
+  markings-on-the-road:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Markings on the Road
+  freedom-is-our-prayer:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: freedom is our prayer
+  the-journeys-the-destination:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: The Journey's the Destination
+  count-ten-to-one:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Count Ten to One
+  song-on-the-cloud:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Song on the Cloud
+  were-not-going-back:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: We're not going back
+  the-tone-of-the-heart:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: The Tone of the Heart
+  answer-in-the-wind:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Answer in the Wind
+  how-to-save-love:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: How to Save Love
+  open-your-heart:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: open your heart
+  under-the-red-star:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: under the red star
+  journey-to-myself:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Journey to Myself
+  be-the-brick:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Be the Brick
+  the-journey-to-myself:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: The Journey to Myself
+  footsteps-in-a-day:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Footsteps in a Day
+  hear-the-silence-from-within:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Hear the silence from Within
+  si-no-fueras-tu:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: si no fueras tu
+  una-foto-para-recordar:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: una foto para recordar
+  rewrite-the-moment:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Rewrite the Moment
+  a-son-and-a-father:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: a son and a father
+  labyrinths-mine:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Labyrinths mine
+  youll-always-be-my-spark:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: You'll always be my spark
+  i-write-the-songs:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: I Write the Songs
+  un-nuevo-amanecer:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: un nuevo amanecer
+  faro-y-reflejo:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Faro y Reflejo
+  eternamente-en-deuda:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: eternamente en deuda
+  hes-bent-up-but-hes-back:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: He's bent up, but he's back
+  slow-dancing-in-time:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Slow Dancing in Time
+  body-art-of-the-heart:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Body Art of the Heart
+  faith-and-change:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Faith and change
+  mar-y-tierra:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Mar y Tierra
+  why-today:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: why today
+  lets-write-a-song:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Let's Write a Song
+  as-i-saw-you-then:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: As I Saw You Then
+  aura-t-il-demain:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Aura-t-il Demain ?
+  test-song:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  el-vuelo-del-fenix:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: El Vuelo del Fénix
+  granja-de-suenos:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Granja de Sueños
+  escribio-si-en-la-arena:
+    tags: []
+    date: null
+    notes: []
+    status: released
+    actual_title: Escribió "Sí" en la Arena
+  ci-sara-un-domani:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: Ci Sarà un Domani?
+  habra-un-manana:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+    actual_title: ¿Habrá un Mañana?

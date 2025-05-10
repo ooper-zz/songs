@@ -35,11 +35,11 @@ To ensure consistency and compatibility across different systems, song folders f
 5. **Examples**:
    - Original: `Aura-t-il Demain ?`
    - Normalized: `aura-t-il-demain`
-   - Actual title in song_tags.yml: `Aura-t-il Demain ?`
+   - Actual title in `song_metadata.yml`: `Aura-t-il Demain ?`
 
    - Original: `¿Habrá un Mañana?`
    - Normalized: `habra-un-mañana`
-   - Actual title in song_tags.yml: `¿Habrá un Mañana?`
+   - Actual title in `song_metadata.yml`: `¿Habrá un Mañana?`
 
 ## Scripts
 
@@ -61,12 +61,12 @@ python normalize_new_song.py "My New Song"
 
 This script will:
 1. Normalize the folder name to lowercase with hyphens
-2. Update song_tags.yml with the actual song title
+2. Update `song_metadata.yml` with the actual song title
 3. Ensure consistent naming across all songs
 
 ### 2. `tools/normalize_song_tags.py`
 
-Purpose: Normalize song keys in song_tags.yml to match the folder naming convention
+Purpose: Normalize song keys in `song_metadata.yml` to match the folder naming convention
 
 Usage:
 ```bash
@@ -74,8 +74,8 @@ python normalize_song_tags.py
 ```
 
 This script will:
-1. Normalize all song keys in song_tags.yml to lowercase with hyphens
-2. Preserve actual song titles in the actual_title field
+1. Normalize all song keys in `song_metadata.yml` to lowercase with hyphens
+2. Preserve actual song titles in the `actual_title` field
 3. Ensure consistency between folder names and song keys
 
 ### 3. `tools/consolidate_songs.py`
