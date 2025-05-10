@@ -1,153 +1,243 @@
 songs:
   Ahora Como Entonces:
+    tags: []
     date: ''
+    notes: []
     status: released
   Carpe Diem Seize The Day:
+    tags: []
     date: null
+    notes: []
     status: deferred
   Desde Tu Vientre:
+    tags: []
     date: ''
+    notes: []
     status: deferred
   Genius Inside:
+    tags: []
     date: null
+    notes: []
     status: released
   Hey Son:
+    tags: []
     date: ''
+    notes: []
     status: released
   Hugely Small:
+    tags: []
     date: null
+    notes: []
     status: deferred
   I'm Trying:
+    tags: []
     date: null
+    notes: []
     status: deferred
   Madre y Padre a la Vez:
+    tags: []
     date: null
+    notes: []
     status: released
   Memorabilia:
+    tags: []
     date: null
+    notes: []
     status: released
   Really Something:
+    tags: []
     date: null
+    notes: []
     status: deferred
   Spanglish:
+    tags: []
     date: ''
+    notes: []
     status: deferred
   The Hummingbird Knows:
-    album: ''
+    tags: []
     date: ''
+    notes: []
     status: released
   The Unsung Song:
+    tags: []
     date: null
+    notes: []
     status: released
   This Time Around:
-    album: Father Trilogy
+    tags: []
     date: null
+    notes: []
     status: released
   Timeless Love:
+    tags: []
     date: null
+    notes: []
     status: ignore
   Timeless Purpose:
-    album: ''
+    tags: []
     date: ''
+    notes: []
     status: released
   Youtuber Anthem:
+    tags: []
     date: null
+    notes: []
     status: deferred
   Youtuber Aventurero:
+    tags: []
     date: null
+    notes: []
     status: released
   Madre y Esposa a la Vez:
+    tags: []
     date: null
+    notes: []
     status: released
   pockets:
+    tags: []
     date: null
+    notes: []
     status: released
   Lend me an Ear:
+    tags: []
     date: null
+    notes: []
     status: released
   only a picture to remember:
+    tags: []
     date: null
+    notes: []
     status: released
   sleepless in Dreamland:
+    tags: []
     date: null
+    notes: []
     status: released
   Hide the evidence:
+    tags: []
     date: null
+    notes: []
     status: released
   Bailando en el Oasis:
+    tags: []
     date: null
+    notes: []
     status: released
   Madre e hija a la vez:
+    tags: []
     date: null
+    notes: []
     status: released
   Markings on the Road:
+    tags: []
     date: null
+    notes: []
     status: released
   freedom is our prayer:
+    tags: []
     date: null
+    notes: []
     status: released
   The Journey's the Destination:
+    tags: []
     date: null
+    notes: []
     status: released
   Count Ten to One:
+    tags: []
     date: null
-    status: released
-  ¿habrá un mañana?:
-    date: null
+    notes: []
     status: released
   Song on the Cloud:
+    tags: []
     date: null
+    notes: []
     status: released
   We're not going back:
+    tags: []
     date: null
+    notes: []
     status: released
   The Tone of the Heart:
+    tags: []
     date: null
+    notes: []
     status: released
   Answer in the Wind:
+    tags: []
     date: null
+    notes: []
     status: released
   How to Save Love:
+    tags: []
     date: null
+    notes: []
     status: released
   open your heart:
+    tags: []
     date: null
+    notes: []
     status: released
   under the red star:
+    tags: []
     date: null
+    notes: []
     status: released
   Journey to Myself:
+    tags: []
     date: null
+    notes: []
     status: released
   El Vuelo del Fénix:
+    tags: []
     date: null
+    notes: []
     status: released
   Granja de Sueños:
+    tags: []
     date: null
+    notes: []
     status: released
   Be the Brick:
+    tags: []
     date: null
+    notes: []
     status: released
   The Journey to Myself:
+    tags: []
     date: null
+    notes: []
     status: released
   Footsteps in a Day:
+    tags: []
     date: null
+    notes: []
     status: released
   Hear the silence from Within:
+    tags: []
     date: null
+    notes: []
     status: released
   si no fueras tu:
+    tags: []
     date: null
+    notes: []
     status: released
   Escribió "Sí" en la Arena:
+    tags: []
     date: null
+    notes: []
     status: released
   una foto para recordar:
+    tags: []
     date: null
+    notes: []
     status: released
   Rewrite the Moment:
+    tags: []
     date: null
+    notes: []
     status: released
   a son and a father:
     tags: []
@@ -225,6 +315,26 @@ songs:
     notes: []
     status: deferred
   Let's Write a Song:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  As I Saw You Then:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  Aura-t-il Demain ?:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  Ci Sarà un Domani?:
+    tags: []
+    date: ''
+    notes: []
+    status: deferred
+  ¿Habrá un Mañana?:
     tags: []
     date: ''
     notes: []

@@ -47,7 +47,13 @@ def generate_song_tags(base_dir: str) -> Dict:
     # Copy existing tags for songs that still exist
     for title in existing_tags["songs"]:
         if title in current_songs:
-            new_tags["songs"][title] = existing_tags["songs"][title]
+            song_data = existing_tags["songs"][title]
+            new_tags["songs"][title] = {
+                "tags": song_data.get("tags", []),
+                "date": song_data.get("date", ""),
+                "notes": song_data.get("notes", []),
+                "status": song_data.get("status", "deferred")
+            }
     
     # Add new songs with default tags
     for title in current_songs:
@@ -112,18 +118,52 @@ def main():
                 existing_tags = yaml.safe_load(f)
             
             # Compare existing and new tags
-            existing_songs = set(existing_tags.get("songs", {}).keys())
-            new_songs = set(new_tags.get("songs", {}).keys())
+            existing_songs = existing_tags.get("songs", {})
+            new_songs = new_tags.get("songs", {})
             
-            if existing_songs == new_songs:
+            # Check if any song is missing tags or notes
+            has_changes = False
+            for title in new_songs:
+                if title in existing_songs:
+                    existing_song = existing_songs[title]
+                    new_song = new_songs[title]
+                    
+                    # Check for missing tags
+                    if "tags" not in existing_song or existing_song["tags"] is None:
+                        has_changes = True
+                        logging.info(f"Adding missing tags to {title}")
+                        new_song["tags"] = []
+                    
+                    # Check for missing notes
+                    if "notes" not in existing_song or existing_song["notes"] is None:
+                        has_changes = True
+                        logging.info(f"Adding missing notes to {title}")
+                        new_song["notes"] = []
+            
+            if not has_changes:
                 print("No changes detected in song_tags.yml")
                 return
+            
+            # Write to main file
+            write_tags(new_tags)
+            
+            # Load existing tags for comparison
+            with open("song_tags.yml", "r") as f:
+                existing_tags = yaml.safe_load(f)
+            
+            # Find missing songs
+            missing_songs = compare_tags(existing_tags, new_tags)
+            
+            # Log missing songs
+            if missing_songs:
+                logging.info(f"\nSongs in lyrics files but missing from song_tags.yml:")
+                for song in missing_songs:
+                    logging.info(f"- {song}")
+            else:
+                logging.info("All songs in lyrics files are present in song_tags.yml")
+            
+            logging.info("\nSuccessfully completed song tag generation")
         
-        # Write to main file
-        write_tags(new_tags)
-        
-        # Load existing tags for comparison
-        with open("song_tags.yml", "r") as f:
             existing_tags = yaml.safe_load(f)
         
         # Find missing songs

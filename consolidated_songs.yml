@@ -1,42 +1,37 @@
 songs:
 - title: Ahora Como Entonces
   lyrics: |-
-    [Solo Grand Piano Intro]
+    Verso 1:
+    Te miro como si fuera la primera vez,
+    En nuestro abrazo, calor que perdura.
+    Viste un rayo de luz en un cielo gris,
+    Y con tu abrazo, inspiraste esta canción.
 
-    Verse 1
-    I look at you as if we’ve just met,
-    Our warm embrace never to forget.
-    A ray of light in a sky of gray,
-    in our embrace, we found our way.
+    Coro:
+    Hoy es oro, el amor aún brilla,
+    En cada giro, tu mano junto a la mía.
+    Lo que venga, lo que fue,
+    Te veo ahora... ¡como te vi entonces!
 
-    Chorus
-    Today is golden, love still shines,
-    Through every turn, your hand with mine.
-    Whatever may come, whatever's been,
+    Verso 2:
+    Sonrisas nacen con la luz del sol,
+    Suaves, constantes, puro fulgor.
+    No tengo palabras que decir,
+    Todo sigue donde debe ir.
 
-    I see you now as I saw you then!
+    Coro:
+    Hoy es oro, el amor aún brilla,
+    En cada giro, tu mano junto a la mía.
+    Lo que venga, lo que fue,
+    Te veo ahora... ¡como te vi entonces!
 
-    Verse 2
-    Smiles unfold like morning light,
-    Soft and steady, pure and bright.
-    No need for words, no need to chase,
-    Every moment still falls into place.
+    Puente:
+    Sin perderme en el ayer, sin temer al mañana,
+    Vivimos la promesa que hicimos con el alma.
 
-    Chorus
-    Today is golden, love still shines,
-    Through every turn, your hand with mine.
-    Whatever may come, whatever's been,
-    I see you now as I saw you then!
-
-    Bridge
-    Not lost in the past, not fearing the new,
-    Just living the promise I made with you.
-
-    Outro
-    If time stands still or carries us on,
-    I see you now, as I saw you then...
-
-    [end]
+    Outro:
+    Si el tiempo se detiene o acelera,
+    ¡Sigues inspirando canción!
 - title: Answer in the Wind
   lyrics: |-
     [begin]
@@ -80,6 +75,75 @@ songs:
     The answer's carved in the Wind...
 
     [end fade out]
+- title: As I Saw You Then
+  lyrics: |-
+    [Solo Grand Piano Intro]
+
+    Verse 1
+    I look at you as if we’ve just met,
+    Our warm embrace never to forget.
+    A ray of light in a sky of gray,
+    in our embrace, we found our way.
+
+    Chorus
+    Today is golden, love still shines,
+    Through every turn, your hand with mine.
+    Whatever may come, whatever's been,
+
+    I see you now as I saw you then!
+
+    Verse 2
+    Smiles unfold like morning light,
+    Soft and steady, pure and bright.
+    No need for words, no need to chase,
+    Every moment still falls into place.
+
+    Chorus
+    Today is golden, love still shines,
+    Through every turn, your hand with mine.
+    Whatever may come, whatever's been,
+    I see you now as I saw you then!
+
+    Bridge
+    Not lost in the past, not fearing the new,
+    Just living the promise I made with you.
+
+    Outro
+    If time stands still or carries us on,
+    I see you now, as I saw you then...
+
+    [end]
+- title: Aura-t-il Demain ?
+  lyrics: |-
+    [Verse 1]
+    Sous le soleil du matin,
+    avec la lumière dans tes yeux,
+    Tu allumais chaque jour,
+    prévoyant chaque soir.
+
+    [Pre-Chorus]
+    Apprécier, sourire, aimer,
+    chaque moment affronter.
+
+    [Chorus]
+    Un nouveau jour, y aura-t-il demain ?
+    Bonjour au matin, rêve du lendemain.
+    Rires, amour, amitié chérir,
+    Et le bon prioriser.
+
+    [Verse 2]
+    Dansant la vie,
+    parti trop tôt,
+    mais avec grâce,
+    dans le miroir de chacun,
+    l'amour que tu laisses.
+
+    [Outro]
+    Chaque souffle pris,
+    Chaque sourire partagé,
+    Dans les simples détails de la vie,
+    C'est ton héritage.
+    Avec paix et amour, tu nous as laissé.
 - title: Bailando en el Oasis
   lyrics: |-
     #verse
@@ -283,6 +347,47 @@ songs:
     [Backup: "Carpe Diem, Seize the Day..."]
 
     [Fade to End]
+- title: Ci Sarà un Domani?
+  lyrics: |-
+    [intro]
+    [grand piano]
+
+    [Verso 1]
+    Sotto il sole del mattino,
+    con la luce nei tuoi occhi,
+    Accendevi ogni giorno,
+    prevedendo ogni sera.
+
+    [Pre-Coro]
+    Apprezzare, sorridere, amare,
+    affrontare ogni momento.
+
+    [Estribillo]
+    Un nuovo giorno, ci sarà un domani?
+    Ciao al mattino, e sogna il domani.
+    Risate, amore, amicizia apprezzare,
+    E il giusto prioritizzare.
+
+    [Verso 2]
+    Ballando la vita,
+    sei andata via troppo presto,
+    ma con grazia pura,
+    nel riflesso di ognuno,
+    l'amore che hai lasciato.
+
+    [Estribillo]
+    Un nuovo giorno, ci sarà un domani?
+    Ciao al mattino, e sogna il domani.
+    Risate, amore, amicizia apprezzare,
+    E il giusto prioritizzare.
+    [interlude]
+
+    [Outro]
+    Ogni respiro preso,
+    Ogni sorriso condiviso,
+    Nei semplici dettagli della vita,
+    Questo è il tuo lascito.
+    Con pace e amore, così ci hai lasciato.
 - title: Count Ten to One
   lyrics: |-
     [intro Grand Piano]
@@ -1996,22 +2101,12 @@ songs:
     Agradecido por el suelo compartido,
     Su buena intención sin igual.
 
-    Eternamente en deuda por las semillas sembradas,
-    Su guía me dio fuerzas para crecer.
-    Agradecido por el suelo compartido,
-    Su buena intención sin igual.
 
     (Verso 2)
     Por caminos difíciles, donde yacen las pruebas,
     Su mano firme me ayudó a seguir.
     En el jardín de la vida, me dio un comienzo,
     Semillas que ayudaron a formar mi camino.
-
-    (Coro)
-    Eternamente en deuda por las semillas sembradas,
-    Su guía me dio fuerzas para crecer.
-    Agradecido por el suelo compartido,
-    Su buena intención sin igual.
 
     Eternamente en deuda por las semillas sembradas,
     Su guía me dio fuerzas para crecer.
@@ -2023,23 +2118,6 @@ songs:
     Su pasión por el arte también me inspiró.
     Ayudando a mi madre, con fuerza y gracia,
     Su carácter brilló en cada lugar.
-
-    (Coro)
-    Eternamente en deuda por las semillas sembradas,
-    Su guía me dio fuerzas para crecer.
-    Agradecido por el suelo compartido,
-    Su buena intención sin igual.
-
-    Eternamente en deuda por las semillas sembradas,
-    Su guía me dio fuerzas para crecer.
-    Agradecido por el suelo compartido,
-    Su buena intención sin igual.
-
-    (Verso 3)
-    Ahora en el atardecer, las reflexiones aparecen,
-    Trazando las raíces, el camino que guió.
-    Poco estatus, pero una vida muy justa,
-    Su amor y esfuerzos siempre firmes.
 
     (Coro)
     Eternamente en deuda por las semillas sembradas,
@@ -2546,7 +2624,7 @@ songs:
     [Pause]
     Heed the wisdom of the wise one!
     [Pause]
-- title: ¿habrá un mañana?
+- title: ¿Habrá un Mañana?
   lyrics: |-
     En el sol del amanecer
     Con la luz en tus ojos

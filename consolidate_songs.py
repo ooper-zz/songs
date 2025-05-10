@@ -115,7 +115,7 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
     
     # Initialize sets for tracking processed songs and versions
     processed_titles = set()
-    duplicates = set()
+    duplicates = {}  # Store paths for each duplicate title
     
     # Process all files, including those in subdirectories
     # Skip the consolidated_songs_lyrics.txt file if it exists
@@ -132,8 +132,10 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             
             # Check for duplicates
             if song_data["title"] in processed_titles:
-                duplicates.add(song_data["title"])
-                logging.info(f"Skipping duplicate: {song_data["title"]}")
+                if song_data["title"] not in duplicates:
+                    duplicates[song_data["title"]] = []
+                duplicates[song_data["title"]].append(file)
+                logging.info(f"Found duplicate: {song_data['title']} at {file}")
                 continue
             
             processed_titles.add(song_data["title"])
@@ -178,9 +180,12 @@ def consolidate_songs(base_dir, output_file, dry_run=False):
             print(f"Unique songs found: {len(songs)}")
             print(f"Duplicate songs skipped: {len(duplicates)}")
             if duplicates:
-                print("\nDuplicate titles:")
-                for title in sorted(duplicates):
-                    print(f"- {title}")
+                print("\nFound duplicate titles (some may be intentional translations):")
+                for title, paths in sorted(duplicates.items()):
+                    print(f"- {title}:")
+                    for path in paths:
+                        print(f"  - {path}")
+                print("\nNote: Some duplicates are intentional translations of the same song in different languages.")
             
             if not dry_run:
                 logging.info(f"Successfully consolidated {len(songs)} songs into {output_file}")
