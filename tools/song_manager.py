@@ -173,12 +173,6 @@ class SongManager:
             
         metadata = {}
         
-        # Use the normalized title as the actual title
-        if "actual_title" not in existing_data:
-            metadata["actual_title"] = self._normalize_song_key(input("\nEnter the song title: ").strip())
-        else:
-            metadata["actual_title"] = existing_data["actual_title"]
-            
         # Get tags
         if "tags" in existing_data:
             metadata["tags"] = existing_data["tags"]
@@ -222,7 +216,14 @@ class SongManager:
     def create_new_song(self) -> None:
         """Create a new song folder and add metadata."""
         print("\nCreating new song...")
-        song_key = self._get_song_key("Enter the song title")
+        
+        # Get the song title
+        title = input("\nEnter the song title: ").strip()
+        if not title:
+            print("Title cannot be empty.")
+            return
+            
+        song_key = self._normalize_song_key(title)
         
         # Check if song already exists
         if song_key in self.tags["songs"]:
@@ -241,11 +242,12 @@ class SongManager:
         # Create lyrics file
         lyrics_file = os.path.join(folder_path, f"{song_key}_lyrics.txt")
         with open(lyrics_file, "w") as f:
-            f.write(f"{song_key}\n\n")  # Add the title as the first line
+            f.write(f"{title}\n\n")  # Write the original title as the first line
         logging.info(f"Created lyrics file: {lyrics_file}")
         
         # Add metadata
         metadata = self._get_metadata()
+        metadata["actual_title"] = title  # Use the original title as actual title
         self.tags["songs"][song_key] = metadata
         self._save_tags()
         print(f"\nSuccessfully created song: {song_key}")
