@@ -225,6 +225,9 @@ Features:
 - Comprehensive logging
 - Unicode character support
 - Lyrics file creation for new songs
+- Local AI integration for song management tasks
+
+**Note: This tool is designed to work with local AI assistance only. It should not be used with external AI services.**
 
 ### 2. `tools/consolidate_songs.py`
 
