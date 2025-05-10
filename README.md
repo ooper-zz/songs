@@ -12,6 +12,69 @@ The system helps maintain a centralized database of song lyrics and their associ
 
 ## Workflow
 
+```mermaid
+graph TD
+    A[Start] --> B{Add New Song?}
+    B -->|Yes| C[Create Song Folder]
+    C --> D[Add Lyrics File]
+    D --> E[Normalize Folder Name]
+    E --> F[Add Metadata]
+    
+    B -->|No| G{Update Existing Song?}
+    G -->|Yes| H{Update Lyrics?}
+    H -->|Yes| I[Edit Lyrics File]
+    H -->|No| J{Update Metadata?}
+    J -->|Yes| K[Update Metadata]
+    J -->|No| L{Rename Song?}
+    L -->|Yes| M[Rename Song]
+    L -->|No| N[End]
+    
+    G -->|No| O{Manage Versions?}
+    O -->|Yes| P[Add New Version]
+    P --> Q[Consolidate Lyrics]
+    Q --> N
+    
+    O -->|No| N
+    
+    subgraph "Song Creation"
+        C --> D --> E --> F
+    end
+    
+    subgraph "Song Updates"
+        I --> K --> M --> N
+    end
+    
+    subgraph "Version Management"
+        P --> Q
+    end
+    
+    subgraph "Metadata Management"
+        K --> M
+    end
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style G fill:#bbf,stroke:#333,stroke-width:2px
+    style O fill:#bbf,stroke:#333,stroke-width:2px
+    style H fill:#bbf,stroke:#333,stroke-width:2px
+    style J fill:#bbf,stroke:#333,stroke-width:2px
+    style L fill:#bbf,stroke:#333,stroke-width:2px
+    
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style D fill:#bfb,stroke:#333,stroke-width:2px
+    style E fill:#bfb,stroke:#333,stroke-width:2px
+    style F fill:#bfb,stroke:#333,stroke-width:2px
+    
+    style I fill:#bfb,stroke:#333,stroke-width:2px
+    style K fill:#bfb,stroke:#333,stroke-width:2px
+    style M fill:#bfb,stroke:#333,stroke-width:2px
+    
+    style P fill:#bfb,stroke:#333,stroke-width:2px
+    style Q fill:#bfb,stroke:#333,stroke-width:2px
+    
+    style N fill:#fbb,stroke:#333,stroke-width:2px
+```
+
 ### 1. Adding a New Song
 
 1. **Create Song Folder**
