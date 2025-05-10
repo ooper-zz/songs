@@ -228,6 +228,10 @@ Song Metadata Management Menu:
 
 To use the menu, run:
 ```bash
+# First activate the virtual environment
+source venv/bin/activate
+
+# Then run the script
 python tools/manage_song_metadata.py
 ```
 
@@ -243,6 +247,8 @@ Tips:
 - Use Tab to autocomplete song titles when selecting a song
 - You can type part of a song title or use the number to select
 - Press Ctrl+C at any time to exit gracefully
+
+Note: The autocomplete feature requires the virtual environment to be activated first.
 
 ### 3. `tools/consolidate_songs.py`
 
