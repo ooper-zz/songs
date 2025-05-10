@@ -247,6 +247,33 @@ This script will:
 2. Preserve actual song titles in the `actual_title` field
 3. Ensure consistency between folder names and song keys
 
+### Song Metadata Management Menu
+
+The metadata management system provides an interactive menu for managing song metadata:
+
+```
+Song Metadata Management Menu:
+1. List all songs
+2. Add new song
+3. Update song metadata
+4. Delete song
+5. Rename song
+6. Exit
+```
+
+To use the menu, run:
+```bash
+python tools/manage_song_metadata.py
+```
+
+Each option allows you to:
+1. List all songs - View all songs with their metadata
+2. Add new song - Create a new song entry
+3. Update song metadata - Modify existing metadata (tags, status, notes)
+4. Delete song - Remove a song from the metadata
+5. Rename song - Change a song's normalized name
+6. Exit - Quit the menu
+
 ### 3. `tools/consolidate_songs.py`
 
 Purpose: Consolidates all lyrics files into a single YAML file.
