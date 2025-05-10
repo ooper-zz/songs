@@ -406,3 +406,9 @@ songs:
     notes: []
     status: deferred
     actual_title: ¿Habrá un Mañana?
+  flickering-light:
+    actual_title: Flickering Light
+    original_lyrics_name: Flickering Light_lyrics.txt
+    tags: []
+    status: deferred
+    notes: []
