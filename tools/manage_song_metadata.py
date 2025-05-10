@@ -203,11 +203,18 @@ class SongMetadataManager:
             print("Title cannot be empty.")
             return
             
-        song_key = self._normalize_song_key(title)
+        # Normalize the title
+        normalized = self._normalize_song_key(title)
+        print(f"\nNormalized folder name: {normalized}")
         
+        # Confirm the normalized title
+        confirm = input("Confirm this folder name? (y/n): ").lower()
+        if confirm != 'y':
+            return
+            
         # Check if song already exists
-        if song_key in self.tags["songs"]:
-            print(f"\nError: Song '{song_key}' already exists.")
+        if normalized in self.tags["songs"]:
+            print(f"\nError: Song '{normalized}' already exists.")
             return
             
         # Create metadata with the title
@@ -221,9 +228,9 @@ class SongMetadataManager:
         # Get additional metadata (tags, status, notes)
         metadata.update(self._get_metadata(metadata))
         
-        self.tags["songs"][song_key] = metadata
+        self.tags["songs"][normalized] = metadata
         self._save_tags()
-        print(f"\nSuccessfully added song: {song_key}")
+        print(f"\nSuccessfully added song: {normalized}")
         
     def update_song(self) -> None:
         """Update an existing song's metadata."""
