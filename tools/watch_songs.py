@@ -17,11 +17,11 @@ class SongFolderHandler(FileSystemEventHandler):
             
             # Run consolidate_songs.py
             print("Updating consolidated_songs.yml...")
-            subprocess.run(['python', 'consolidate_songs.py', '--base-dir', self.base_dir, '--output', os.path.join(self.base_dir, 'consolidated_songs.yml')], check=True)
+            subprocess.run(['python', os.path.join('tools', 'consolidate_songs.py'), '--base-dir', self.base_dir, '--output', os.path.join(self.base_dir, 'consolidated_songs.yml')], check=True)
             
             # Run generate_song_tags.py
             print("Updating song_tags.yml...")
-            subprocess.run(['python', 'generate_song_tags.py', '--base-dir', self.base_dir, '--output', os.path.join(self.base_dir, 'song_tags.yml')], check=True)
+            subprocess.run(['python', os.path.join('tools', 'generate_song_tags.py'), '--base-dir', self.base_dir, '--output', os.path.join(self.base_dir, 'song_tags.yml')], check=True)
             
             print("Both files updated successfully!")
         except Exception as e:
