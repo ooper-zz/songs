@@ -358,18 +358,25 @@ class SongMetadataManager:
                 shutil.move(old_folder, new_folder)
                 print(f"\nRenamed folder: {old_folder} -> {new_folder}")
                 
-                # Rename lyrics file to match new folder name
-                old_lyrics = os.path.join(new_folder, f"{old_key}_lyrics.txt")
+                # Try both possible lyrics file names
+                old_lyrics_1 = os.path.join(new_folder, f"{old_key}_lyrics.txt")  # Normalized name
+                old_lyrics_2 = os.path.join(new_folder, f"{old_key.replace('-', ' ')}_lyrics.txt")  # Original title name
                 new_lyrics = os.path.join(new_folder, f"{new_key}_lyrics.txt")
                 
-                # Check if the old lyrics file exists
-                if os.path.exists(old_lyrics):
-                    try:
-                        # Rename the lyrics file
-                        os.rename(old_lyrics, new_lyrics)
-                        print(f"Renamed lyrics file: {os.path.basename(old_lyrics)} -> {os.path.basename(new_lyrics)}")
-                    except Exception as e:
-                        print(f"Warning: Could not rename lyrics file: {str(e)}")
+                # Try to rename using both possible old names
+                renamed = False
+                for old_lyrics in [old_lyrics_1, old_lyrics_2]:
+                    if os.path.exists(old_lyrics):
+                        try:
+                            os.rename(old_lyrics, new_lyrics)
+                            print(f"Renamed lyrics file: {os.path.basename(old_lyrics)} -> {os.path.basename(new_lyrics)}")
+                            renamed = True
+                            break
+                        except Exception as e:
+                            print(f"Warning: Could not rename lyrics file {os.path.basename(old_lyrics)}: {str(e)}")
+                
+                if not renamed:
+                    print(f"Warning: Could not find lyrics file to rename in {new_folder}")
             
             # Update metadata
             self.tags["songs"][new_key] = self.tags["songs"][old_key]
