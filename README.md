@@ -64,7 +64,21 @@ This script will:
 2. Update song_tags.yml with the actual song title
 3. Ensure consistent naming across all songs
 
-### 2. `tools/consolidate_songs.py`
+### 2. `tools/normalize_song_tags.py`
+
+Purpose: Normalize song keys in song_tags.yml to match the folder naming convention
+
+Usage:
+```bash
+python normalize_song_tags.py
+```
+
+This script will:
+1. Normalize all song keys in song_tags.yml to lowercase with hyphens
+2. Preserve actual song titles in the actual_title field
+3. Ensure consistency between folder names and song keys
+
+### 3. `tools/consolidate_songs.py`
 
 Purpose: Consolidates all lyrics files into a single YAML file.
 
