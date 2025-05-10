@@ -198,12 +198,11 @@ This script will:
 2. Update `song_metadata.yml` with the actual song title
 3. Ensure consistent naming across all songs
 
-### 2. `tools/normalize_song_metadata.py`
+### 1. `tools/song_manager.py`
 
-Purpose: Normalize song keys in `song_metadata.yml` to match the folder naming convention
+Purpose: Comprehensive tool for managing songs, including folder creation and metadata management.
 
-Usage:
-```bash
+**Note: This tool is designed to work with local AI assistance only. It should not be used with external AI services.**
 
 To use the menu, run:
 ```bash
@@ -228,6 +227,30 @@ Features:
 - Local AI integration for song management tasks
 
 **Note: This tool is designed to work with local AI assistance only. It should not be used with external AI services.**
+
+### 2. `tools/manage_song_metadata.py`
+
+Purpose: Alternative tool for managing song metadata without AI assistance.
+
+To use the menu, run:
+```bash
+python tools/manage_song_metadata.py
+```
+
+The menu provides these options:
+1. List all songs - View all songs with their metadata
+2. Add new song - Create a new song entry
+3. Update song metadata - Modify existing metadata (tags, status, notes)
+4. Delete song - Remove a song from the metadata
+5. Rename song - Change a song's normalized name
+6. Exit - Quit the menu
+
+Features:
+- Manual song management
+- Basic metadata operations
+- No AI integration
+
+**Note: For comprehensive song management, including folder creation and AI assistance, use `song_manager.py`.**
 
 ### 2. `tools/consolidate_songs.py`
 
