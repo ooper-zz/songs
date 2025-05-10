@@ -12,45 +12,47 @@ The system helps maintain a centralized database of song lyrics and their associ
 
 ## Scripts
 
-### 1. `consolidate_songs.py`
+All scripts are located in the `tools/` directory.
+
+### 1. `tools/consolidate_songs.py`
 
 Purpose: Consolidates all lyrics files into a single YAML file.
 
 Usage:
 ```bash
-python consolidate_songs.py --base-dir . --output consolidated_songs.yml
+python tools/consolidate_songs.py --base-dir .. --output ../consolidated_songs.yml
 ```
 
 Options:
-- `--base-dir`: Directory containing the lyrics files (default: current directory)
-- `--output`: Output YAML file path (default: consolidated_songs.yml)
+- `--base-dir`: Directory containing the lyrics files (default: parent directory)
+- `--output`: Output YAML file path (default: parent directory/consolidated_songs.yml)
 - `--dry-run`: Preview changes without writing to output file
 - `--verbose`: Enable verbose logging
 
-### 2. `generate_song_tags.py`
+### 2. `tools/generate_song_tags.py`
 
 Purpose: Generates and maintains metadata tags for each song.
 
 Usage:
 ```bash
-python generate_song_tags.py --base-dir . --output song_tags.yml
+python tools/generate_song_tags.py --base-dir .. --output ../song_tags.yml
 ```
 
 Options:
-- `--base-dir`: Directory containing the lyrics files (default: current directory)
-- `--output`: Output YAML file path (default: song_tags.yml)
+- `--base-dir`: Directory containing the lyrics files (default: parent directory)
+- `--output`: Output YAML file path (default: parent directory/song_tags.yml)
 
-### 3. `watch_songs.py`
+### 3. `tools/watch_songs.py`
 
 Purpose: Watches the directory for changes and automatically runs consolidation and tag generation.
 
 Usage:
 ```bash
 # Start the watcher
-python watch_songs.py start
+python tools/watch_songs.py start
 
 # Stop the watcher
-python watch_songs.py stop
+python tools/watch_songs.py stop
 ```
 
 ## Workflow

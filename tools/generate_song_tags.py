@@ -67,7 +67,7 @@ def generate_song_tags(base_dir: str) -> Dict:
     
     return new_tags
 
-def write_tags(new_tags: Dict, target_file: str = "song_tags.yml"):
+def write_tags(new_tags: Dict, target_file: str = "../song_tags.yml"):
     """Write the generated tags to the main song_tags.yml file."""
     with open(target_file, "w") as f:
         yaml.dump(new_tags, f, default_flow_style=False, allow_unicode=True, sort_keys=False)

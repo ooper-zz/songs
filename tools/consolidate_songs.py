@@ -99,7 +99,7 @@ def str_presenter(dumper, data):
 
 yaml.add_representer(str, str_presenter)
 
-def consolidate_songs(base_dir, output_file, dry_run=False):
+def consolidate_songs(base_dir: str = "..", output_file: str = "../consolidated_songs.yml", dry_run: bool = False):
     """Consolidate all lyrics files into a single YAML file."""
     lyrics_files = find_lyrics_files(base_dir)
     
