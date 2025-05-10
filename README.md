@@ -10,6 +10,98 @@ The system helps maintain a centralized database of song lyrics and their associ
 3. Supporting multiple language versions of the same song
 4. Automatically updating files when changes are detected
 
+## Workflow
+
+### 1. Adding a New Song
+
+1. **Create Song Folder**
+   - Create a new folder with the song title
+   - The folder name will be automatically normalized to lowercase with hyphens
+   - Example: `Madre y Padre a la Vez` becomes `madre-y-padre-a-la-vez`
+
+2. **Add Lyrics File**
+   - Create a lyrics file in the format: `<song-name>_lyrics.txt`
+   - The first line of the file should be the actual song title
+   - Example: `madre-y-padre-a-la-vez_lyrics.txt`
+
+3. **Normalize Folder Name**
+   ```bash
+   python tools/normalize_new_song.py "Madre y Padre a la Vez"
+   ```
+   - This script will:
+     - Normalize the folder name
+     - Update `song_metadata.yml` with the actual title
+     - Ensure consistent naming
+
+4. **Add Metadata**
+   ```bash
+   python tools/manage_song_metadata.py
+   ```
+   - Use the interactive menu to:
+     - Add new song
+     - Enter metadata (tags, status, notes)
+     - Confirm all changes
+
+### 2. Updating an Existing Song
+
+1. **Update Lyrics**
+   - Edit the lyrics file directly
+   - Changes will be automatically detected
+
+2. **Update Metadata**
+   ```bash
+   python tools/manage_song_metadata.py
+   ```
+   - Use the interactive menu to:
+     - Select the song to update
+     - Modify metadata fields
+     - Add/remove tags
+     - Add/remove notes
+     - Change status
+
+3. **Rename Song**
+   - If needed, use the management script to rename:
+   ```bash
+   python tools/manage_song_metadata.py
+   ```
+   - Select "Rename song" from the menu
+   - Follow the prompts to rename the song
+   - The script will handle folder renaming and metadata updates
+
+### 3. Managing Multiple Versions
+
+1. **Add New Version**
+   - Create a new folder for the version
+   - Use the management script to link versions
+   - Add version-specific metadata
+
+2. **Consolidate Lyrics**
+   ```bash
+   python tools/consolidate_songs.py
+   ```
+   - This script will:
+     - Consolidate all lyrics files
+     - Update `consolidated_songs.yml`
+     - Maintain version history
+
+### 4. Best Practices
+
+1. **Naming Conventions**
+   - Use descriptive song titles
+   - Include language indicators for non-English songs
+   - Use consistent formatting for song versions
+
+2. **Metadata Management**
+   - Update metadata immediately after changes
+   - Use descriptive tags
+   - Document important notes
+   - Maintain accurate status
+
+3. **Version Control**
+   - Commit changes after each major update
+   - Include descriptive commit messages
+   - Push changes to remote repository
+
 ## Folder Naming Convention
 
 To ensure consistency and compatibility across different systems, song folders follow a specific naming convention:
