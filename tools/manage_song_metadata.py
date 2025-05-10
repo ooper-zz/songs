@@ -5,6 +5,7 @@ from typing import Dict, List, Optional
 import logging
 import sys
 import signal
+import readline
 from normalize_new_song import normalize_title
 
 def signal_handler(signum, frame):
@@ -15,6 +16,25 @@ def signal_handler(signum, frame):
 # Register signal handlers
 signal.signal(signal.SIGINT, signal_handler)  # Handle Ctrl+C
 signal.signal(signal.SIGTERM, signal_handler) # Handle termination signal
+
+class SongCompleter:
+    """Autocomplete for song titles."""
+    def __init__(self, songs: List[str]):
+        self.songs = songs
+        self.matches = []
+
+    def complete(self, text, state):
+        """Return the next possible completion for text."""
+        if state == 0:
+            if text:
+                self.matches = [s for s in self.songs if s.startswith(text)]
+            else:
+                self.matches = self.songs[:]
+
+        try:
+            return self.matches[state]
+        except IndexError:
+            return None
 
 class SongMetadataManager:
     def __init__(self, base_dir: str):
@@ -59,18 +79,37 @@ class SongMetadataManager:
         print("6. Exit")
         
     def _get_choice(self, prompt: str, choices: List[str]) -> str:
-        """Get user choice from a list of options."""
+        """Get user choice from a list of options with autocomplete."""
         while True:
             print(f"\n{prompt}")
+            print("Type to autocomplete or enter a number:")
             for i, choice in enumerate(choices, 1):
                 print(f"{i}. {choice}")
+            
             try:
-                choice = int(input("Enter your choice (1-{}): ".format(len(choices))))
-                if 1 <= choice <= len(choices):
-                    return choices[choice - 1]
-                print("Invalid choice. Please try again.")
-            except ValueError:
-                print("Please enter a number.")
+                # Set up autocomplete
+                completer = SongCompleter(choices)
+                readline.set_completer(completer.complete)
+                readline.parse_and_bind('tab: complete')
+                
+                # Get input
+                choice = input("Enter choice (number or type to autocomplete): ").strip()
+                
+                # Try to convert to number first
+                try:
+                    choice_num = int(choice)
+                    if 1 <= choice_num <= len(choices):
+                        return choices[choice_num - 1]
+                except ValueError:
+                    # If not a number, check if it's a complete song title
+                    if choice in choices:
+                        return choice
+                    
+                    # If not found, show error
+                    print("Invalid choice. Please try again.")
+            except EOFError:
+                print("\nExiting...")
+                sys.exit(0)
                 
     def _get_song_key(self, prompt: str) -> str:
         """Get a normalized song key from user input."""

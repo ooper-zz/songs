@@ -239,7 +239,10 @@ Each option allows you to:
 5. Rename song - Change a song's normalized name
 6. Exit - Quit the menu
 
-You can also exit at any time by pressing Ctrl+C, which will exit gracefully.
+Tips:
+- Use Tab to autocomplete song titles when selecting a song
+- You can type part of a song title or use the number to select
+- Press Ctrl+C at any time to exit gracefully
 
 ### 3. `tools/consolidate_songs.py`
 
