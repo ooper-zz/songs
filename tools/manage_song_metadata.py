@@ -361,9 +361,15 @@ class SongMetadataManager:
                 # Rename lyrics file to match new folder name
                 old_lyrics = os.path.join(new_folder, f"{old_key}_lyrics.txt")
                 new_lyrics = os.path.join(new_folder, f"{new_key}_lyrics.txt")
+                
+                # Check if the old lyrics file exists
                 if os.path.exists(old_lyrics):
-                    os.rename(old_lyrics, new_lyrics)
-                    print(f"Renamed lyrics file: {os.path.basename(old_lyrics)} -> {os.path.basename(new_lyrics)}")
+                    try:
+                        # Rename the lyrics file
+                        os.rename(old_lyrics, new_lyrics)
+                        print(f"Renamed lyrics file: {os.path.basename(old_lyrics)} -> {os.path.basename(new_lyrics)}")
+                    except Exception as e:
+                        print(f"Warning: Could not rename lyrics file: {str(e)}")
             
             # Update metadata
             self.tags["songs"][new_key] = self.tags["songs"][old_key]
