@@ -262,6 +262,11 @@ class SongMetadataManager:
         if not os.path.exists(folder_path):
             print(f"\nWarning: Folder '{folder_path}' not found.")
             
+        # Check lyrics file
+        lyrics_file = os.path.join(folder_path, f"{song_key}_lyrics.txt")
+        if not os.path.exists(lyrics_file):
+            print(f"\nWarning: Lyrics file '{os.path.basename(lyrics_file)}' not found.")
+            
         print("\nCurrent Metadata:")
         print(f"Actual Title: {existing_data.get('actual_title', 'N/A')}")
         print(f"Status: {existing_data.get('status', 'N/A')}")
@@ -273,6 +278,23 @@ class SongMetadataManager:
             metadata = self._get_metadata(existing_data)
             self.tags["songs"][song_key] = metadata
             self._save_tags()
+            
+            # Ask if user wants to update lyrics
+            update_lyrics = input("\nUpdate lyrics file? (y/n): ").lower()
+            if update_lyrics == 'y':
+                try:
+                    with open(lyrics_file, "r") as f:
+                        lyrics = f.read()
+                    print(f"\nCurrent lyrics:\n{lyrics}")
+                    
+                    new_lyrics = input("\nEnter new lyrics (press Enter to keep current): ").strip()
+                    if new_lyrics:
+                        with open(lyrics_file, "w") as f:
+                            f.write(new_lyrics)
+                        print(f"\nUpdated lyrics file: {os.path.basename(lyrics_file)}")
+                except Exception as e:
+                    print(f"\nError updating lyrics: {str(e)}")
+            
             print(f"\nSuccessfully updated song: {song_key}")
         
     def delete_song(self) -> None:
@@ -331,8 +353,17 @@ class SongMetadataManager:
                 if os.path.exists(new_folder):
                     print(f"\nError: Folder '{new_folder}' already exists.")
                     return
+                
+                # Move folder contents
                 shutil.move(old_folder, new_folder)
                 print(f"\nRenamed folder: {old_folder} -> {new_folder}")
+                
+                # Rename lyrics file to match new folder name
+                old_lyrics = os.path.join(new_folder, f"{old_key}_lyrics.txt")
+                new_lyrics = os.path.join(new_folder, f"{new_key}_lyrics.txt")
+                if os.path.exists(old_lyrics):
+                    os.rename(old_lyrics, new_lyrics)
+                    print(f"Renamed lyrics file: {os.path.basename(old_lyrics)} -> {os.path.basename(new_lyrics)}")
             
             # Update metadata
             self.tags["songs"][new_key] = self.tags["songs"][old_key]
