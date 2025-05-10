@@ -210,9 +210,16 @@ class SongMetadataManager:
             print(f"\nError: Song '{song_key}' already exists.")
             return
             
-        # Get metadata (using title as actual_title)
-        metadata = self._get_metadata()
-        metadata["actual_title"] = title  # Use the original title as actual title
+        # Create metadata with the title
+        metadata = {
+            "actual_title": title,
+            "tags": [],
+            "status": "deferred",
+            "notes": []
+        }
+        
+        # Get additional metadata (tags, status, notes)
+        metadata.update(self._get_metadata(metadata))
         
         self.tags["songs"][song_key] = metadata
         self._save_tags()
