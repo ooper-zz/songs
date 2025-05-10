@@ -257,6 +257,11 @@ class SongMetadataManager:
         song_key = self._get_choice("\nSelect song to update", songs)
         existing_data = self._get_song_data(song_key)
         
+        # Get folder path
+        folder_path = os.path.join(self.base_dir, song_key)
+        if not os.path.exists(folder_path):
+            print(f"\nWarning: Folder '{folder_path}' not found.")
+            
         print("\nCurrent Metadata:")
         print(f"Actual Title: {existing_data.get('actual_title', 'N/A')}")
         print(f"Status: {existing_data.get('status', 'N/A')}")
