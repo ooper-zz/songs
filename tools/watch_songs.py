@@ -42,8 +42,40 @@ class SongFolderHandler(FileSystemEventHandler):
     def on_moved(self, event):
         if not event.is_directory:
             return
-        folder_name = os.path.basename(event.dest_path)
-        self.process_folder(folder_name)
+            
+        # Get old and new folder names
+        old_folder = os.path.basename(event.src_path)
+        new_folder = os.path.basename(event.dest_path)
+        
+        # Update metadata if this is a folder rename
+        metadata_file = os.path.join(self.base_dir, "song_metadata.yml")
+        if os.path.exists(metadata_file):
+            try:
+                with open(metadata_file, "r", encoding='utf-8') as f:
+                    metadata = yaml.safe_load(f)
+                
+                # Update folder name in metadata
+                if old_folder in metadata.get("songs", {}):
+                    song_data = metadata["songs"][old_folder]
+                    del metadata["songs"][old_folder]
+                    metadata["songs"][new_folder] = song_data
+                    
+                    # Update the lyrics file name in metadata
+                    if "original_lyrics_name" in song_data:
+                        old_lyrics_name = song_data["original_lyrics_name"]
+                        # Replace old folder name with new folder name in lyrics file name
+                        new_lyrics_name = old_lyrics_name.replace(f"{old_folder}_", f"{new_folder}_")
+                        song_data["original_lyrics_name"] = new_lyrics_name
+                    
+                    # Save updated metadata
+                    with open(metadata_file, "w", encoding='utf-8') as f:
+                        yaml.dump(metadata, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+                    print(f"Updated metadata for folder rename: {old_folder} -> {new_folder}")
+            except Exception as e:
+                print(f"Error updating metadata for folder rename: {str(e)}")
+        
+        # Process the new folder
+        self.process_folder(new_folder)
 
     def on_modified(self, event):
         if not event.is_directory:

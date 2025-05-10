@@ -15,23 +15,40 @@ import sys
 from pathlib import Path
 
 def find_lyrics_files(base_dir):
-    """Find all files matching the '_lyrics.txt' pattern."""
+    """Find lyrics files using metadata."""
     lyrics_files = []
     logging.info(f"Searching for lyrics files in {base_dir}")
     
     try:
-        for root, dirs, files in os.walk(base_dir):
-            logging.debug(f"Searching directory: {root}")
-            for file in files:
-                if file.endswith('_lyrics.txt'):
-                    full_path = os.path.join(root, file)
-                    logging.debug(f"Found potential lyrics file: {full_path}")
-                    # Validate file exists and is readable
-                    if os.path.isfile(full_path) and os.access(full_path, os.R_OK):
-                        lyrics_files.append(full_path)
-                        logging.info(f"Found valid lyrics file: {full_path}")
-                    else:
-                        logging.warning(f"Skipping invalid file: {full_path}")
+        # Load metadata
+        metadata_file = os.path.join(base_dir, "song_metadata.yml")
+        if not os.path.exists(metadata_file):
+            logging.error(f"Metadata file not found: {metadata_file}")
+            return lyrics_files
+            
+        with open(metadata_file, "r", encoding='utf-8') as f:
+            metadata = yaml.safe_load(f)
+            
+        # For each song in metadata
+        for song_key, song_data in metadata.get("songs", {}).items():
+            folder_path = os.path.join(base_dir, song_key)
+            if not os.path.exists(folder_path):
+                logging.warning(f"Folder not found for song {song_key}")
+                continue
+                
+            # Get the original lyrics file name from metadata
+            lyrics_name = song_data.get("original_lyrics_name")
+            if not lyrics_name:
+                # Fallback to old pattern if not found in metadata
+                lyrics_name = f"{song_key}_lyrics.txt"
+                
+            lyrics_path = os.path.join(folder_path, lyrics_name)
+            if os.path.isfile(lyrics_path) and os.access(lyrics_path, os.R_OK):
+                lyrics_files.append(lyrics_path)
+                logging.info(f"Found valid lyrics file: {lyrics_path}")
+            else:
+                logging.warning(f"Lyrics file not found: {lyrics_path}")
+                
         logging.debug(f"All directories searched")
     except Exception as e:
         logging.error(f"Error searching directory {base_dir}: {str(e)}")
