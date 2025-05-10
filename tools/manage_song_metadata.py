@@ -196,13 +196,24 @@ class SongMetadataManager:
     def add_song(self) -> None:
         """Add a new song."""
         print("\nAdding new song...")
-        song_key = self._get_song_key("Enter the song title")
         
+        # Get the song title
+        title = input("\nEnter the song title: ").strip()
+        if not title:
+            print("Title cannot be empty.")
+            return
+            
+        song_key = self._normalize_song_key(title)
+        
+        # Check if song already exists
         if song_key in self.tags["songs"]:
             print(f"\nError: Song '{song_key}' already exists.")
             return
             
+        # Get metadata (using title as actual_title)
         metadata = self._get_metadata()
+        metadata["actual_title"] = title  # Use the original title as actual title
+        
         self.tags["songs"][song_key] = metadata
         self._save_tags()
         print(f"\nSuccessfully added song: {song_key}")
