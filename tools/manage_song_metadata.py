@@ -217,6 +217,21 @@ class SongMetadataManager:
             print(f"\nError: Song '{normalized}' already exists.")
             return
             
+        # Create the folder
+        folder_path = os.path.join(self.base_dir, normalized)
+        if os.path.exists(folder_path):
+            print(f"\nError: Folder '{folder_path}' already exists.")
+            return
+            
+        os.makedirs(folder_path)
+        print(f"\nCreated folder: {folder_path}")
+        
+        # Create lyrics file
+        lyrics_file = os.path.join(folder_path, f"{normalized}_lyrics.txt")
+        with open(lyrics_file, "w") as f:
+            f.write(f"{title}\n\n")  # Write the original title as the first line
+        print(f"Created lyrics file: {lyrics_file}")
+        
         # Create metadata with the title
         metadata = {
             "actual_title": title,
