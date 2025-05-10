@@ -279,8 +279,20 @@ class SongMetadataManager:
             
         song_key = self._get_choice("\nSelect song to delete", songs)
         
+        # Get folder path
+        folder_path = os.path.join(self.base_dir, song_key)
+        if not os.path.exists(folder_path):
+            print(f"\nWarning: Folder '{folder_path}' not found.")
+            
         confirm = input(f"\nAre you sure you want to delete '{song_key}'? (y/n): ").lower()
         if confirm == 'y':
+            # Delete folder and its contents
+            if os.path.exists(folder_path):
+                import shutil
+                shutil.rmtree(folder_path)
+                print(f"\nDeleted folder: {folder_path}")
+            
+            # Delete metadata
             del self.tags["songs"][song_key]
             self._save_tags()
             print(f"\nSuccessfully deleted song: {song_key}")
@@ -299,8 +311,25 @@ class SongMetadataManager:
             print(f"\nError: Song '{new_key}' already exists.")
             return
             
+        # Get folder paths
+        old_folder = os.path.join(self.base_dir, old_key)
+        new_folder = os.path.join(self.base_dir, new_key)
+        
+        if not os.path.exists(old_folder):
+            print(f"\nWarning: Folder '{old_folder}' not found.")
+            
         confirm = input(f"\nRename '{old_key}' to '{new_key}'? (y/n): ").lower()
         if confirm == 'y':
+            # Rename folder
+            if os.path.exists(old_folder):
+                import shutil
+                if os.path.exists(new_folder):
+                    print(f"\nError: Folder '{new_folder}' already exists.")
+                    return
+                shutil.move(old_folder, new_folder)
+                print(f"\nRenamed folder: {old_folder} -> {new_folder}")
+            
+            # Update metadata
             self.tags["songs"][new_key] = self.tags["songs"][old_key]
             del self.tags["songs"][old_key]
             self._save_tags()
