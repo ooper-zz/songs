@@ -54,40 +54,6 @@ start
 
 repeat
     :Add New Song?;
-    if (Yes) then (No)
-        :Create Song Folder;
-        :Add Lyrics File;
-        :Normalize Folder Name;
-        :Add Metadata;
-    else (No)
-        :Update Existing Song?;
-        if (Yes) then (No)
-            :Update Lyrics?;
-            if (Yes) then (No)
-                :Edit Lyrics File;
-            endif
-            :Update Metadata?;
-            if (Yes) then (No)
-                :Update Metadata;
-            endif
-            :Rename Song?;
-            if (Yes) then (No)
-                :Rename Song;
-            endif
-        else (No)
-            :Manage Versions?;
-            if (Yes) then (No)
-                :Add New Version;
-                :Consolidate Lyrics;
-            endif
-        endif
-    endif
-repeat while (not finished)
-
-stop
-
-@enduml
-```
 
 ### 1. Adding a New Song
 
@@ -117,7 +83,6 @@ stop
    - Use the interactive menu to:
      - Add new song
      - Enter metadata (tags, status, notes)
-     - Confirm all changes
 
 ### 2. Updating an Existing Song
 
