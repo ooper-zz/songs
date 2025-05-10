@@ -204,53 +204,29 @@ Purpose: Normalize song keys in `song_metadata.yml` to match the folder naming c
 
 Usage:
 ```bash
-python normalize_song_metadata.py
-```
-
-This script will:
-1. Normalize all song keys in `song_metadata.yml` to lowercase with hyphens
-2. Preserve actual song titles in the `actual_title` field
-3. Ensure consistency between folder names and song keys
-
-### Song Metadata Management Menu
-
-The metadata management system provides an interactive menu for managing song metadata:
-
-```
-Song Metadata Management Menu:
-1. List all songs
-2. Add new song
-3. Update song metadata
-4. Delete song
-5. Rename song
-6. Exit
-```
 
 To use the menu, run:
 ```bash
-# First activate the virtual environment
-source venv/bin/activate
-
-# Then run the script
-python tools/manage_song_metadata.py
+python tools/song_manager.py
 ```
 
-Each option allows you to:
-1. List all songs - View all songs with their metadata
-2. Add new song - Create a new song entry
+The menu provides these options:
+1. Create new song - Create a new song folder and add metadata
+2. List all songs - View all songs with their metadata
 3. Update song metadata - Modify existing metadata (tags, status, notes)
-4. Delete song - Remove a song from the metadata
-5. Rename song - Change a song's normalized name
+4. Delete song - Remove a song and its folder
+5. Rename song - Change a song's normalized name and folder
 6. Exit - Quit the menu
 
-Tips:
-- Use Tab to autocomplete song titles when selecting a song
-- You can type part of a song title or use the number to select
-- Press Ctrl+C at any time to exit gracefully
+Features:
+- Automatic folder name normalization
+- Tab-based autocomplete for song selection
+- Graceful exit handling (Ctrl+C)
+- Comprehensive logging
+- Unicode character support
+- Lyrics file creation for new songs
 
-Note: The autocomplete feature requires the virtual environment to be activated first.
-
-### 3. `tools/consolidate_songs.py`
+### 2. `tools/consolidate_songs.py`
 
 Purpose: Consolidates all lyrics files into a single YAML file.
 

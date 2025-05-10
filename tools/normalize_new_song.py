@@ -74,23 +74,28 @@ def normalize_new_song(base_dir: str, song_dir: str) -> None:
         with open("song_tags.yml", "r") as f:
             tags = yaml.safe_load(f)
             
-        # Get the song data from the lyrics file
         lyrics_file = os.path.join(new_path, f"{os.path.basename(new_path)}_lyrics.txt")
         if os.path.exists(lyrics_file):
             with open(lyrics_file, "r") as f:
                 actual_title = f.readline().strip()  # Assume first line is the title
             
-            # Update song_tags.yml
-            if song_dir in tags["songs"]:
-                tags["songs"][normalized] = tags["songs"][song_dir]
-                tags["songs"][normalized]["actual_title"] = actual_title
-                del tags["songs"][song_dir]
+            with open("song_metadata.yml", "r") as f:
+                tags = yaml.safe_load(f)
+            
+            if "songs" not in tags:
+                tags["songs"] = {}
+            
+            tags["songs"][normalized] = {
+                "actual_title": actual_title,
+                "status": "deferred",
+                "tags": [],
+                "notes": []
+            }
+            
+            with open("song_metadata.yml", "w") as f:
+                yaml.dump(tags, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
                 
-                # Write updated tags
-                with open("song_tags.yml", "w") as f:
-                    yaml.dump(tags, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-                
-                logging.info(f"Updated song_tags.yml: {song_dir} -> {normalized}")
+            logging.info(f"Updated song_metadata.yml: {song_dir} -> {normalized}")
         
     except Exception as e:
         logging.error(f"Error in normalize_new_song: {str(e)}")
