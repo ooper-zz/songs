@@ -12,9 +12,16 @@ def normalize_title(title: str) -> str:
     - Replace spaces with hyphens
     - Remove special characters except hyphens
     - Remove leading/trailing hyphens
+    - Handle Unicode characters properly
     """
+    import unicodedata
+    
+    # Normalize Unicode characters (NFKD form)
+    normalized = unicodedata.normalize('NFKD', title)
+    # Remove combining characters (accents, etc.)
+    normalized = ''.join(c for c in normalized if not unicodedata.combining(c))
     # Remove special characters except hyphens
-    normalized = ''.join(c if c.isalnum() or c == '-' or c == ' ' else '' for c in title)
+    normalized = ''.join(c if c.isalnum() or c == '-' or c == ' ' else '' for c in normalized)
     # Convert to lowercase
     normalized = normalized.lower()
     # Replace spaces with hyphens

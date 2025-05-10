@@ -45,7 +45,26 @@ To ensure consistency and compatibility across different systems, song folders f
 
 All scripts are located in the `tools/` directory.
 
-### 1. `tools/consolidate_songs.py`
+### 1. `tools/normalize_new_song.py`
+
+Purpose: Normalize new song folder names to maintain consistency
+
+Usage:
+```bash
+python normalize_new_song.py <song_directory>
+```
+
+Example:
+```bash
+python normalize_new_song.py "My New Song"
+```
+
+This script will:
+1. Normalize the folder name to lowercase with hyphens
+2. Update song_tags.yml with the actual song title
+3. Ensure consistent naming across all songs
+
+### 2. `tools/consolidate_songs.py`
 
 Purpose: Consolidates all lyrics files into a single YAML file.
 
