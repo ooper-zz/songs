@@ -6,3 +6,5 @@ test_generate_song_tags.py
 *.log
 consolidated_songs.yml.bak
 generate_song_tags.log
+*.bak
+*.log
