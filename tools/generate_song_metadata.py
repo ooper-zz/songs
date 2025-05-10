@@ -16,71 +16,77 @@ def get_song_title_from_file(file_path: str) -> str:
     normalized = ' '.join(dir_name.split())  # Normalize spaces
     return normalized
 
-def generate_song_tags(base_dir: str) -> Dict:
-    """
-    Generate song tags for all _lyrics.txt files in the directory.
-    Focuses on maintaining song metadata without album information.
-    """
-    existing_tags = {}
+def generate_song_metadata(base_dir: str, output_file: str, dry_run: bool = False, verbose: bool = False) -> None:
+    """Generate song metadata from lyrics files."""
     
-    # Load existing song tags
-    with open("song_tags.yml", "r") as f:
-        existing_tags = yaml.safe_load(f)
+    # Load existing song metadata
+    song_metadata_file = "song_metadata.yml"
+    try:
+        with open(song_metadata_file, "r") as f:
+            existing_tags = yaml.safe_load(f)
+    except FileNotFoundError:
+        existing_tags = {"songs": {}}
     
     # Get all lyrics files
     lyrics_files = []
-    for root, dirs, files in os.walk(base_dir):
+    for root, _, files in os.walk(base_dir):
         for file in files:
             if file.endswith("_lyrics.txt"):
                 lyrics_files.append(os.path.join(root, file))
     
-    # Get current song titles from lyrics files
+    if verbose:
+        logging.info(f"Found {len(lyrics_files)} lyrics files")
+    
+    # Process lyrics files
     current_songs = set()
     for file_path in lyrics_files:
-        title = get_song_title_from_file(file_path)
-        if title is not None:  # Skip root directory
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                lines = f.readlines()
+            
+            if not lines:
+                continue
+            
+            # Get song title from file name
+            title = os.path.basename(file_path).replace("_lyrics.txt", "")
             current_songs.add(title)
+            
+            if verbose:
+                logging.info(f"Processing: {title}")
+        except Exception as e:
+            if verbose:
+                logging.error(f"Error processing {file_path}: {str(e)}")
     
-    # Create new tags structure
+    # Generate new tags
     new_tags = {"songs": {}}
     
     # Copy existing tags for songs that still exist
-    for title in existing_tags["songs"]:
+    for title in existing_tags.get("songs", {}):
         if title in current_songs:
             song_data = existing_tags["songs"][title]
             new_tags["songs"][title] = {
+                "actual_title": song_data.get("actual_title", title),
+                "status": song_data.get("status", "deferred"),
                 "tags": song_data.get("tags", []),
-                "date": song_data.get("date", ""),
-                "notes": song_data.get("notes", []),
-                "status": song_data.get("status", "deferred")
+                "notes": song_data.get("notes", [])
             }
     
-    # Add new songs with default tags
+    # Add new songs
     for title in current_songs:
         if title not in new_tags["songs"]:
             new_tags["songs"][title] = {
+                "actual_title": title,
+                "status": "deferred",
                 "tags": [],
-                "date": "",
-                "notes": [],
-                "status": "deferred"
+                "notes": []
             }
     
-    return new_tags
-
-def write_tags(new_tags: Dict, target_file: str = "../song_tags.yml"):
-    """Write the generated tags to the main song_tags.yml file."""
-    with open(target_file, "w") as f:
-        yaml.dump(new_tags, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-
-def compare_tags(existing_tags: Dict, new_tags: Dict) -> List[str]:
-    """Compare existing tags with new tags and return list of missing songs."""
-    if "songs" not in existing_tags:
-        return []
+    # Write the tags
+    if not dry_run:
+        with open(output_file, "w") as f:
+            yaml.dump(new_tags, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
     
-    # Get existing song titles (case-insensitive and normalized spaces)
-    existing_songs = {title.lower(): title for title in existing_tags["songs"]}
-    
-    # Get new song titles
+    # Log missing songs
     new_songs = set(new_tags["songs"]) if "songs" in new_tags else set()
     
     # Songs in new tags but not in existing (case-insensitive)

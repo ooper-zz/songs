@@ -6,7 +6,7 @@ import logging
 import sys
 from normalize_new_song import normalize_title
 
-def normalize_song_tags(base_dir: str) -> None:
+def normalize_song_metadata(base_dir: str) -> None:
     """
     Normalize all song keys in song_tags.yml to match the folder naming convention
     """
@@ -20,8 +20,8 @@ def normalize_song_tags(base_dir: str) -> None:
     )
     
     try:
-        # Load existing song tags
-        with open("song_tags.yml", "r") as f:
+        # Load existing song metadata
+        with open("song_metadata.yml", "r") as f:
             tags = yaml.safe_load(f)
             
         # Create a mapping of old to new keys
@@ -49,13 +49,13 @@ def normalize_song_tags(base_dir: str) -> None:
             data = tags["songs"][old_key]
             tags["songs"][new_key] = data
             del tags["songs"][old_key]
-            logging.info(f"Updated song_tags.yml: {old_key} -> {new_key}")
+            logging.info(f"Updated song_metadata.yml: {old_key} -> {new_key}")
         
-        # Write updated tags
-        with open("song_tags.yml", "w") as f:
+        # Write updated metadata
+        with open("song_metadata.yml", "w") as f:
             yaml.dump(tags, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
             
-        logging.info("Successfully normalized all song keys in song_tags.yml")
+        logging.info("Successfully normalized all song keys in song_metadata.yml")
         
     except Exception as e:
         logging.error(f"Error in normalize_song_tags: {str(e)}")
