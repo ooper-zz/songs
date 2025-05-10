@@ -5,8 +5,7 @@ from typing import Dict, List, Optional
 import logging
 import sys
 import signal
-from prompt_toolkit import prompt
-from prompt_toolkit.completion import WordCompleter
+import readline
 from normalize_new_song import normalize_title
 
 def signal_handler(signum, frame):
@@ -17,6 +16,24 @@ def signal_handler(signum, frame):
 # Register signal handlers
 signal.signal(signal.SIGINT, signal_handler)  # Handle Ctrl+C
 signal.signal(signal.SIGTERM, signal_handler) # Handle termination signal
+
+class SimpleCompleter:
+    """Simple autocomplete for song titles."""
+    def __init__(self, songs: List[str]):
+        self.songs = songs
+        
+    def complete(self, text, state):
+        """Return the next possible completion for text."""
+        if state == 0:
+            if text:
+                self.matches = [s for s in self.songs if s.startswith(text)]
+            else:
+                self.matches = self.songs[:]
+
+        try:
+            return self.matches[state]
+        except IndexError:
+            return None
 
 class SongMetadataManager:
     def __init__(self, base_dir: str):
@@ -69,15 +86,13 @@ class SongMetadataManager:
                 print(f"{i}. {choice}")
             
             try:
-                # Set up prompt_toolkit completer
-                completer = WordCompleter(choices)
+                # Set up readline completer
+                completer = SimpleCompleter(choices)
+                readline.set_completer(completer.complete)
+                readline.parse_and_bind('tab: complete')
                 
-                # Get input with autocomplete
-                choice = prompt(
-                    "Enter choice (number or type to autocomplete): ",
-                    completer=completer,
-                    complete_while_typing=True
-                ).strip()
+                # Get input
+                choice = input("Enter choice (number or type to autocomplete): ").strip()
                 
                 # Try to convert to number first
                 try:
