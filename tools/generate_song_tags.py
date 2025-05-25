@@ -112,15 +112,15 @@ def main():
     )
     
     try:
-        # Generate new tags
-        new_tags = generate_song_tags(".")
+        # Generate new metadata
+        new_tags = generate_song_metadata(".", "song_metadata.yml")
         if not new_tags:
             logging.error("Failed to generate new tags")
             return
         
         # Check if file exists and compare with existing
-        if os.path.exists("song_tags.yml"):
-            with open("song_tags.yml", "r") as f:
+        if os.path.exists("song_metadata.yml"):
+            with open("song_metadata.yml", "r") as f:
                 existing_tags = yaml.safe_load(f)
             
             # Compare existing and new tags
@@ -147,7 +147,7 @@ def main():
                         new_song["notes"] = []
             
             if not has_changes:
-                print("No changes detected in song_tags.yml")
+                print("No changes detected in song_metadata.yml")
                 return
             
             # Write to main file
@@ -168,7 +168,7 @@ def main():
             else:
                 logging.info("All songs in lyrics files are present in song_metadata.yml")
             
-            logging.info("\nSuccessfully completed song tag generation")
+            logging.info("\nSuccessfully completed song metadata generation")
         
             existing_tags = yaml.safe_load(f)
         
@@ -177,13 +177,13 @@ def main():
         
         # Log missing songs
         if missing_songs:
-            logging.info(f"\nSongs in lyrics files but missing from song_tags.yml:")
+            logging.info(f"\nSongs in lyrics files but missing from song_metadata.yml:")
             for song in missing_songs:
                 logging.info(f"- {song}")
         else:
-            logging.info("All songs in lyrics files are present in song_tags.yml")
+            logging.info("All songs in lyrics files are present in song_metadata.yml")
         
-        logging.info("\nSuccessfully completed song tag generation")
+        logging.info("\nSuccessfully completed song metadata generation")
         
     except Exception as e:
         logging.error(f"Error in main execution: {str(e)}")

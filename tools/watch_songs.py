@@ -48,7 +48,7 @@ class SongFolderHandler(FileSystemEventHandler):
         new_folder = os.path.basename(event.dest_path)
         
         # Update metadata if this is a folder rename
-        metadata_file = os.path.join(self.base_dir, "song_metadata.yml")
+        metadata_file = os.path.join(self.base_dir, "song_tags.yml")
         if os.path.exists(metadata_file):
             try:
                 with open(metadata_file, "r", encoding='utf-8') as f:

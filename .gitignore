@@ -9,3 +9,8 @@ generate_song_tags.log
 *.bak
 *.log
 songs.code-workspace
+*.bak
+*.bak
+consolidated_songs.yml.bak
+*.bak
+*.log
