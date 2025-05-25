@@ -8,3 +8,4 @@ consolidated_songs.yml.bak
 generate_song_tags.log
 *.bak
 *.log
+songs.code-workspace

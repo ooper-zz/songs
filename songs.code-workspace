@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../gpt-tools"
+		},
+		{
+			"path": "../gpt-tools/carl-muse-gpt-back-end"
 		}
 	],
 	"settings": {}
