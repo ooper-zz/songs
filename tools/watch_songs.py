@@ -23,51 +23,34 @@ class SongFolderHandler(FileSystemEventHandler):
         
     def process_folder(self, folder_name):
         try:
-            print(f"Processing folder: {folder_name}")
+            logging.info(f"Processing folder: {folder_name}")
             subprocess.run(['python', os.path.join('tools', 'consolidate_songs.py'), '--base-dir', '.', '--output', 'consolidated_songs.yml'], check=True)
             subprocess.run(['python', os.path.join('tools', 'generate_song_metadata.py'), '--base-dir', '.', '--output', 'song_metadata.yml'], check=True)
-            print("Both files updated successfully!")
+            logging.info("Both files updated successfully!")
         except Exception as e:
-            print(f"Error processing folder: {e}")
+            logging.error(f"Error processing folder: {e}")
 
     def on_created(self, event):
-        print(f"\nEvent: {event.event_type}")
-        print(f"Path: {event.src_path}")
-        print(f"Is directory: {event.is_directory}")
         if event.is_directory:
             folder_name = os.path.basename(event.src_path)
         else:
             folder_name = '.'  # Root directory
-        print(f"Folder: {folder_name}")
-        print("Processing...")
         self.process_folder(folder_name)
 
     def on_deleted(self, event):
-        print(f"\nEvent: {event.event_type}")
-        print(f"Path: {event.src_path}")
-        print(f"Is directory: {event.is_directory}")
         if event.is_directory:
             folder_name = os.path.basename(event.src_path)
         else:
             folder_name = '.'  # Root directory
-        print(f"Folder: {folder_name}")
-        print("Processing...")
         self.process_folder(folder_name)
 
     def on_moved(self, event):
-        print(f"\nEvent: {event.event_type}")
-        print(f"From: {event.src_path}")
-        print(f"To: {event.dest_path}")
-        print(f"Is directory: {event.is_directory}")
         if event.is_directory:
             old_folder = os.path.basename(event.src_path)
             new_folder = os.path.basename(event.dest_path)
         else:
             old_folder = '.'  # Root directory
             new_folder = '.'  # Root directory
-        print(f"Old Folder: {old_folder}")
-        print(f"New Folder: {new_folder}")
-        print("Processing...")
         
         # Update metadata if this is a folder rename
         metadata_file = "song_metadata.yml"
@@ -93,30 +76,21 @@ class SongFolderHandler(FileSystemEventHandler):
                     with open(metadata_file, "w", encoding='utf-8') as f:
                         yaml.dump(metadata, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
             except Exception as e:
-                print(f"Error updating metadata for folder rename: {str(e)}")
+                logging.error(f"Error updating metadata for folder rename: {str(e)}")
         
         # Process the new folder
         self.process_folder(new_folder)
 
     def on_modified(self, event):
-        print(f"\nEvent: {event.event_type}")
-        print(f"Path: {event.src_path}")
-        print(f"Is directory: {event.is_directory}")
-        
         # Only process if enough time has passed since last update
         current_time = time.time()
         if current_time - self.last_update > 2:  # 2 seconds delay
             folder_name = '.'  # Root directory
-            print(f"Folder: {folder_name}")
-            print("Processing...")
             self.process_folder(folder_name)
             self.last_update = current_time
             return  # Add return to prevent further processing
 
 def start_watcher():
-    print("Starting song folder watcher in foreground...")
-    print("Use Ctrl+C to stop")
-    
     event_handler = SongFolderHandler('.')
     observer = Observer()
     observer.schedule(event_handler, '.', recursive=True)
@@ -125,10 +99,6 @@ def start_watcher():
     try:
         while True:
             time.sleep(1)
-            # Print a heartbeat message every 30 seconds to show it's running
-            if time.time() - event_handler.last_update > 30:
-                print("Watcher is running...")
-                event_handler.last_update = time.time()
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
