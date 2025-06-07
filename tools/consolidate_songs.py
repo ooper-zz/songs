@@ -8,62 +8,51 @@ import re
 # Track processed versions
 processed_versions = {}
 import time
-from tqdm import tqdm
+try:
+    from tqdm import tqdm
+except ImportError:
+    # Fallback if tqdm is not installed
+    def tqdm(iterable, *args, **kwargs):
+        return iterable
 import shutil
 import argparse
 import sys
 from pathlib import Path
 
 def find_lyrics_files(base_dir):
-    """Find lyrics files using metadata and _lyrics.txt pattern."""
+    """Find all lyrics files in the filesystem, handling all filename formats."""
     lyrics_files = []
+    potential_lyrics_files = []  # For debug logging
     logging.info(f"Searching for lyrics files in {base_dir}")
     
     try:
-        # Load metadata
-        metadata_file = os.path.join(base_dir, "song_metadata.yml")
-        if not os.path.exists(metadata_file):
-            logging.error(f"Metadata file not found: {metadata_file}")
-            return lyrics_files
-            
-        with open(metadata_file, "r", encoding='utf-8') as f:
-            metadata = yaml.safe_load(f)
-            
-        # First try to find files using metadata
-        for song_key, song_data in metadata.get("songs", {}).items():
-            folder_path = os.path.join(base_dir, song_key)
-            if not os.path.exists(folder_path):
-                logging.warning(f"Folder not found for song {song_key}")
+        # Search all files recursively
+        for root, dirs, files in os.walk(base_dir):
+            # Skip the tools directory to avoid self-referential files
+            if "tools" in root.split(os.path.sep):
                 continue
                 
-            # Get the original lyrics file name from metadata
-            lyrics_name = song_data.get("original_lyrics_name")
-            if lyrics_name:
-                lyrics_path = os.path.join(folder_path, lyrics_name)
-                if os.path.isfile(lyrics_path) and os.access(lyrics_path, os.R_OK):
-                    lyrics_files.append(lyrics_path)
-                    logging.info(f"Found valid lyrics file (metadata): {lyrics_path}")
-                    continue
-                else:
-                    logging.warning(f"Lyrics file not found (metadata): {lyrics_path}")
-                    
-            # If metadata method failed, try _lyrics.txt pattern
-            lyrics_path = os.path.join(folder_path, f"{song_key}_lyrics.txt")
-            if os.path.isfile(lyrics_path) and os.access(lyrics_path, os.R_OK):
-                lyrics_files.append(lyrics_path)
-                logging.info(f"Found valid lyrics file (_lyrics.txt): {lyrics_path}")
+            for file in files:
+                # Log potential lyrics files for debugging
+                if "lyric" in file.lower() or "song" in file.lower() or "text" in file.lower():
+                    potential_lyrics_files.append(os.path.join(root, file))
                 
-        # If no files found using metadata, try searching all files
-        if not lyrics_files:
-            logging.info("No files found using metadata, searching all files...")
-            for root, dirs, files in os.walk(base_dir):
-                for file in files:
-                    if file.endswith('_lyrics.txt'):
-                        full_path = os.path.join(root, file)
-                        if os.path.isfile(full_path) and os.access(full_path, os.R_OK):
-                            lyrics_files.append(full_path)
-                            logging.info(f"Found valid lyrics file (search): {full_path}")
+                # Fully case-insensitive matching for _lyrics.txt
+                if file.lower().endswith('_lyrics.txt'):
+                    # Skip the consolidated_songs_lyrics.txt file
+                    if file.lower() == "consolidated_songs_lyrics.txt":
+                        continue
+                        
+                    full_path = os.path.join(root, file)
+                    if os.path.isfile(full_path) and os.access(full_path, os.R_OK):
+                        lyrics_files.append(full_path)
+                        logging.info(f"Found valid lyrics file (_lyrics.txt): {full_path}")
         
+        # Log potential lyrics files that weren't included
+        for file_path in potential_lyrics_files:
+            if file_path not in lyrics_files:
+                logging.debug(f"Potential lyrics file not matching pattern: {file_path}")
+                
         logging.debug(f"All directories searched")
     except Exception as e:
         logging.error(f"Error searching directory {base_dir}: {str(e)}")
@@ -73,27 +62,12 @@ def find_lyrics_files(base_dir):
     return lyrics_files
 
 def normalize_title(title):
-    """Normalize song titles to match the expected format."""
-    # Handle known special cases
-    special_cases = {
-        "Faro y Reflejo": "Faro Y Reflejo",
-        "¿Habrá Un Mañana?": "¿Habrá Un Mañana?",
-        "Y Aura-t-il Demain?": "¿Habrá Un Mañana?",
-        "Un Nuevo Amanezer": "Un Nuevo Amanezer",
-        "You'll always be my spark": "You'Ll Always Be My Spark",
-        "Una Foto Para Recordar": "Un Foto Para Recordar",
-        "Sleepless In Dreamland 1": "Sleepless In Dreamland",
-        "Slow Dancing In Time 1": "Slow Dancing In Time",
-        "Under The Red Star. V2": "Under The Red Star"
-    }
-    
-    # Apply special case normalization if needed
-    title = special_cases.get(title, title)
-    
-    # Normalize spacing
-    title = ' '.join(title.split())
-    
-    return title
+    """
+    Use directory name as-is with minimal normalization.
+    Just normalize spacing to avoid leading/trailing whitespace issues.
+    """
+    # Only normalize spacing
+    return ' '.join(title.split())
 
 def read_lyrics_file(file_path):
     """Read the lyrics file and return its content."""
@@ -106,8 +80,9 @@ def read_lyrics_file(file_path):
         with open(file_path, "r", encoding='utf-8') as f:
             lyrics = f.read().strip()
         
-        # Get the title from the directory name
+        # Get the title from the directory name (as-is)
         dir_name = os.path.basename(os.path.dirname(file_path))
+        # Only apply minimal normalization
         title = normalize_title(dir_name)
         
         logging.info(f"Processed {file_path} with title: {title}")
@@ -150,8 +125,7 @@ def consolidate_songs(base_dir: str = "..", output_file: str = "../consolidated_
     duplicates = {}  # Store paths for each duplicate title
     
     # Process all files, including those in subdirectories
-    # Skip the consolidated_songs_lyrics.txt file if it exists
-    lyrics_files = [f for f in lyrics_files if not os.path.basename(f) == "consolidated_songs_lyrics.txt"]
+    # The consolidated_songs_lyrics.txt file is already filtered out in find_lyrics_files
     
     # Process files to get current songs
     current_songs = []
@@ -247,7 +221,7 @@ if __name__ == "__main__":
     
     # Set up logging
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.DEBUG if args.verbose else logging.INFO,
         format='%(message)s',
         handlers=[
             logging.FileHandler('consolidate_songs.log'),

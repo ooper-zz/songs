@@ -18,14 +18,33 @@ logging.basicConfig(
 
 class SongFolderHandler(FileSystemEventHandler):
     def __init__(self, base_dir):
-        self.base_dir = os.path.abspath('.')  # Use current directory as base
+        # Use the absolute path of the base directory passed in
+        self.base_dir = os.path.abspath(base_dir)
         self.last_update = time.time()
         
     def process_folder(self, folder_name):
         try:
             logging.info(f"Processing folder: {folder_name}")
-            subprocess.run(['python', os.path.join('tools', 'consolidate_songs.py'), '--base-dir', '.', '--output', 'consolidated_songs.yml'], check=True)
-            subprocess.run(['python', os.path.join('tools', 'generate_song_metadata.py'), '--base-dir', '.', '--output', 'song_metadata.yml'], check=True)
+            
+            # Get absolute paths for scripts and output files
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            
+            # Run consolidate_songs.py
+            subprocess.run(
+                ['python', os.path.join(script_dir, 'consolidate_songs.py'), 
+                 '--base-dir', self.base_dir, 
+                 '--output', os.path.join(script_dir, 'consolidated_songs.yml')],
+                check=True
+            )
+            
+            # Run generate_song_metadata.py
+            subprocess.run(
+                ['python', os.path.join(script_dir, 'generate_song_metadata.py'), 
+                 '--base-dir', self.base_dir, 
+                 '--output', os.path.join(script_dir, 'song_metadata.yml')],
+                check=True
+            )
+            
             logging.info("Both files updated successfully!")
         except Exception as e:
             logging.error(f"Error processing folder: {e}")

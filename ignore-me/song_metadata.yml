@@ -1,0 +1,187 @@
+songs:
+  ahora-como-entonces:
+    actual_title: Ahora Como Entonces
+    status: released, yt-suppressed
+    tags: []
+    notes: []
+    ai_generated: suno4.5
+  as-i-saw-you-then:
+    actual_title: As I Saw You Then
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  bailando-en-el-oasis:
+    actual_title: Bailando en el Oasis
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  body-art-of-the-heart:
+    actual_title: Body Art of the Heart
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  faith-and-change:
+    actual_title: Faith and change
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  faro-y-reflejo:
+    actual_title: Faro y Reflejo
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  flickering-candle:
+    actual_title: Flickering Candle
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  flickering-light:
+    actual_title: Flickering Light
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  hear-the-silence-from-within:
+    actual_title: Hear the silence from Within
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  hey-son:
+    actual_title: Hey Son
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  hide-the-evidence:
+    actual_title: Hide the evidence
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  how-to-save-love:
+    actual_title: How to Save Love
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  hugely-small:
+    actual_title: Hugely Small
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  madre-y-esposa-a-la-vez:
+    actual_title: Madre y Esposa a la Vez
+    status: released, yt-suppressed
+    tags: []
+    notes: []
+    ai_generated: suno4.0
+  madre-e-hija-a-la-vez:
+    actual_title: Madre e Hija a la Vez
+    status: released, yt-suppressed
+    tags: []
+    notes: []
+    ai_generated: suno4.0
+  madre-y-padre-a-la-vez:
+    actual_title: Madre y Padre a la Vez
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  mar-y-tierra:
+    actual_title: Mar y Tierra
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  miles-in-me:
+    actual_title: Miles in Me
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 4.5
+  only-a-picture-to-remember:
+    actual_title: only a picture to remember
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  open-your-heart:
+    actual_title: open your heart
+    status: released, yt-suppressed
+    tags: []
+    notes: []
+    ai_generated: suno4.5
+  pockets:
+    actual_title: pockets
+    status: released, yt-suppressed
+    tags: []
+    notes: []
+    ai_generated: suno4.0
+  really-something:
+    actual_title: Really Something
+    status: released, yt-suppressed
+    tags: []
+    notes: []
+    ai_generated: suno4.5
+  slow-dancing-in-time:
+    actual_title: Slow Dancing in Time
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  song-on-the-cloud:
+    actual_title: Song on the Cloud
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  spanglish:
+    actual_title: Spanglish
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  flickering-spanglish:
+    actual_title: Flickering Spanglish
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  the-hummingbird-knows:
+    actual_title: The Hummingbird Knows
+    status: released, yt-suppressed
+    tags: []
+    notes: []
+    ai_generated: suno4.5
+  the-tone-of-the-heart:
+    actual_title: The Tone of the Heart
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
+  un-gesto-inolvidable:
+    actual_title: Un Gesto Inolvidable
+    status: released, yt-supressed
+    tags: []
+    notes: []
+    ai_generated: 4.5
+  why-today:
+    actual_title: why today
+    status: deferred
+    tags: []
+    notes: []
+    ai_generated: 
+  y-aura-t-il-demain:
+    actual_title: y aura-t-il-demain
+    status: released
+    tags: []
+    notes: []
+    ai_generated: 
