@@ -1,6 +1,6 @@
 songs:
   hugely-small:
-    actual_title: hugely-small
+    actual_title: Hugely Small
     status: deferred
     tags: []
     notes: []
@@ -10,195 +10,213 @@ songs:
     tags: []
     notes: []
   open-your-heart:
-    actual_title: open-your-heart
-    status: deferred
+    actual_title: Open Your Heart
+    status: released
     tags: []
     notes: []
+    upc: 990591102354
   body-art-of-the-heart:
-    actual_title: body-art-of-the-heart
+    actual_title: Body Art of the Heart
     status: deferred
     tags: []
     notes: []
   the-hummingbird-knows:
-    actual_title: the-hummingbird-knows
-    status: deferred
+    actual_title: The Hummingbird Knows
+    status: released
     tags: []
     notes: []
+    upc: 990591101722
   pockets:
-    actual_title: pockets
+    actual_title: Pockets
     status: deferred
     tags: []
     notes: []
   only-a-picture-to-remember:
-    actual_title: only-a-picture-to-remember
+    actual_title: Only a Picture to Remember
     status: deferred
     tags: []
     notes: []
   bailando-en-el-oasis:
-    actual_title: bailando-en-el-oasis
+    actual_title: Bailando en el Oasis
     status: deferred
     tags: []
     notes: []
   flickering-light:
-    actual_title: flickering-light
+    actual_title: Flickering Light
     status: deferred
     tags: []
     notes: []
   ci-sarà-un-domani:
-    actual_title: ci-sarà-un-domani
+    actual_title: Ci Sarà un Domani
     status: deferred
     tags: []
     notes: []
   ahora-como-entonces:
-    actual_title: ahora-como-entonces
-    status: deferred
+    actual_title: Ahora Como Entonces
+    status: released
     tags: []
     notes: []
+    upc: 056870132334
   faith-and-change:
-    actual_title: faith-and-change
+    actual_title: Faith and Change
     status: deferred
     tags: []
     notes: []
   hey-son:
-    actual_title: hey-son
-    status: deferred
+    actual_title: Hey Son
+    status: released
     tags: []
     notes: []
+    upc: 055905000143
   hide-the-evidence:
-    actual_title: hide-the-evidence
+    actual_title: Hide the Evidence
     status: deferred
     tags: []
     notes: []
   the-miles-in-me:
-    actual_title: the-miles-in-me
-    status: deferred
+    actual_title: The Miles in Me
+    status: released
     tags: []
     notes: []
+    upc: 990591441811
   madre-y-esposa-a-la-vez:
-    actual_title: madre-y-esposa-a-la-vez
+    actual_title: Madre y Esposa a la Vez
     status: deferred
     tags: []
     notes: []
   slow-dancing-in-time:
-    actual_title: slow-dancing-in-time
+    actual_title: Slow Dancing in Time
     status: deferred
     tags: []
     notes: []
   un-gesto-inolvidable:
-    actual_title: un-gesto-inolvidable
-    status: deferred
+    actual_title: Un Gesto Inolvidable
+    status: released
     tags: []
     notes: []
+    upc: 990591442139
   why-today:
-    actual_title: why-today
+    actual_title: Why Today
     status: deferred
     tags: []
     notes: []
   susurro-divino:
-    actual_title: susurro-divino
+    actual_title: Susurro Divino
     status: deferred
     tags: []
     notes: []
   flickering-candle:
-    actual_title: flickering-candle
+    actual_title: Flickering Candle
     status: deferred
     tags: []
     notes: []
   song-on-the-cloud:
-    actual_title: song-on-the-cloud
+    actual_title: Song on the Cloud
     status: deferred
     tags: []
     notes: []
   hear-the-silence-from-within:
-    actual_title: hear-the-silence-from-within
+    actual_title: Hear the Silence from Within
     status: deferred
     tags: []
     notes: []
   mar-y-tierra:
-    actual_title: mar-y-tierra
+    actual_title: Mar y Tierra
     status: deferred
     tags: []
     notes: []
   madre-y-padre-a-la-vez:
-    actual_title: madre-y-padre-a-la-vez
+    actual_title: Madre y Padre a la Vez
     status: deferred
     tags: []
     notes: []
   my-beacon-on-a-hill:
-    actual_title: my-beacon-on-a-hill
+    actual_title: My Beacon on a Hill
     status: deferred
     tags: []
     notes: []
   spitha:
-    actual_title: spitha
+    actual_title: Spitha
     status: deferred
     tags: []
     notes: []
   as-i-saw-you-then:
-    actual_title: as-i-saw-you-then
+    actual_title: As I Saw You Then
     status: deferred
     tags: []
     notes: []
   prayer-of-the-frontier:
-    actual_title: prayer-of-the-frontier
+    actual_title: Prayer of the Frontier
     status: deferred
     tags: []
     notes: []
   how-to-save-love:
-    actual_title: how-to-save-love
-    status: deferred
+    actual_title: How to Save Love
+    status: released
     tags: []
     notes: []
+    upc: 055855961181
   amber-twilight:
-    actual_title: amber-twilight
-    status: deferred
+    actual_title: Amber Twilight
+    status: released
     tags: []
     notes: []
+    upc: 055855959973
+  bajo-la-estrella-roja:
+    actual_title: Bajo la Estrella Roja
+    status: released
+    tags: []
+    notes: []
+    upc: 055855959973
   faro-y-reflejo:
-    actual_title: faro-y-reflejo
+    actual_title: Faro y Reflejo
     status: deferred
     tags: []
     notes: []
   the-tone-of-the-heart:
-    actual_title: the-tone-of-the-heart
-    status: deferred
+    actual_title: The Tone of the Heart
+    status: released
     tags: []
     notes: []
+    upc: 990591048126
   really-something:
-    actual_title: really-something
-    status: deferred
+    actual_title: It Was Really Something
+    status: released
     tags: []
     notes: []
+    upc: 990591253575
   una-foto-para-recordar:
-    actual_title: una-foto-para-recordar
+    actual_title: Una Foto para Recordar
     status: deferred
     tags: []
     notes: []
   were-not-going-back:
-    actual_title: were-not-going-back
+    actual_title: We're Not Going Back
     status: deferred
     tags: []
     notes: []
   desde-tu-vientre:
-    actual_title: desde-tu-vientre
+    actual_title: Desde tu Vientre
     status: deferred
     tags: []
     notes: []
   lets-write-a-song:
-    actual_title: lets-write-a-song
+    actual_title: Let's Write a Song
     status: deferred
     tags: []
     notes: []
   introspective-lyrics:
-    actual_title: introspective-lyrics
-    status: deferred
+    actual_title: Introspective Lyrics
+    status: released
     tags: []
     notes: []
+    upc: 055905200482
   youtuber-anthem:
-    actual_title: youtuber-anthem
-    status: deferred
+    actual_title: Adventure YouTuber (Album)
+    status: released
     tags: []
     notes: []
+    upc: 990591073463
   granja-de-sueños:
     actual_title: granja-de-sueños
     status: deferred
@@ -260,132 +278,146 @@ songs:
     tags: []
     notes: []
   the-journeys-the-destination:
-    actual_title: the-journeys-the-destination
-    status: deferred
+    actual_title: The Journeys the Destination
+    status: released
     tags: []
     notes: []
-  answer-in-the-wind:
-    actual_title: answer-in-the-wind
-    status: deferred
+    upc: 056870019888
+  carved-in-the-wind:
+    actual_title: Carved in the Wind
+    status: released
     tags: []
     notes: []
+    upc: 056870019888
   count-ten-to-one:
-    actual_title: count-ten-to-one
+    actual_title: Count Ten to One
+    status: released
+    tags: []
+    notes: []
+    upc: 056870019888
+  answer-in-the-wind:
+    actual_title: Carved in the Wind (Ode to Bob Dylan)
     status: deferred
     tags: []
     notes: []
   youtuber-aventurero:
-    actual_title: youtuber-aventurero
+    actual_title: YouTuber Aventurero
     status: deferred
     tags: []
     notes: []
   timeless-love:
-    actual_title: timeless-love
+    actual_title: Timeless Love
     status: deferred
     tags: []
     notes: []
   freedom-is-our-prayer:
-    actual_title: freedom-is-our-prayer
+    actual_title: Freedom is Our Prayer
     status: deferred
     tags: []
     notes: []
   lend-me-an-ear:
-    actual_title: lend-me-an-ear
+    actual_title: Lend Me an Ear
     status: deferred
     tags: []
     notes: []
   im-trying:
-    actual_title: im-trying
+    actual_title: I'm Trying
     status: deferred
     tags: []
     notes: []
   hes-bent-up-but-hes-back:
-    actual_title: hes-bent-up-but-hes-back
+    actual_title: He's Bent Up but He's Back
     status: deferred
     tags: []
     notes: []
   youll-always-be-my-spark:
-    actual_title: youll-always-be-my-spark
-    status: deferred
+    actual_title: You'll Always Be My Spark
+    status: released
     tags: []
     notes: []
-  aura-t-il-demain:
-    actual_title: aura-t-il-demain
-    status: deferred
+    upc: 056870907987
+  ellas-pilares-de-madre:
+    actual_title: Ellas, Pilares de Madre (Album)
+    status: released
     tags: []
     notes: []
+    upc: 056870907987
   escribió-sí-en-la-arena:
-    actual_title: escribió-sí-en-la-arena
+    actual_title: Escribió Sí en la Arena
     status: deferred
     tags: []
     notes: []
   footsteps-in-a-day:
-    actual_title: footsteps-in-a-day
+    actual_title: Footsteps in a Day
     status: deferred
     tags: []
     notes: []
   be-the-brick:
-    actual_title: be-the-brick
+    actual_title: Be the Brick
     status: deferred
     tags: []
     notes: []
   journey-to-myself:
-    actual_title: journey-to-myself
-    status: deferred
+    actual_title: Journey to Myself
+    status: released
     tags: []
     notes: []
+    upc: 055905669760
   carpe-diem-seize-the-day:
-    actual_title: carpe-diem-seize-the-day
+    actual_title: Carpe Diem (Seize the Day)
     status: deferred
     tags: []
     notes: []
   under-the-red-star:
-    actual_title: under-the-red-star
-    status: deferred
+    actual_title: Under the Red Star
+    status: released
     tags: []
     notes: []
+    upc: 055905038030
   i-write-the-songs:
-    actual_title: i-write-the-songs
+    actual_title: I Write the Songs
     status: deferred
     tags: []
     notes: []
   madre-e-hija-a-la-vez:
-    actual_title: madre-e-hija-a-la-vez
+    actual_title: Madre e Hija a la Vez
     status: deferred
     tags: []
     notes: []
   genius-inside:
-    actual_title: genius-inside
+    actual_title: Genius Inside
     status: deferred
     tags: []
     notes: []
   markings-on-the-road:
-    actual_title: markings-on-the-road
+    actual_title: Markings on the Road
     status: deferred
     tags: []
     notes: []
   the-journey-to-myself:
-    actual_title: the-journey-to-myself
+    actual_title: The Journey to Myself
     status: deferred
     tags: []
     notes: []
   si-no-fueras-tu:
-    actual_title: si-no-fueras-tu
-    status: deferred
+    actual_title: Si No Fueras Tú
+    status: released
     tags: []
     notes: []
-  Memorabilia:
+    upc: 055905087106
+  memorabilia:
     actual_title: Memorabilia
-    status: deferred
+    status: released
     tags: []
     notes: []
+    upc: 055905087106
   a-son-and-a-father:
-    actual_title: a-son-and-a-father
+    actual_title: A Son and a Father
     status: deferred
     tags: []
     notes: []
   the-unsung-song:
-    actual_title: the-unsung-song
+    actual_title: The Unsung Song
     status: deferred
     tags: []
     notes: []
