@@ -1,7 +1,7 @@
 songs:
   hugely-small:
     actual_title: Hugely Small
-    status: deferred
+    status: released
     tags: []
     notes: []
   Spanglish:
@@ -11,10 +11,14 @@ songs:
     notes: []
   open-your-heart:
     actual_title: Open Your Heart
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 990591102354
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   body-art-of-the-heart:
     actual_title: Body Art of the Heart
     status: deferred
@@ -22,23 +26,27 @@ songs:
     notes: []
   the-hummingbird-knows:
     actual_title: The Hummingbird Knows
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 990591101722
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   pockets:
     actual_title: Pockets
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
   only-a-picture-to-remember:
     actual_title: Only a Picture to Remember
-    status: deferred
+    status: released
     tags: []
     notes: []
   bailando-en-el-oasis:
     actual_title: Bailando en el Oasis
-    status: deferred
+    status: released
     tags: []
     notes: []
   flickering-light:
@@ -48,15 +56,19 @@ songs:
     notes: []
   ci-sarà-un-domani:
     actual_title: Ci Sarà un Domani
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
   ahora-como-entonces:
     actual_title: Ahora Como Entonces
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 056870132334
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   faith-and-change:
     actual_title: Faith and Change
     status: deferred
@@ -64,24 +76,32 @@ songs:
     notes: []
   hey-son:
     actual_title: Hey Son
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 055905000143
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   hide-the-evidence:
     actual_title: Hide the Evidence
-    status: deferred
+    status: released, hidden
     tags: []
     notes: []
   the-miles-in-me:
     actual_title: The Miles in Me
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 990591441811
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   madre-y-esposa-a-la-vez:
     actual_title: Madre y Esposa a la Vez
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
   slow-dancing-in-time:
@@ -91,10 +111,14 @@ songs:
     notes: []
   un-gesto-inolvidable:
     actual_title: Un Gesto Inolvidable
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 990591442139
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   why-today:
     actual_title: Why Today
     status: deferred
@@ -112,12 +136,12 @@ songs:
     notes: []
   song-on-the-cloud:
     actual_title: Song on the Cloud
-    status: deferred
+    status: released
     tags: []
     notes: []
   hear-the-silence-from-within:
     actual_title: Hear the Silence from Within
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
   mar-y-tierra:
@@ -127,7 +151,7 @@ songs:
     notes: []
   madre-y-padre-a-la-vez:
     actual_title: Madre y Padre a la Vez
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
   my-beacon-on-a-hill:
@@ -142,7 +166,7 @@ songs:
     notes: []
   as-i-saw-you-then:
     actual_title: As I Saw You Then
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
   prayer-of-the-frontier:
@@ -152,19 +176,23 @@ songs:
     notes: []
   how-to-save-love:
     actual_title: How to Save Love
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 055855961181
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   amber-twilight:
     actual_title: Amber Twilight
-    status: released
+    status: deferred
     tags: []
     notes: []
-    upc: 055855959973
+    upc: 
   bajo-la-estrella-roja:
     actual_title: Bajo la Estrella Roja
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 055855959973
@@ -179,25 +207,33 @@ songs:
     tags: []
     notes: []
     upc: 990591048126
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   really-something:
     actual_title: It Was Really Something
     status: released
     tags: []
     notes: []
     upc: 990591253575
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   una-foto-para-recordar:
     actual_title: Una Foto para Recordar
-    status: deferred
+    status: released
     tags: []
     notes: []
   were-not-going-back:
     actual_title: We're Not Going Back
-    status: deferred
+    status: hidden
     tags: []
     notes: []
   desde-tu-vientre:
     actual_title: Desde tu Vientre
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
   lets-write-a-song:
@@ -213,13 +249,17 @@ songs:
     upc: 055905200482
   youtuber-anthem:
     actual_title: Adventure YouTuber (Album)
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 990591073463
+    date_released: ""
+    distributor: landr
+    catalog_number: ""
+    description: ""
   granja-de-sueños:
     actual_title: granja-de-sueños
-    status: deferred
+    status: released
     tags: []
     notes: []
   labyrinths-mine:
@@ -229,27 +269,27 @@ songs:
     notes: []
   timeless-purpose:
     actual_title: timeless-purpose
-    status: deferred
+    status: released
     tags: []
     notes: []
   habrá-un-mañana:
     actual_title: habrá-un-mañana
-    status: deferred
+    status: released
     tags: []
     notes: []
   el-vuelo-del-fénix:
     actual_title: el-vuelo-del-fénix
-    status: deferred
+    status: released
     tags: []
     notes: []
   sleepless-in-dreamland:
     actual_title: sleepless-in-dreamland
-    status: deferred
+    status: released
     tags: []
     notes: []
   song-of-us-lyrics:
     actual_title: song-of-us-lyrics
-    status: deferred
+    status: released
     tags: []
     notes: []
   labarga-anniversario-lyrics:
@@ -259,9 +299,9 @@ songs:
     notes: []
   rewrite-the-moment:
     actual_title: rewrite-the-moment
-    status: deferred
+    status: released
     tags: []
-    notes: []
+    notes: [artist -Carl J. Garcia]
   eternamente-en-deuda:
     actual_title: eternamente-en-deuda
     status: deferred
@@ -269,7 +309,7 @@ songs:
     notes: []
   this-time-around:
     actual_title: this-time-around
-    status: deferred
+    status: released
     tags: []
     notes: []
   un-nuevo-amanecer:
@@ -282,27 +322,22 @@ songs:
     status: released
     tags: []
     notes: []
-    upc: 056870019888
-  carved-in-the-wind:
-    actual_title: Carved in the Wind
-    status: released
-    tags: []
-    notes: []
-    upc: 056870019888
+    upc: 055855333940
   count-ten-to-one:
     actual_title: Count Ten to One
     status: released
     tags: []
     notes: []
-    upc: 056870019888
+    upc: 056870330365
   answer-in-the-wind:
     actual_title: Carved in the Wind (Ode to Bob Dylan)
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
+    upc: 056870019888
   youtuber-aventurero:
     actual_title: YouTuber Aventurero
-    status: deferred
+    status: released
     tags: []
     notes: []
   timeless-love:
@@ -312,7 +347,7 @@ songs:
     notes: []
   freedom-is-our-prayer:
     actual_title: Freedom is Our Prayer
-    status: deferred
+    status: released, hidden
     tags: []
     notes: []
   lend-me-an-ear:
@@ -332,10 +367,10 @@ songs:
     notes: []
   youll-always-be-my-spark:
     actual_title: You'll Always Be My Spark
-    status: released
+    status: deferred
     tags: []
     notes: []
-    upc: 056870907987
+    upc:
   ellas-pilares-de-madre:
     actual_title: Ellas, Pilares de Madre (Album)
     status: released
@@ -347,14 +382,16 @@ songs:
     status: deferred
     tags: []
     notes: []
+    upc: 055855783899
   footsteps-in-a-day:
     actual_title: Footsteps in a Day
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
+    upc: 055905200482
   be-the-brick:
     actual_title: Be the Brick
-    status: deferred
+    status: released
     tags: []
     notes: []
   journey-to-myself:
@@ -370,41 +407,37 @@ songs:
     notes: []
   under-the-red-star:
     actual_title: Under the Red Star
-    status: released
+    status: released, ai-blocked
     tags: []
     notes: []
     upc: 055905038030
   i-write-the-songs:
     actual_title: I Write the Songs
-    status: deferred
+    status: released
     tags: []
     notes: []
   madre-e-hija-a-la-vez:
     actual_title: Madre e Hija a la Vez
-    status: deferred
+    status: released, ai-blocked
     tags: []
-    notes: []
+    notes: [track in album - mother's day]
   genius-inside:
     actual_title: Genius Inside
-    status: deferred
+    status: released
     tags: []
     notes: []
   markings-on-the-road:
     actual_title: Markings on the Road
-    status: deferred
+    status: released, ai-blocked
     tags: []
     notes: []
-  the-journey-to-myself:
-    actual_title: The Journey to Myself
-    status: deferred
-    tags: []
-    notes: []
+    upc: 990591048126
   si-no-fueras-tu:
     actual_title: Si No Fueras Tú
     status: released
     tags: []
     notes: []
-    upc: 055905087106
+    upc: 055855354723
   memorabilia:
     actual_title: Memorabilia
     status: released
@@ -418,6 +451,6 @@ songs:
     notes: []
   the-unsung-song:
     actual_title: The Unsung Song
-    status: deferred
+    status: released
     tags: []
     notes: []
