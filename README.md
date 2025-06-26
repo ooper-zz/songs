@@ -1,6 +1,6 @@
 # Song Management System
 
-This repository contains scripts for managing and consolidating song lyrics and metadata.
+This repository contains scripts for managing the lifecycle of song lyrics and any associated metadata.
 
 ## Installation Requirements
 
@@ -28,7 +28,7 @@ After installation, the system diagrams in the README will be properly rendered.
 The system helps maintain a centralized database of song lyrics and their associated metadata (tags, notes, etc.) by:
 1. Automatically consolidating lyrics from multiple files
 2. Maintaining consistent metadata across different versions of songs
-3. Supporting multiple language versions of the same song
+3. Supporting multiple language versions of the same song, if any
 4. Automatically updating files when changes are detected
 
 ## Purpose
@@ -202,8 +202,6 @@ This script will:
 
 Purpose: Comprehensive tool for managing songs, including folder creation and metadata management.
 
-**Note: This tool is designed to work with local AI assistance only. It should not be used with external AI services.**
-
 To use the menu, run:
 ```bash
 python tools/song_manager.py
@@ -224,13 +222,8 @@ Features:
 - Comprehensive logging
 - Unicode character support
 - Lyrics file creation for new songs
-- Local AI integration for song management tasks
-
-**Note: This tool is designed to work with local AI assistance only. It should not be used with external AI services.**
 
 ### 2. `tools/manage_song_metadata.py`
-
-Purpose: Alternative tool for managing song metadata without AI assistance.
 
 To use the menu, run:
 ```bash
@@ -248,9 +241,8 @@ The menu provides these options:
 Features:
 - Manual song management
 - Basic metadata operations
-- No AI integration
 
-**Note: For comprehensive song management, including folder creation and AI assistance, use `song_manager.py`.**
+**Note: For comprehensive song management, including folder creation, use `song_manager.py`.**
 
 ### 2. `tools/consolidate_songs.py`
 
