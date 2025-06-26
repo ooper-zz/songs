@@ -1,6 +1,6 @@
 # Song Management System
 
-This repository contains scripts for managing the lifecycle of song lyrics and any associated metadata.
+This repository contains scripts for managing the creative lifecycle of song lyrics and any associated metadata.
 
 ## Installation Requirements
 
